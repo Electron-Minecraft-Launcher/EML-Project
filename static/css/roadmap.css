@@ -1,0 +1,98 @@
+.roadmap {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 30px 0 0 10px;
+}
+
+.roadmap::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 30px;
+  width: 4px;
+  height: calc(100% - 100px);
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-left: 80px;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #505050;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.step-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  outline: 0px solid var(--primary-tr-color-hover);
+  transition: all 0.3s ease, shadow 0.1s ease, margin 0.1s, outline 0.1s ease;
+  cursor: pointer;
+}
+
+.step-content::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 14px);
+  font-size: 28px;
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.step-content:hover::before {
+  transform: translateX(60px);
+  color: var(--primary-color-hover);
+}
+
+.step-title {
+  font-size: 20px;
+  margin: 0 0 6px 0 !important;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.step-content:hover .step-title {
+  color: var(--primary-color-hover) !important;
+}
+
+.step-description {
+  font-size: 0.95rem;
+  width: 578px;
+  color: var(--text-dark-color) !important;
+}
