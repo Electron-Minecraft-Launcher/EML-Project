@@ -5,11 +5,11 @@ export async function onRequest(context) {
   try {
     const releasesRaw = await fetchReleases(context.env)
 
-    const formatRelease = (r) => ({
+    const formatRelease = (r, forceLatestUrl = false) => ({
       version: r.tag_name,
       published_at: r.published_at,
       is_prerelease: r.prerelease,
-      installer_url: `https://${context.request.headers.get('host')}/install/${CONFIG.toolName}@${r.tag_name}`,
+      installer_url: `https://${context.request.headers.get('host')}/install/${CONFIG.toolName}@${forceLatestUrl ? 'latest' : r.tag_name}`,
       assets: r.assets.map((a) => ({ name: a.name, url: a.browser_download_url }))
     })
 
@@ -17,7 +17,7 @@ export async function onRequest(context) {
 
     const latestStable = releasesRaw.find((r) => !r.prerelease)
     if (latestStable) {
-      const latestEntry = formatRelease(latestStable)
+      const latestEntry = formatRelease(latestStable, true)
       latestEntry.version = 'latest'
       latestEntry.real_version = latestStable.tag_name
       formatted.unshift(latestEntry)
@@ -33,4 +33,7 @@ export async function onRequest(context) {
     return new Response(JSON.stringify({ error: e.message }), { status: 500 })
   }
 }
+
+
+
 

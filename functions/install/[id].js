@@ -27,7 +27,7 @@ export async function onRequest(context) {
     const realTag = targetRelease.tag_name
     const rawUrl = `${CONFIG.githubRaw}/${CONFIG.owner}/${CONFIG.repo}/main/.github/scripts/${CONFIG.scriptName}@${realTag}`
 
-    console.log(`Fetching script from: ${rawUrl}`)
+    console.log(`Request: ${requestedTag} -> Resolved to: ${realTag} -> URL: ${rawUrl}`)
 
     const scriptResponse = await fetch(rawUrl)
 
