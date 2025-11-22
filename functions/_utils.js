@@ -1,45 +1,65 @@
 import { CONFIG } from './_config.js'
 
-export async function fetchReleases(env) {
-  const url = `${CONFIG.githubApi}/repos/${CONFIG.owner}/${CONFIG.repo}/releases`
+async function fetchGitHub(env, endpoint) {
+  const url = `${CONFIG.githubApi}/repos/${CONFIG.owner}/${CONFIG.repo}${endpoint}`
 
   const cacheKey = new Request(url, { method: 'GET' })
   const cache = caches.default
   let response = await cache.match(cacheKey)
 
   if (!response) {
-    console.log('Cache miss: Fetching from GitHub API')
-
+    console.log(`Cache miss: ${url}`)
     const headers = {
       'User-Agent': CONFIG.userAgent,
       Accept: 'application/vnd.github.v3+json'
     }
-
     if (env.GITHUB_TOKEN) {
       headers['Authorization'] = `Bearer ${env.GITHUB_TOKEN}`
     }
 
-    response = await fetch(url, { headers })
+    const apiRes = await fetch(url, { headers })
 
-    if (!response.ok) {
-      throw new Error(`GitHub API Error: ${response.status}`)
+    if (apiRes.status === 404) {
+      return null
     }
 
-    response = new Response(response.body, response)
-    response.headers.set('Cache-Control', `max-age=${CONFIG.cacheTtl}`)
+    if (!apiRes.ok) {
+      throw new Error(`GitHub API Error ${apiRes.status} on ${endpoint}`)
+    }
 
+    response = new Response(apiRes.body, apiRes)
+    response.headers.set('Cache-Control', `max-age=${CONFIG.cacheTtl}`)
     await cache.put(cacheKey, response.clone())
-  } else {
-    console.log('Cache hit')
   }
 
   return await response.json()
 }
 
-export function findVersion(releases, requestedTag) {
-  if (requestedTag === 'latest') {
-    return releases.find((r) => !r.prerelease)
+export function cleanTagName(tag) {
+  if (!tag) return ''
+  return tag.replace(/^v/, '')
+}
+
+export async function fetchAllReleases(env) {
+  const data = await fetchGitHub(env, '/releases')
+  return data ?? []
+}
+
+export async function fetchLatestRelease(env) {
+  let latest = await fetchGitHub(env, '/releases/latest')
+
+  if (!latest) {
+    console.log('GitHub /releases/latest is empty, fallback to the most recent one.')
+    const all = await fetchAllReleases(env)
+    if (all && all.length > 0) {
+      latest = all[0]
+    }
   }
-  return releases.find((r) => r.tag_name === requestedTag)
+
+  return latest
+}
+
+export async function fetchReleaseByTag(env, tag) {
+  return await fetchGitHub(env, `/releases/tags/${tag}`)
 }
 
