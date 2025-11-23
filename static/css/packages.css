@@ -1,0 +1,126 @@
+div.container {
+  display: grid !important;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+}
+
+div.container div {
+  width: auto !important;
+}
+
+label {
+  margin-top: 0 !important;
+}
+
+input[type="radio"] {
+  display: inline-block !important;
+  width: auto !important;
+  outline: none !important;
+  accent-color: var(--primary-color) !important;
+  box-shadow: none !important;
+}
+
+.versions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 50px;
+}
+
+.version-card {
+  background: var(--background-color);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.version-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.version-tag {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge.latest {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.badge.stable {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.badge.beta {
+  background: #ffedd5;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+}
+
+.version-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.version-card pre {
+  overflow-x: auto;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.version-card pre code {
+  display: block;
+  padding: 14px;
+  background: #e6e8eb;
+  border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.version-card pre i {
+  color: var(--primary-color);
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+
+.copy-feedback {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background: var(--primary-dark-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.copy-feedback.show {
+  opacity: 1;
+  top: -10px;
+}

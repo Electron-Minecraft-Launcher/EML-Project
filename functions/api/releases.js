@@ -6,25 +6,30 @@ export async function onRequest(context) {
     const [allReleases, latestRelease] = await Promise.all([fetchAllReleases(context.env), fetchLatestRelease(context.env)])
 
     const host = context.request.headers.get('host')
+    const baseInstallUrl = `https://${host}/install/${CONFIG.toolName}`
 
-    const formatRelease = (r, isVirtualLatest = false) => {
+    const latestId = latestRelease ? latestRelease.id : null
+
+    const formattedList = allReleases.map((r) => {
       const versionClean = cleanTagName(r.tag_name)
+      const isLatest = latestId && r.id === latestId
+      const installerUrls = []
+
+      installerUrls.push(`${baseInstallUrl}@${versionClean}`)
+
+      if (isLatest) {
+        installerUrls.push(`${baseInstallUrl}@latest`)
+      }
+
       return {
-        version: isVirtualLatest ? 'latest' : versionClean,
+        version: versionClean,
         published_at: r.published_at,
         is_prerelease: r.prerelease,
-        installer_url: `https://${host}/install/${CONFIG.toolName}@${isVirtualLatest ? 'latest' : versionClean}`,
-        real_version: versionClean,
+        is_latest: isLatest,
+        installer_urls: installerUrls,
         assets: r.assets.map((a) => ({ name: a.name, url: a.browser_download_url }))
       }
-    }
-
-    const formattedList = allReleases.map((r) => formatRelease(r, false))
-
-    if (latestRelease) {
-      const latestEntry = formatRelease(latestRelease, true)
-      formattedList.unshift(latestEntry)
-    }
+    })
 
     return new Response(JSON.stringify(formattedList, null, 2), {
       headers: {
@@ -36,4 +41,3 @@ export async function onRequest(context) {
     return new Response(JSON.stringify({ error: e.message }), { status: 500 })
   }
 }
-

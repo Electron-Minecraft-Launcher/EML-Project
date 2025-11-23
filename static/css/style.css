@@ -90,6 +90,12 @@ label.p {
   color: black;
 }
 
+label.inline {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: var(--text-dark-color) !important;
+}
+
 a:not(.not-a),
 button.a {
   color: var(--primary-color);
