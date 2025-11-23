@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     })
 
     const isLatest = release.is_latest
-    const isBeta = release.is_prerelease
+    const isPrerelease = release.is_prerelease
 
     let badgeHtml = ''
     if (isLatest) badgeHtml += `<span class="badge latest">Latest</span>`
-    if (isBeta) badgeHtml += `<span class="badge beta">Beta</span>`
-    if (!isLatest && !isBeta) badgeHtml += `<span class="badge stable">Stable</span>`
+    if (isPrerelease) badgeHtml += `<span class="badge beta">Pre-release</span>`
+    if (!isLatest && !isPrerelease) badgeHtml += `<span class="badge stable">Stable</span>`
     let targetUrl = release.installer_urls[0]
 
     if (isLatest) {
