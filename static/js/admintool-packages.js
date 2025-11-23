@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <div class="version-tag">
                 EML AdminTool v${release.version} ${badgeHtml}
               </div>
-              <a href="https://github.com/Electron-Minecraft-Launcher/EML-AdminTool-v2/releases/tag/${release.version}" target="_blank" class="not-a" title="See on GitHub" style="color: #aaa;">
+              <a href="https://github.com/Electron-Minecraft-Launcher/EML-AdminTool-v2/releases/tag/v${release.version}" target="_blank" class="not-a" title="See on GitHub" style="color: #aaa;">
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>
