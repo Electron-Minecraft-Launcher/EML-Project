@@ -86,10 +86,10 @@ function processTabs() {
       if (commentValue === 'TABS:END') {
         inTabGroup = false
 
-        if (currentTabNav && currentTabNav.firstChild) {
+        if (currentTabNav?.firstChild) {
           currentTabNav.firstChild.classList.add('active')
         }
-        if (currentTabContent && currentTabContent.firstChild) {
+        if (currentTabContent?.firstChild) {
           currentTabContent.firstChild.classList.add('active')
         }
 

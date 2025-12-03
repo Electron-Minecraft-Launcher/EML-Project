@@ -145,10 +145,6 @@
   word-wrap: break-word;
 }
 
-#doc-content a {
-  font-size: 15px;
-}
-
 #doc-content ul,
 #doc-content ol {
   padding-left: 25px;
@@ -307,6 +303,13 @@
 #doc-content th {
   background-color: var(--background-color);
   font-weight: 600;
+  text-align: center;
+}
+
+#doc-content img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 16px 0;
   text-align: center;
 }
 

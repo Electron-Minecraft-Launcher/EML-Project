@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   let allData = []
 
-  window.copyCommand = (cmd, btnId) => {
+  globalThis.copyCommand = (cmd, btnId) => {
     navigator.clipboard.writeText(cmd).then(() => {
       const icon = document.getElementById(`copy-icon-${btnId}`)
       if (icon) {
