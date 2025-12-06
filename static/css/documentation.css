@@ -465,3 +465,9 @@
 .nav-button.next i {
   margin-left: 8px;
 }
+
+hr {
+  border: none;
+  border-top: 3px solid var(--border-color);
+  margin: 2rem 0;
+}
