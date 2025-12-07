@@ -1,6 +1,6 @@
 const contentElement = document.getElementById('doc-content')
 const sidebarLinks = document.querySelectorAll('#doc-sidebar a')
-const defaultPage = 'test-1'
+const defaultPage = '1.1-required-knowledge'
 
 function setActiveLink(id) {
   sidebarLinks.forEach((link) => {
