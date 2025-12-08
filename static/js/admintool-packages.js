@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     let installCmd = ''
-    if (commandTool === 'curl') installCmd = `curl -sSL ${targetUrl} | bash`
+    if (commandTool === 'curl') installCmd = `curl -fsSL ${targetUrl} | bash`
     else installCmd = `wget -qO- ${targetUrl} | bash`
 
     return `

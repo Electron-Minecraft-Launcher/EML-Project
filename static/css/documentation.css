@@ -471,3 +471,73 @@ hr {
   border-top: 3px solid var(--border-color);
   margin: 2rem 0;
 }
+
+.code-switch-container {
+  margin: 16px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.code-switch-header {
+  display: flex;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0;
+}
+
+.code-switch-button {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #666;
+  background: transparent;
+  border: none;
+  border-radius: 5px 5px 0 0 !important;
+  cursor: pointer;
+  border-bottom: 2px solid transparent !important;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+
+.code-switch-button:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.code-switch-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color) !important;
+  opacity: 1;
+}
+
+.code-switch-body {
+  position: relative;
+  background: #f3f4f6;
+  /* Important: doit matcher le background du bloc de code hljs */
+}
+
+.code-switch-pane {
+  display: none;
+}
+
+.code-switch-pane.active {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Ajustement spécifique pour les <pre> à l'intérieur du switcher */
+.code-switch-pane pre {
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.code-switch-pane pre code.hljs {
+  border-radius: 0 0 6px 6px !important;
+  /* Arrondi seulement en bas */
+  padding: 1.2em !important;
+  /* Un peu plus d'espace */
+  border: none !important;
+}

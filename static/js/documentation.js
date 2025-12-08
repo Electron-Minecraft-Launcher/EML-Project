@@ -141,6 +141,110 @@ function processTabs() {
   })
 }
 
+function processCodeSwitch() {
+  const nodes = Array.from(contentElement.childNodes)
+
+  let inSwitchGroup = false
+  let currentSwitchContainer = null
+  let currentSwitchHeader = null
+  let currentSwitchBody = null
+  let switchCounter = 0
+  let pendingLanguageLabel = null
+
+  nodes.forEach((node) => {
+    // 1. Détection des commentaires
+    if (node.nodeType === Node.COMMENT_NODE) {
+      const commentValue = node.nodeValue.trim()
+
+      if (commentValue === 'CODESWITCH:START') {
+        inSwitchGroup = true
+        switchCounter++
+
+        currentSwitchContainer = document.createElement('div')
+        currentSwitchContainer.className = 'code-switch-container'
+
+        currentSwitchHeader = document.createElement('div')
+        currentSwitchHeader.className = 'code-switch-header'
+
+        currentSwitchBody = document.createElement('div')
+        currentSwitchBody.className = 'code-switch-body'
+
+        currentSwitchContainer.appendChild(currentSwitchHeader)
+        currentSwitchContainer.appendChild(currentSwitchBody)
+
+        contentElement.insertBefore(currentSwitchContainer, node)
+        node.remove()
+        return
+      }
+
+      if (inSwitchGroup && commentValue.startsWith('CODE:')) {
+        pendingLanguageLabel = commentValue.replace('CODE:', '').trim()
+        node.remove()
+        return
+      }
+
+      if (commentValue === 'CODESWITCH:END') {
+        inSwitchGroup = false
+
+        // Active le premier onglet par défaut à la fin du groupe
+        if (currentSwitchHeader && currentSwitchHeader.firstChild) {
+          currentSwitchHeader.firstChild.classList.add('active')
+        }
+        if (currentSwitchBody && currentSwitchBody.firstChild) {
+          currentSwitchBody.firstChild.classList.add('active')
+        }
+
+        currentSwitchContainer = null
+        currentSwitchHeader = null
+        currentSwitchBody = null
+        pendingLanguageLabel = null
+        node.remove()
+        return
+      }
+    }
+
+    // 2. Traitement du code
+    if (inSwitchGroup && currentSwitchContainer && pendingLanguageLabel) {
+      if (node.tagName === 'PRE') {
+        const uniqueId = `codeswitch-${switchCounter}-${currentSwitchHeader.children.length}`
+
+        // --- CORRECTION ICI ---
+        // On capture les éléments actuels dans des constantes locales
+        // pour que le onclick garde la référence correcte plus tard.
+        const thisHeader = currentSwitchHeader
+        const thisBody = currentSwitchBody
+
+        // Création du Pane (Contenu)
+        const pane = document.createElement('div')
+        pane.className = 'code-switch-pane'
+        pane.id = uniqueId
+        pane.appendChild(node) // Déplace le PRE dans le pane
+
+        // Création du Bouton (Onglet)
+        const button = document.createElement('button')
+        button.className = 'code-switch-button'
+        button.textContent = pendingLanguageLabel
+
+        button.onclick = () => {
+          // On utilise les variables locales 'thisHeader' et 'thisBody'
+          Array.from(thisHeader.children).forEach((b) => b.classList.remove('active'))
+          Array.from(thisBody.children).forEach((p) => p.classList.remove('active'))
+
+          button.classList.add('active')
+          pane.classList.add('active')
+        }
+
+        thisHeader.appendChild(button)
+        thisBody.appendChild(pane)
+
+        pendingLanguageLabel = null
+      } else if (node.nodeType === Node.TEXT_NODE && !node.textContent.trim()) {
+        node.remove()
+      }
+    }
+  })
+}
+
 function updateNavigationButtons(currentPageId) {
   const existingNav = contentElement.querySelector('.doc-nav')
   if (existingNav) {
@@ -203,6 +307,7 @@ async function loadMarkdown(pageId) {
 
     processAdmonitions()
     processTabs()
+    processCodeSwitch()
 
     contentElement.querySelectorAll('pre code').forEach((block) => {
       hljs.highlightElement(block)
@@ -234,4 +339,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   globalThis.addEventListener('hashchange', handleHashChange)
 })
+
+
 
