@@ -152,7 +152,6 @@ function processCodeSwitch() {
   let pendingLanguageLabel = null
 
   nodes.forEach((node) => {
-    // 1. Détection des commentaires
     if (node.nodeType === Node.COMMENT_NODE) {
       const commentValue = node.nodeValue.trim()
 
@@ -186,11 +185,10 @@ function processCodeSwitch() {
       if (commentValue === 'CODESWITCH:END') {
         inSwitchGroup = false
 
-        // Active le premier onglet par défaut à la fin du groupe
-        if (currentSwitchHeader && currentSwitchHeader.firstChild) {
+        if (currentSwitchHeader?.firstChild) {
           currentSwitchHeader.firstChild.classList.add('active')
         }
-        if (currentSwitchBody && currentSwitchBody.firstChild) {
+        if (currentSwitchBody?.firstChild) {
           currentSwitchBody.firstChild.classList.add('active')
         }
 
@@ -203,30 +201,23 @@ function processCodeSwitch() {
       }
     }
 
-    // 2. Traitement du code
     if (inSwitchGroup && currentSwitchContainer && pendingLanguageLabel) {
       if (node.tagName === 'PRE') {
         const uniqueId = `codeswitch-${switchCounter}-${currentSwitchHeader.children.length}`
 
-        // --- CORRECTION ICI ---
-        // On capture les éléments actuels dans des constantes locales
-        // pour que le onclick garde la référence correcte plus tard.
         const thisHeader = currentSwitchHeader
         const thisBody = currentSwitchBody
 
-        // Création du Pane (Contenu)
         const pane = document.createElement('div')
         pane.className = 'code-switch-pane'
         pane.id = uniqueId
-        pane.appendChild(node) // Déplace le PRE dans le pane
+        pane.appendChild(node)
 
-        // Création du Bouton (Onglet)
         const button = document.createElement('button')
         button.className = 'code-switch-button'
         button.textContent = pendingLanguageLabel
 
         button.onclick = () => {
-          // On utilise les variables locales 'thisHeader' et 'thisBody'
           Array.from(thisHeader.children).forEach((b) => b.classList.remove('active'))
           Array.from(thisBody.children).forEach((p) => p.classList.remove('active'))
 
@@ -306,8 +297,8 @@ async function loadMarkdown(pageId) {
     contentElement.innerHTML = marked.parse(markdown, { gfm: true })
 
     processAdmonitions()
-    processTabs()
     processCodeSwitch()
+    processTabs()
 
     contentElement.querySelectorAll('pre code').forEach((block) => {
       hljs.highlightElement(block)
