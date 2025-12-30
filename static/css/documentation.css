@@ -282,8 +282,11 @@
 
 #doc-content code, #doc-content code * {
   font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-  font-size: 14px;
   line-height: 1.7;
+}
+
+#doc-content pre code * {
+  font-size: 14px;
 }
 
 #doc-content table {
