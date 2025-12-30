@@ -22,9 +22,11 @@
     padding: 40px 20px 0 20px;
   }
 
-  /* --- 2. HEADER & MENU (ANIMATION FLUIDE) --- */
+  /* --- 2. HEADER & MENU --- */
+
   header .container-layout {
-    position: relative;
+    /* On reste en static pour que le menu se cale sur le header global */
+    position: static;
     flex-wrap: wrap;
   }
 
@@ -39,49 +41,100 @@
     margin-left: auto;
   }
 
+  /* LE MENU DÉROULANT */
   .main-nav {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
 
-    /* Animation fluide : on part de 0 partout */
+    /* Z-Index élevé pour passer au-dessus de l'overlay */
+    z-index: 1100;
+
+    background: var(--background-light-color);
+    /* FOND BLANC/CLAIR */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+    /* Animation fluide */
     max-height: 0;
     opacity: 0;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
     overflow: hidden;
-    background: var(--background-light-color);
     border-top: 1px solid transparent;
-
-    /* On anime tout ensemble */
     transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
   .main-nav.active {
     max-height: 500px;
-    /* Valeur max suffisante */
     opacity: 1;
-    margin-top: 15px;
-    /* Le décalage apparaît progressivement */
-    padding-bottom: 20px;
     border-top-color: var(--border-color);
   }
 
   .main-nav ul {
     flex-direction: column;
     gap: 0;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .main-nav a {
     display: block;
-    padding: 15px 10px;
+    padding: 15px 20px;
     width: 100%;
     border-bottom: 1px solid var(--secondary-color);
     text-align: center;
+    background: var(--background-light-color);
   }
 
-  /* --- 3. DOCUMENTATION (SIDEBAR AVEC BOUTON FERMER) --- */
+  /* L'OVERLAY SOMBRE (NOUVEAU) */
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* Le fond assombri */
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* --- 3. FIX PAGE PACKAGES --- */
+  div.container {
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px !important;
+  }
+
+  div.container>div,
+  div.container input[type="text"],
+  div.container select {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 5px;
+  }
+
+  div.container label.inline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  label.second {
+    margin-left: 0 !important;
+  }
+
+  /* --- 4. DOCUMENTATION --- */
   .doc-layout {
     grid-template-columns: 1fr;
     margin: 1rem auto;
@@ -104,27 +157,21 @@
     left: 0;
     width: 85%;
     max-width: 320px;
-    height: 100vh;
-    z-index: 1000;
-    border-radius: 0;
+    min-height: 100vh;
+    z-index: 1200;
     border-right: 1px solid var(--border-color);
     background: var(--background-light-color);
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
-
-    /* Animation glissement */
     transform: translateX(-100%);
     transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
   #doc-sidebar.active {
     transform: translateX(0);
-    min-height: 100vh !important;
   }
 
-  /* Le nouveau bouton fermer */
   #doc-close-btn {
     display: block;
-    /* Visible sur mobile */
     position: absolute;
     top: 15px;
     right: 15px;
@@ -137,12 +184,11 @@
     z-index: 1001;
   }
 
-  /* On décale le contenu de la sidebar pour ne pas qu'il passe sous le bouton */
   #doc-sidebar h3:first-of-type {
     margin-right: 30px;
+    margin-top: 20px;
   }
 
-  /* Overlay sombre */
   .doc-overlay {
     display: block;
     position: fixed;
@@ -151,7 +197,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 1150;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
@@ -162,26 +208,11 @@
     visibility: visible;
   }
 
-  /* --- 4. CONTENU & AUTRES --- */
-  .container {
-    padding: 20px;
-  }
-
+  /* --- 5. AUTRES --- */
   #doc-content pre {
     max-width: 100vw;
   }
 
-  div.container.packages-container {
-    grid-template-columns: 1fr !important;
-  }
-
-  .version-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  /* Reset roadmap mobile */
   .roadmap::before {
     left: 19px;
     top: 30px;
@@ -203,27 +234,28 @@
     display: none;
   }
 
+  /* No-Hover Touch */
   a:hover, button:hover {
     transform: none !important;
     box-shadow: none !important;
     background-color: initial !important;
-    color: initial !important;
-    border-bottom: initial !important;
   }
 
   nav a:hover {
     border-bottom: 1px solid var(--secondary-color) !important;
+    background: #f9f9f9 !important;
+    /* Léger feedback visuel */
+  }
+
+  button.primary:hover {
+    background: var(--primary-dark-color) !important;
+    color: var(--text-light-color) !important;
   }
 }
 
-/* --- ORDI : CACHER LE BOUTON FERMER --- */
+/* --- ORDI --- */
 @media (min-width: 769px) {
-  #doc-close-btn {
-    display: none !important;
-  }
-
-  .mobile-menu-toggle,
-  #doc-menu-toggle {
+  #doc-close-btn, .mobile-menu-toggle, #doc-menu-toggle {
     display: none !important;
   }
 }
