@@ -12,6 +12,10 @@ label {
   margin-top: 0 !important;
 }
 
+label.second {
+  margin-left: 20px !important;
+}
+
 input[type="radio"] {
   display: inline-block !important;
   width: auto !important;

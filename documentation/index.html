@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/static/css/style.css" />
   <link rel="stylesheet" href="/static/css/subpage.css" />
   <link rel="stylesheet" href="/static/css/documentation.css" />
+  <link rel="stylesheet" href="/static/css/responsive.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" />
 
 </head>
@@ -26,7 +27,15 @@
 
     <div class="doc-layout">
 
+      <button id="doc-menu-toggle" class="button secondary">
+        <i class="fa-solid fa-list"></i> Table of contents
+    </button>
+
       <aside id="doc-sidebar">
+        <button id="doc-close-btn" aria-label="Fermer le menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
         <h3>Table of contents</h3>
 
         <details>
@@ -96,11 +105,9 @@
   <footer></footer>
 </body>
 
-<script type="module" async src="/static/js/layout.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script type="module" async src="/static/js/layout.js"></script>
 <script type="module" src="/static/js/documentation.js"></script>
 
 </html>

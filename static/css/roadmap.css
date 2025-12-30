@@ -92,7 +92,7 @@
 }
 
 .step-description {
-  font-size: 0.95rem;
-  width: 578px;
+  font-size: 14px;
+  max-width: 578px;
   color: var(--text-dark-color) !important;
 }
