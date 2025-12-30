@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <div class="version-tag">
             EML Lib v${pkg.version} ${badgeHtml}
           </div>
-          <a href="https://www.npmjs.com/package/${PACKAGE_NAME}/v/${pkg.version}" target="_blank" class="not-a" title="See on NPM" style="color: #aaa;">
+          <a href="https://www.npmjs.com/package/${PACKAGE_NAME}/v/${pkg.version}" target="_blank" class="not-a" title="See on npm" style="color: #aaa;">
             <i class="fa-brands fa-npm"></i>
           </a>
         </div>
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     const res = await fetch(`https://registry.npmjs.org/${PACKAGE_NAME}`)
-    if (!res.ok) throw new Error(`NPM Registry Error: ${res.status}`)
+    if (!res.ok) throw new Error(`npm Registry Error: ${res.status}`)
 
     const rawData = await res.json()
 
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   } catch (err) {
     console.error(err)
     versionsGrid.innerHTML = `<div style="grid-column: 1/-1; padding: 20px; background: #fee2e2; border: 1px solid #ef4444; border-radius: 8px; color: #b91c1c;">
-          Unable to load packages from NPM. <br> <small>${err.message}</small>
+          Unable to load packages from npm.<br> <small>${err.message}</small>
         </div>`
   }
 

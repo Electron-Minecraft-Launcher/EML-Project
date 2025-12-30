@@ -82,13 +82,18 @@
   border-left-color: var(--primary-color);
 }
 
-#doc-content {
+.container {
   background: var(--background-light-color);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 40px;
   min-height: 500px;
   overflow-y: hidden;
+}
+
+#doc-content {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #doc-content>*:first-child {
@@ -282,8 +287,11 @@
 
 #doc-content code, #doc-content code * {
   font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-  font-size: 14px;
   line-height: 1.7;
+}
+
+#doc-content pre code * {
+  font-size: 14px;
 }
 
 #doc-content table {
