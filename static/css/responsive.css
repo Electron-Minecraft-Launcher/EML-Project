@@ -1,0 +1,229 @@
+/* =========================================
+   STYLE MOBILE & TABLETTE (Max 768px)
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* --- 1. GLOBAUX --- */
+  .container-layout {
+    width: 90%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  section.section {
+    padding: 30px 20px;
+  }
+
+  div.footer-container {
+    padding: 40px 20px 0 20px;
+  }
+
+  /* --- 2. HEADER & MENU (ANIMATION FLUIDE) --- */
+  header .container-layout {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--text-dark-color);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto;
+  }
+
+  .main-nav {
+    display: block;
+    width: 100%;
+
+    /* Animation fluide : on part de 0 partout */
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    background: var(--background-light-color);
+    border-top: 1px solid transparent;
+
+    /* On anime tout ensemble */
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .main-nav.active {
+    max-height: 500px;
+    /* Valeur max suffisante */
+    opacity: 1;
+    margin-top: 15px;
+    /* Le décalage apparaît progressivement */
+    padding-bottom: 20px;
+    border-top-color: var(--border-color);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 10px;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 15px 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+  }
+
+  /* --- 3. DOCUMENTATION (SIDEBAR AVEC BOUTON FERMER) --- */
+  .doc-layout {
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    width: 95%;
+  }
+
+  #doc-menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  #doc-sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    z-index: 1000;
+    border-radius: 0;
+    border-right: 1px solid var(--border-color);
+    background: var(--background-light-color);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+
+    /* Animation glissement */
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  #doc-sidebar.active {
+    transform: translateX(0);
+    min-height: 100vh !important;
+  }
+
+  /* Le nouveau bouton fermer */
+  #doc-close-btn {
+    display: block;
+    /* Visible sur mobile */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* On décale le contenu de la sidebar pour ne pas qu'il passe sous le bouton */
+  #doc-sidebar h3:first-of-type {
+    margin-right: 30px;
+  }
+
+  /* Overlay sombre */
+  .doc-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .doc-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* --- 4. CONTENU & AUTRES --- */
+  .container {
+    padding: 20px;
+  }
+
+  #doc-content pre {
+    max-width: 100vw;
+  }
+
+  div.container.packages-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .version-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Reset roadmap mobile */
+  .roadmap::before {
+    left: 19px;
+    top: 30px;
+  }
+
+  .step {
+    padding-left: 50px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    left: 2px;
+    top: 18px;
+  }
+
+  .step-content:hover::before {
+    display: none;
+  }
+
+  a:hover, button:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: initial !important;
+    color: initial !important;
+    border-bottom: initial !important;
+  }
+
+  nav a:hover {
+    border-bottom: 1px solid var(--secondary-color) !important;
+  }
+}
+
+/* --- ORDI : CACHER LE BOUTON FERMER --- */
+@media (min-width: 769px) {
+  #doc-close-btn {
+    display: none !important;
+  }
+
+  .mobile-menu-toggle,
+  #doc-menu-toggle {
+    display: none !important;
+  }
+}
