@@ -1,0 +1,118 @@
+.roadmap {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 32px;
+    width: 4px;
+    height: 70%;
+    background: var(--border-color);
+    border-radius: 2px;
+    z-index: 0;
+  }
+
+  .step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-left: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: white;
+      border: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 1.2rem;
+      z-index: 1;
+    }
+
+    .step-content {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 25px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+      h3 {
+        margin: 0 0 8px 0;
+        color: var(--primary);
+        font-size: 1.25rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--text-main);
+        line-height: 1.5;
+      }
+    }
+
+    &.completed {
+      opacity: 0.7;
+    }
+
+    &.active {
+      .step-number {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+        background: white;
+      }
+
+      .step-content {
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap {
+    margin-left: 0;
+    width: auto;
+
+    &::before {
+      display: none;
+    }
+
+    .step {
+      padding-left: 0;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      .step-number {
+        position: static;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        border-width: 2px;
+      }
+
+      .step-content {
+        width: calc(100% - 50px);
+      }
+    }
+  }
+}
