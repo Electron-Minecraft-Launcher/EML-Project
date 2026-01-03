@@ -39,6 +39,10 @@
   font-family: 'Poppins', 'Arial', 'Helvetica', sans-serif;
 }
 
+html {
+  // scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -86,6 +90,7 @@ button.a {
   background: none;
   font-size: 1em;
   padding: 0;
+  line-height: 16px;
 
   &.small-link {
     font-size: 14px;

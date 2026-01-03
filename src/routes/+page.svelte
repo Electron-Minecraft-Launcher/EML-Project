@@ -1,7 +1,7 @@
 <script lang="ts">
   import hljs from 'highlight.js'
   import typescript from 'highlight.js/lib/languages/typescript'
-  import 'highlight.js/styles/vs2015.css'
+  import 'highlight.js/styles/github-dark.css'
 
   hljs.registerLanguage('typescript', typescript)
 
@@ -46,7 +46,7 @@ async function start() {
     </p>
 
     <div class="buttons">
-      <a href="/docs/1.1-required-knowledge" class="button button-primary">Get Started</a>
+      <a href="/docs" class="button button-primary">Get Started</a>
       <a href="/docs" class="button button-secondary">Browse packages</a>
     </div>
   </div>
@@ -127,7 +127,7 @@ async function start() {
       <a href="https://discord.gg/nfEHKtghPh" target="_blank" class="button button-discord">
         <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join Discord
       </a>
-      <a href="/docs/2.1-get-docker" class="button button-primary">Start installation</a>
+      <a href="/docs" class="button button-primary">Start installation</a>
     </div>
   </div>
 </section>

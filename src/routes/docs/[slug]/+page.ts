@@ -1,17 +1,20 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
+import  {docsMenu} from '../../../lib/config/docs'
 
 export const load = (async ({ params }) => {
   try {
-    // const post = await import(`../../../../lib/docs/${params.slug}.md`)
-    const post = await import(`../../../lib/docs/${params.slug}.md`)
+    const filename = docsMenu.flatMap(section => section.items)
+      .find(item => item.slug === params.slug)?.file
+    const post = await import(`../../../lib/docs/${filename}.md`)
 
     return {
       content: post.default,
-      meta: post.metadata
+      meta: post.metadata,
+      slug: params.slug
     }
-  } catch (e: unknown) {
+  } catch (e) {
     console.error(e)
-    throw error(404, `Could not find documentation for ${params.slug}`)
+    throw error(404, `Le document ${params.slug} est introuvable.`)
   }
 }) satisfies PageLoad

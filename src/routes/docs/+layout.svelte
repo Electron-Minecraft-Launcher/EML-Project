@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state'
   import { docsMenu } from '$lib/config/docs'
+  import { copyCode } from '$lib/utils/copycode'
   import type { LayoutData } from '../$types'
 
   interface Props {
@@ -11,14 +12,24 @@
   let { data, children }: Props = $props()
 
   let isDocMenuOpen = $state(false)
+  let openSections = $state<boolean[]>(new Array(docsMenu.length).fill(false))
 
   function toggleDocMenu() {
     isDocMenuOpen = !isDocMenuOpen
   }
 
   $effect(() => {
-    const p = page.url.pathname
+    const currentPath = page.url.pathname
+
     isDocMenuOpen = false
+
+    docsMenu.forEach((section, index) => {
+      const containsActivePage = section.items.some((item) => currentPath.includes(item.slug))
+
+      if (containsActivePage) {
+        openSections[index] = true
+      }
+    })
   })
 </script>
 
@@ -26,13 +37,13 @@
   <aside class="sidebar" class:open={isDocMenuOpen}>
     <p class="table-of-contents">Table of Contents</p>
     <div class="sidebar-inner">
-      {#each docsMenu as section}
-        <details>
+      {#each docsMenu as section, index}
+        <details bind:open={openSections[index]}>
           <summary>&nbsp;&nbsp;{section.title}</summary>
           <ul>
             {#each section.items as item}
               <li>
-                <a href="/docs/{item.slug}" class:active={page.url.pathname.includes(item.slug)}>
+                <a href="/docs/{item.slug}" class:active={page.url.pathname.split('/').slice(-1)[0] === item.slug}>
                   {item.title}
                 </a>
               </li>
@@ -52,7 +63,7 @@
       <i class="fa-solid fa-list-ul"></i> Menu
     </button>
 
-    <article class="markdown-body">
+    <article class="markdown-body" use:copyCode={page.url.pathname}>
       {@render children?.()}
     </article>
   </div>
@@ -162,21 +173,13 @@
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 40px;
-    min-height: 500px;
+    min-height: calc(100vh - 202px);
     overflow-y: hidden;
   }
 
   .content-wrapper .markdown-body {
     max-width: 1000px;
     margin: 0 auto;
-  }
-
-  .content-wrapper .markdown-body > *:first-child {
-    margin-top: 0;
-  }
-
-  .content-wrapper .markdown-body > *:last-child {
-    margin-bottom: 0 !important;
   }
 
   @media (max-width: 768px) {
