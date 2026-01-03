@@ -26,7 +26,7 @@
   {@render children?.()}
 </div>
 
-<style>
+<style global lang="scss">
   .tab-pane {
     display: none;
   }

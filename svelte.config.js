@@ -2,6 +2,8 @@ import adapter from '@sveltejs/adapter-cloudflare'
 import { sveltePreprocess } from 'svelte-preprocess'
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { remarkAlert } from './plugins/remark.js'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import typescript from 'highlight.js/lib/languages/typescript'
@@ -51,7 +53,7 @@ const config = {
         }
       },
       remarkPlugins: [remarkAlert],
-      rehypePlugins: []
+      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
     })
   ],
   compilerOptions: {
@@ -72,4 +74,7 @@ const config = {
 }
 
 export default config
+
+
+
 
