@@ -56,7 +56,9 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-# END Cloudflare Managed Content`
+# END Cloudflare Managed Content
+
+Sitemap: https://eml-project.pages.dev/sitemap.xml`
 
   return new Response(robots, {
     headers: {

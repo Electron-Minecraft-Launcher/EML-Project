@@ -15,6 +15,6 @@ export const load = (async ({ params }) => {
     }
   } catch (e) {
     console.error(e)
-    throw error(404, `Le document ${params.slug} est introuvable.`)
+    throw error(404, `Document ${params.slug} not found.`)
   }
 }) satisfies PageLoad

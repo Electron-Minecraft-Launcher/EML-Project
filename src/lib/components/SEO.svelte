@@ -13,7 +13,7 @@
   let {
     title,
     description = 'EML Project is an open-source, modular infrastructure designed for server administrators to create, secure, and distribute custom Minecraft launchers.',
-    image = 'https://eml-project.pages.dev/images/og-image-default.png',
+    image = 'https://emlproject.pages.dev/images/og-image-default.png',
     type = 'website',
     author = 'Electron Minecraft Launcher',
     publishedTime
@@ -21,7 +21,7 @@
 
   const siteTitle = 'EML Project'
   const finalTitle = title === siteTitle ? title : `${title} | ${siteTitle}`
-  const canonicalUrl = $derived(`https://eml-project.pages.dev${page.url.pathname}`)
+  const canonicalUrl = $derived(`https://emlproject.pages.dev${page.url.pathname}`)
 
   const jsonLd = {
     '@context': 'https://schema.org',
