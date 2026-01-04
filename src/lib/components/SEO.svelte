@@ -20,7 +20,7 @@
   }: Props = $props()
 
   const siteTitle = 'EML Project'
-  const finalTitle = title === siteTitle ? title : `${title} | ${siteTitle}`
+  const finalTitle = title === siteTitle ? title : `${title}`
   const canonicalUrl = $derived(`https://emlproject.pages.dev${page.url.pathname}`)
 
   const jsonLd = {
