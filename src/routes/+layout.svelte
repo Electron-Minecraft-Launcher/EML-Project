@@ -13,13 +13,13 @@
 
   let { data, children }: Props = $props()
 
-  // afterNavigate(() => {
-  //   if (!dev && typeof window.gtag !== 'undefined') {
-  //     window.gtag('config', 'G-7G31KJ2ZE8', {
-  //       page_path: window.location.pathname + window.location.search
-  //     })
-  //   }
-  // })
+  afterNavigate(() => {
+    if (!dev && typeof window.gtag !== 'undefined') {
+      window.gtag('config', 'G-RERDYHCFQW', {
+        page_path: window.location.pathname + window.location.search
+      })
+    }
+  })
 </script>
 
 <Header />
