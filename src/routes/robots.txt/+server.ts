@@ -1,4 +1,7 @@
-# As a condition of accessing this website, you agree to abide by the following
+import type { RequestHandler } from '@sveltejs/kit'
+
+export const GET: RequestHandler = async () => {
+  const robots = `# As a condition of accessing this website, you agree to abide by the following
 # content signals:
 
 # (a)  If a content-signal = yes, you may collect content for the corresponding
@@ -53,4 +56,11 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-# END Cloudflare Managed Content
+# END Cloudflare Managed Content`
+
+  return new Response(robots, {
+    headers: {
+      'Content-Type': 'text/plain'
+    }
+  })
+}

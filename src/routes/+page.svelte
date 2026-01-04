@@ -1,5 +1,6 @@
 <script lang="ts">
-  import hljs from 'highlight.js'
+  import SEO from '$lib/components/SEO.svelte'
+import hljs from 'highlight.js'
   import typescript from 'highlight.js/lib/languages/typescript'
   import 'highlight.js/styles/github-dark.css'
 
@@ -21,7 +22,7 @@ async function start() {
     url: 'https://at.emlproject.pages.dev',
     serverId: 'goldfrite',
     account: account,
-    memory: { min: '2048', max: '1024' },
+    memory: { min: 2048, max: 1024 },
   })
   
   // 3. Launch
@@ -30,13 +31,7 @@ async function start() {
 `
 </script>
 
-<svelte:head>
-  <title>EML Project - Build your Custom Minecraft Launcher</title>
-  <meta
-    name="description"
-    content="The complete infrastructure to create, manage and distribute your own Minecraft Launcher. AdminTool, Library and Template included."
-  />
-</svelte:head>
+<SEO title="EML Project — Build your own Minecraft launcher" description="An open-source, modular infrastructure designed for server administrators. Create, secure, and distribute your modpacks with professional tools." />
 
 <section class="hero">
   <div class="container-layout">
@@ -47,19 +42,19 @@ async function start() {
 
     <div class="buttons">
       <a href="/docs" class="button button-primary">Get Started</a>
-      <a href="/docs" class="button button-secondary">Browse packages</a>
+      <a href="/packages" class="button button-secondary">Browse packages</a>
     </div>
   </div>
 </section>
 
 <section class="features container-layout">
   <div class="card">
-    <h3><i class="fa-solid fa-server"></i> EML AdminTool</h3>
-    <p>A self-hosted web dashboard to manage your launcher, news, maintenance and files remotely via a modern interface.</p>
+    <h3><i class="fa-solid fa-cube"></i> EML Lib</h3>
+    <p>The core logic handled for you: Microsoft Auth, File Hashing, Java launching, and integrity checks.</p>
   </div>
   <div class="card">
-    <h3><i class="fa-solid fa-code"></i> EML Lib</h3>
-    <p>The core logic handled for you: Microsoft Auth, File Hashing, Java launching, and integrity checks.</p>
+    <h3><i class="fa-solid fa-server"></i> EML AdminTool</h3>
+    <p>A self-hosted web dashboard to manage your launcher, news, maintenance and files remotely via a modern interface.</p>
   </div>
   <div class="card">
     <h3><i class="fa-solid fa-layer-group"></i> EML Template</h3>
@@ -197,9 +192,6 @@ async function start() {
       padding: 25px 30px;
       border-radius: 12px;
       border: 1px solid var(--border-color);
-      transition:
-        transform 0.2s,
-        box-shadow 0.2s;
 
       h3 {
         margin: 0 0 15px 0;

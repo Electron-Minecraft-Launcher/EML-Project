@@ -42,7 +42,9 @@
       justify-content: space-between;
       gap: 30px;
       margin-bottom: 30px;
+      padding-top: 30px;
       text-align: left;
+      border-top: 1px solid var(--border-color);
     }
 
     .footer-col {
@@ -72,7 +74,7 @@
       font-size: 13px;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
-      padding-top: 20px;
+      padding-top: 0;
       width: 90%;
       margin: 0 auto;
     }

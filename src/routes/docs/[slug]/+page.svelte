@@ -1,4 +1,5 @@
 <script lang="ts">
+  import SEO from '$lib/components/SEO.svelte'
   import { docsMenu } from '$lib/config/docs'
   import type { PageProps } from './$types'
 
@@ -6,6 +7,7 @@
   let Content = $derived(data.content)
 
   const flatMenu = docsMenu.flatMap((section) => section.items)
+  const meta = data.meta ?? {}
 
   let currentSlug = $derived(data.slug)
 
@@ -14,9 +16,7 @@
   let nextPage = $derived(currentIndex < flatMenu.length - 1 ? flatMenu[currentIndex + 1] : null)
 </script>
 
-<svelte:head>
-  <title>{data.meta?.title ? `${data.meta.title} — EML Docs` : 'Documentation'}</title>
-</svelte:head>
+<SEO title={meta.title ? `${meta.title} — EML Docs` : 'EML Docs'} description={meta.description} type="article" publishedTime={meta.lastUpdated} />
 
 <div class="doc-content">
   <Content />

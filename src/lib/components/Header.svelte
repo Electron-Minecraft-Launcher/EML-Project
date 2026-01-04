@@ -31,6 +31,9 @@
           <a href="/docs" class:active={page.url.pathname.startsWith('/docs')}>Docs</a>
         </li>
         <li>
+          <a href="/packages" class:active={page.url.pathname.startsWith('/packages')}>Packages</a>
+        </li>
+        <li>
           <a href="https://github.com/Electron-Minecraft-Launcher" target="_blank" rel="noopener noreferrer">
             GitHub <i class="fa-brands fa-github"></i>
           </a>

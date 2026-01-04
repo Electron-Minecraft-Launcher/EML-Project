@@ -33,6 +33,12 @@
   })
 </script>
 
+<section class="hero small">
+  <div class="container-layout">
+    <p class="hero-title"><span>EML</span> Docs</p>
+  </div>
+</section>
+
 <div class="docs-layout">
   <aside class="sidebar" class:open={isDocMenuOpen}>
     <p class="table-of-contents">Table of Contents</p>
