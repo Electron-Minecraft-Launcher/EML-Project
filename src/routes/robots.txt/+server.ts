@@ -26,37 +26,15 @@ export const GET: RequestHandler = async () => {
 # RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT
 # AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.
 
-# BEGIN Cloudflare Managed content
-
 User-Agent: *
 Content-signal: search=yes,ai-train=no
 Allow: /
-
-User-agent: Amazonbot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
 
 User-agent: Bytespider
 Disallow: /
 
 User-agent: CCBot
 Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: GPTBot
-Disallow: /
-
-User-agent: meta-externalagent
-Disallow: /
-
-# END Cloudflare Managed Content
 
 Sitemap: https://eml-project.pages.dev/sitemap.xml`
 
