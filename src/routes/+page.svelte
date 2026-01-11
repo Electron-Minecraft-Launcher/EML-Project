@@ -72,7 +72,7 @@ async function start() {
     <ul class="check-list">
       <li><i class="fa-solid fa-check"></i> Native Microsoft authentication</li>
       <li><i class="fa-solid fa-check"></i> Automatic Java download</li>
-      <li><i class="fa-solid fa-check"></i> Forge & Vanilla support</li>
+      <li><i class="fa-solid fa-check"></i> Vanilla, Forge and Fabric support</li>
     </ul>
   </div>
 
@@ -101,14 +101,14 @@ async function start() {
       <div class="step-number">2</div>
       <div class="step-content">
         <h3>V2 Beta (Current)</h3>
-        <p>Complete rewrite. Secure Architecture. AdminTool V2 with Docker. Forge Support.</p>
+        <p>Complete rewrite. Secure Architecture. AdminTool V2 with Docker. Forge support.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-number">3</div>
       <div class="step-content">
         <h3>V2 Release</h3>
-        <p>Fabric & NeoForge Support. Auto-Updater for the Launcher itself. Public Release.</p>
+        <p>Fabric & NeoForge support. Auto-Updater for the Launcher itself. Public Release.</p>
       </div>
     </div>
   </div>
@@ -119,7 +119,7 @@ async function start() {
     <h2>Ready to build?</h2>
     <p>Join the Discord community or start reading the documentation.</p>
     <div class="buttons">
-      <a href="https://discord.gg/nfEHKtghPh" target="_blank" class="button button-discord">
+      <a href="https://discord.gg/YVB4k6HzAY" target="_blank" class="button button-discord">
         <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join Discord
       </a>
       <a href="/docs" class="button button-primary">Start installation</a>
