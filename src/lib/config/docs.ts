@@ -10,7 +10,7 @@ export const docsMenu = [
     title: 'EML AdminTool setup',
     items: [
       { title: 'Get Docker', slug: 'get-docker', file: '2.1-get-docker' },
-      { title: 'Install AdminTool', slug: 'install-eml-admintool', file: '2.2-install-eml-admintool' },
+      { title: 'Install EML AdminTool', slug: 'install-eml-admintool', file: '2.2-install-eml-admintool' },
       { title: 'Set up NGINX', slug: 'set-up-nginx', file: '2.3-set-up-nginx' },
       { title: 'Use an SSL certificate', slug: 'use-an-ssl-certificate', file: '2.4-use-an-ssl-certificate' },
       { title: 'Security advice', slug: 'security-advice', file: '2.5-security-advice' }
