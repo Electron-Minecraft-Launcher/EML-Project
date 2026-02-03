@@ -1,8 +1,8 @@
 <script lang="ts">
   import SEO from '$lib/components/SEO.svelte'
-import hljs from 'highlight.js'
+  import hljs from 'highlight.js'
   import typescript from 'highlight.js/lib/languages/typescript'
-  import 'highlight.js/styles/github-dark.css'
+  // import 'highlight.js/styles/github-dark.css'
 
   hljs.registerLanguage('typescript', typescript)
 
@@ -31,7 +31,10 @@ async function start() {
 `
 </script>
 
-<SEO title="EML Project — Build your own Minecraft launcher" description="An open-source, modular infrastructure designed for server administrators. Create, secure, and distribute your modpacks with professional tools." />
+<SEO
+  title="EML Project — Build your own Minecraft launcher"
+  description="An open-source, modular infrastructure designed for server administrators. Create, secure, and distribute your modpacks with professional tools."
+/>
 
 <section class="hero">
   <div class="container-layout">
@@ -70,9 +73,9 @@ async function start() {
       your players.
     </p>
     <ul class="check-list">
-      <li><i class="fa-solid fa-check"></i> Native Microsoft authentication</li>
-      <li><i class="fa-solid fa-check"></i> Automatic Java download</li>
-      <li><i class="fa-solid fa-check"></i> Vanilla, Forge and Fabric support</li>
+      <li><i class="fa-solid fa-check"></i>Native Microsoft authentication</li>
+      <li><i class="fa-solid fa-check"></i>Automatic Java download</li>
+      <li><i class="fa-solid fa-check"></i>Vanilla, Forge, NeoForge, Fabric and Quilt support</li>
     </ul>
   </div>
 
@@ -100,15 +103,22 @@ async function start() {
     <div class="step active">
       <div class="step-number">2</div>
       <div class="step-content">
-        <h3>V2 Beta (Current)</h3>
-        <p>Complete rewrite. Secure Architecture. AdminTool V2 with Docker. Forge support.</p>
+        <h3>V2 Beta (current)</h3>
+        <p>Complete rewrite. Secure architecture. EML AdminTool with Docker. Forge support.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-number">3</div>
       <div class="step-content">
         <h3>V2 Release</h3>
-        <p>Fabric & NeoForge support. Auto-Updater for the Launcher itself. Public Release.</p>
+        <p>NeoForge, Fabric & Quilt support. Public release.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>New features</h3>
+        <p>Multi-instance support. EML AdminTool-agnostic version of EML Lib.</p>
       </div>
     </div>
   </div>
@@ -128,7 +138,9 @@ async function start() {
 </section>
 
 <style lang="scss">
+  @use 'sass:meta';
   @use '../../static/styles/roadmap.scss';
+
   section.hero {
     text-align: center;
 
@@ -250,6 +262,10 @@ async function start() {
       color: #d4d4d4;
       font-size: 0.9rem;
 
+      :global {
+        @include meta.load-css('static/styles/home-theme.scss');
+      }
+
       .code-header {
         display: flex;
         gap: 8px;
@@ -282,7 +298,7 @@ async function start() {
       }
 
       code,
-      code>span * {
+      code > span * {
         font-family: 'Fira Code', monospace !important;
       }
 
