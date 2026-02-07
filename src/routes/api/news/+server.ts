@@ -2,7 +2,6 @@ import type { RequestHandler } from './$types'
 import { json } from '@sveltejs/kit'
 
 export const GET: RequestHandler = async ({url}) => {
-  // get query param 'limit' if exists and 'content' if exists
   const limit = url.searchParams.get('limit') ? parseInt(url.searchParams.get('limit') as string, 10) : null
   const getContent = url.searchParams.get('get-content') !== null
 

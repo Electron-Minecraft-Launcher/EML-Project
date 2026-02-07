@@ -20,8 +20,6 @@ export const load = (async ({ fetch }) => {
       }))
       .sort((a, b) => b.date.getTime() - a.date.getTime())
     
-    console.log(versions)
-
     return {
       packageName: data.name,
       versions,
