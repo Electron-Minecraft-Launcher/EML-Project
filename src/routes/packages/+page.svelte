@@ -79,6 +79,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-bottom: 50px;
   }
 
   .project-card {
@@ -101,7 +102,7 @@
   }
 
   .icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 

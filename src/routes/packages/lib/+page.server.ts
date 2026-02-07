@@ -11,7 +11,7 @@ export const load = (async ({ fetch }) => {
     const data = await res.json()
 
     const versions = Object.keys(data.time)
-      .filter((v) => v !== 'created' && v !== 'modified')
+      .filter((v) => v !== 'created' && v !== 'modified' && data.versions[v] && !data.versions[v].deprecated)
       .map((version) => ({
         version,
         date: new Date(data.time[version]),
@@ -19,6 +19,8 @@ export const load = (async ({ fetch }) => {
         isPreRelease: version.includes('-alpha') || version.includes('-beta') || version.includes('-rc')
       }))
       .sort((a, b) => b.date.getTime() - a.date.getTime())
+    
+    console.log(versions)
 
     return {
       packageName: data.name,
