@@ -23,7 +23,8 @@
   </div>
 
   <div class="copyright">
-    &copy; {new Date().getFullYear()} EML Project. Licensed under MIT and AGPL-3.0.
+    &copy; {new Date().getFullYear()} EML Project. Licensed under MIT and AGPL-3.0. <br />
+    EML Project is not affiliated with Mojang Studios, Microsoft Corporation or OpenJS Foundation.
   </div>
 </footer>
 
