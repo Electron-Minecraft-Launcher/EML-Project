@@ -44,8 +44,8 @@ async function start() {
     </p>
 
     <div class="buttons">
-      <a href="/docs" class="button button-primary">Get Started</a>
-      <a href="/packages" class="button button-secondary">Browse packages</a>
+      <a href="/docs" class="not-a button primary">Get Started</a>
+      <a href="/packages" class="not-a button secondary">Browse packages</a>
     </div>
   </div>
 </section>
@@ -100,17 +100,17 @@ async function start() {
         <p>Proof of concept. Functional but with security flaws. Deprecated.</p>
       </div>
     </div>
-    <div class="step active">
-      <div class="step-number">2</div>
+    <div class="step completed">
+      <div class="step-number"><i class="fa-solid fa-check"></i></div>
       <div class="step-content">
-        <h3>V2 Beta (current)</h3>
+        <h3>V2 Beta</h3>
         <p>Complete rewrite. Secure architecture. EML AdminTool with Docker. Forge support.</p>
       </div>
     </div>
-    <div class="step">
+    <div class="step active">
       <div class="step-number">3</div>
       <div class="step-content">
-        <h3>V2 Release</h3>
+        <h3>V2 Release (current)</h3>
         <p>NeoForge, Fabric & Quilt support. Public release.</p>
       </div>
     </div>
@@ -129,10 +129,10 @@ async function start() {
     <h2>Ready to build?</h2>
     <p>Join the Discord community or start reading the documentation.</p>
     <div class="buttons">
-      <a href="https://discord.gg/YVB4k6HzAY" target="_blank" class="button button-discord">
+      <a href="/docs" class="button primary start">Start installation</a>
+      <a href="https://discord.gg/YVB4k6HzAY" target="_blank" class="button discord">
         <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join Discord
       </a>
-      <a href="/docs" class="button button-primary">Start installation</a>
     </div>
   </div>
 </section>
@@ -172,23 +172,15 @@ async function start() {
         border-radius: 50rem;
         border-bottom: none;
         outline: 0px solid var(--primary-tr-color-hover);
-        transition: outline 0.1s;
+        transition: all 0.3s, outline 0.1s;
         font-weight: 500;
+        box-shadow: none !important;
 
         &:hover:active {
           outline: 6px solid var(--primary-tr-color-hover);
           transform: translateY(0);
+          box-shadow: none;
         }
-      }
-
-      .button-primary {
-        background-color: var(--primary-color);
-        color: white;
-      }
-
-      .button-secondary {
-        background-color: var(--secondary-color);
-        color: var(--text-dark-color);
       }
     }
   }
@@ -349,18 +341,17 @@ async function start() {
         outline: 0px solid var(--primary-tr-color-hover);
       }
 
-      .button-primary {
+      .start {
         background: var(--primary-color);
         color: white;
-
-        &:hover:active {
-          outline: 6px solid var(--primary-tr-color-hover);
-        }
+        margin-top: 0;
+        width: 150px;
       }
 
-      .button-discord {
+      .discord {
         background: #5865f2;
         color: white;
+        width: 150px;
 
         &:hover:active {
           outline: 6px solid rgba(88, 101, 242, 0.3);
