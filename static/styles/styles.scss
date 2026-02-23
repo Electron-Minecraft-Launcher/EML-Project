@@ -199,7 +199,7 @@ a.button {
     width: 100%;
 
     &:hover:not(:disabled) {
-      background: var(--primary-color-hover);
+      background: var(--primary-color-hover) !important;
     }
 
     &:hover:active:not(:disabled) {
@@ -208,7 +208,7 @@ a.button {
   }
 
   &.secondary {
-    margin-top: 25px;
+    margin-top: 30px;
     background: var(--secondary-color);
     box-shadow: 0 2px 0 var(--secondary-shadow-dark-color);
     color: var(--text-dark-color);
