@@ -2,7 +2,6 @@
   import type { PageData } from './$types'
   import { copyCode } from '$lib/utils/copycode'
   import { page } from '$app/state'
-  import { title } from 'process'
   import SEO from '$lib/components/SEO.svelte'
 
   interface Props {

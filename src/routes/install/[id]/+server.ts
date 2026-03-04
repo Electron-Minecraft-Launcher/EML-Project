@@ -49,7 +49,6 @@ export const GET: RequestHandler = async ({ params, fetch }) => {
   }
 
   try {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let targetRelease: any = null
 
     if (requestedVersion === 'latest') {

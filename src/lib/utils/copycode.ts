@@ -1,7 +1,6 @@
 import { mount, unmount } from 'svelte'
 import CopyButton from '$lib/components/CopyButton.svelte'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
 export function copyCode(node: HTMLElement, _: any) {
   let components: ReturnType<typeof mount>[] = []
 
@@ -39,7 +38,6 @@ export function copyCode(node: HTMLElement, _: any) {
     destroy() {
       cleanup()
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
     update(_: any) {
       init()
     }

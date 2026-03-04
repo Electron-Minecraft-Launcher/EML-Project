@@ -12,7 +12,6 @@ export const GET: RequestHandler = async ({url}) => {
     import: 'default'
   })
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const posts = Object.entries(modules).map(([path, file]: any) => {
     const slug = path.split('/').pop()?.replace('.md', '')
     const metadata = file.metadata

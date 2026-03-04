@@ -28,7 +28,6 @@ export const load = (async ({ fetch }) => {
 
     const repoData = repoRes.ok ? await repoRes.json() : {}
     const releasesData = await releasesRes.json()
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const versions: Version = releasesData.map((release: any) => {
       const cleanVersion = release.tag_name.replace(/^v/, '')
 
@@ -42,7 +41,6 @@ export const load = (async ({ fetch }) => {
       }
     })
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const latestStable = versions.find((v: any) => !v.isPreRelease)
 
     if (latestStable) {
