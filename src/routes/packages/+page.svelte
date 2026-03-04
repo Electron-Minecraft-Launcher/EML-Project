@@ -1,7 +1,7 @@
-<script>
-  import SEO from "$lib/components/SEO.svelte"
+<script lang="ts">
+  import SEO from '$lib/components/SEO.svelte'
 
-  const projects = [
+  const projects: { id: string; name: string; description: string; icon: string; link: string; blank?: boolean }[] = [
     {
       id: 'lib',
       name: 'EML Lib',
