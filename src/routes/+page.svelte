@@ -122,6 +122,10 @@ async function start() {
       </div>
     </div>
   </div>
+
+  <div class="buttons">
+    <a href="/roadmap" class="button primary">View Roadmap</a>
+  </div>
 </section>
 
 <section class="cta">
@@ -130,7 +134,7 @@ async function start() {
     <p>Join the Discord community or start reading the documentation.</p>
     <div class="buttons">
       <a href="/docs" class="button primary start">Start installation</a>
-      <a href="https://discord.gg/YVB4k6HzAY" target="_blank" class="button discord">
+      <a href="https://discord.gg/VbR86WchH9" target="_blank" class="button discord">
         <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join Discord
       </a>
     </div>
@@ -172,7 +176,9 @@ async function start() {
         border-radius: 50rem;
         border-bottom: none;
         outline: 0px solid var(--primary-tr-color-hover);
-        transition: all 0.3s, outline 0.1s;
+        transition:
+          all 0.3s,
+          outline 0.1s;
         font-weight: 500;
         box-shadow: none !important;
 
@@ -308,15 +314,37 @@ async function start() {
 
   .roadmap-section {
     padding: 80px 0;
+
     h2 {
       text-align: center;
       margin: 0 0 50px 0;
       font-size: 2.2rem;
     }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .button {
+        padding: 12px 24px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        outline: 0px solid var(--primary-tr-color-hover);
+        background: var(--primary-color);
+        color: white;
+        margin-top: 0;
+        width: 150px;
+      }
+    }
   }
 
   .cta {
     background: white;
+    background-image: url('/images/background.png');
+    background-size: cover;
     padding: 80px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
@@ -325,6 +353,14 @@ async function start() {
     h2 {
       font-size: 2rem;
       margin: 0 0 10px 0;
+    }
+
+    h2, p {
+      text-shadow: 0 0 10px white;
+    }
+
+    p {
+      font-weight: 500;
     }
 
     .buttons {

@@ -17,7 +17,7 @@
       <h4>Community</h4>
       <ul>
         <li><a href="https://github.com/Electron-Minecraft-Launcher" target="_blank">GitHub</a></li>
-        <li><a href="https://discord.gg/YVB4k6HzAY" target="_blank">Discord</a></li>
+        <li><a href="https://discord.gg/VbR86WchH9" target="_blank">Discord</a></li>
       </ul>
     </div>
   </div>
