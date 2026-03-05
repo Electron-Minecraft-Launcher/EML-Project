@@ -34,6 +34,9 @@
           <a href="/packages" class:active={page.url.pathname.startsWith('/packages')}>Packages</a>
         </li>
         <li>
+          <a href="/roadmap" class:active={page.url.pathname.startsWith('/roadmap')}>Roadmap</a>
+        </li>
+        <li>
           <a href="/blog" class:active={page.url.pathname.startsWith('/blog')}>Blog</a>
         </li>
         <li>
