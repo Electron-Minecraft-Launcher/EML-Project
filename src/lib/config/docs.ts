@@ -43,7 +43,7 @@ export const docsMenu = [
       { title: 'Authentication', slug: 'authentication', file: '5.2-authentication' },
       { title: 'Launch settings', slug: 'launch-settings', file: '5.3-launch-settings' },
       { title: 'Bootstrap', slug: 'bootstrap', file: '5.4-bootstrap' },
-      { title: 'Maintenance', slug: 'maintenance', file: '5.5-maintenance' },
+      { title: 'Maintenance mode', slug: 'maintenance-mode', file: '5.5-maintenance-mode' },
       { title: 'Customization', slug: 'customization', file: '5.6-customization' },
       { title: 'Packaging (electron-builder)', slug: 'packaging', file: '5.7-packaging' }
     ]

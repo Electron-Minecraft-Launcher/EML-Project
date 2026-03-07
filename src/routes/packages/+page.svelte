@@ -89,7 +89,7 @@
     padding: 30px;
     background: white;
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 10px;
     text-decoration: none;
     color: inherit;
     transition: all 0.2s ease;

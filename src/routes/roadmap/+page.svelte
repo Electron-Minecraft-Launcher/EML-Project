@@ -49,7 +49,7 @@
       version: 'v2.1.0',
       title: 'Improved uploading system',
       description: 'Redesign the uploading system with chunked uploads.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 5,
@@ -57,7 +57,7 @@
       version: 'v2.2.0',
       title: 'Homepage component',
       description: 'Add a homepage component to display server status and information.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 6,
@@ -281,7 +281,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 27%, var(--border-color) 27%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 35%, var(--border-color) 35%);
       border-radius: 2px;
       z-index: 0;
     }
