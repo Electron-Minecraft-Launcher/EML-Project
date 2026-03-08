@@ -27,11 +27,11 @@
   ]
 </script>
 
-<SEO title="EML packages — EML Project" description="Browse and discover the various packages that make up the EML Project." />
+<SEO title="Packages — EML Project" description="Browse and discover the various packages that make up the EML Project." />
 
 <section class="hero small">
   <div class="container-layout">
-    <p class="hero-title"><span>EML</span> packages</p>
+    <p class="hero-title"><span>EML</span> Packages</p>
   </div>
 </section>
 
