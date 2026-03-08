@@ -95,29 +95,29 @@
       id: 9,
       target: 'lib',
       version: 'v2.3.0',
-      title: 'Stats and Crash Reporting features',
-      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'future'
-    },
-    {
-      id: 9,
-      target: 'admintool',
-      version: 'v2.4.0',
-      title: 'Stats and Crash Reporting features',
-      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
+      title: 'Skins and Capes management',
+      description: 'Add functionality to manage player skins and capes (Microsoft accounts only).',
       status: 'future'
     },
     {
       id: 10,
       target: 'lib',
       version: 'v2.4.0',
-      title: 'Bypass maintenance mode',
-      description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
+      title: 'Stats and Crash Reporting features',
+      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
       status: 'future'
     },
     {
       id: 10,
       target: 'admintool',
+      version: 'v2.4.0',
+      title: 'Stats and Crash Reporting features',
+      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
+      status: 'future'
+    },
+    {
+      id: 11,
+      target: 'lib',
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
@@ -125,14 +125,22 @@
     },
     {
       id: 11,
+      target: 'admintool',
+      version: 'v2.5.0',
+      title: 'Bypass maintenance mode',
+      description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
+      status: 'future'
+    },
+    {
+      id: 12,
       title: 'MCP support',
       target: 'lib',
-      version: 'v2.5.0',
+      version: 'v2.6.0',
       description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
       status: 'future'
     },
     {
-      id: 11,
+      id: 12,
       title: 'MCP support',
       target: 'admintool',
       version: 'v2.6.0',
