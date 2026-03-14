@@ -4,7 +4,7 @@
 
   let { data }: { data: PageData } = $props()
   
-  const DEFAULT_HERO = '/images/default-blog-hero.jpg'
+  const DEFAULT_HERO = '/images/blog/default-hero.webp'
 </script>
 
 <SEO title="{data.meta.title} — EML Blog" description="Read about {data.meta.title} on the EML Project blog." />
