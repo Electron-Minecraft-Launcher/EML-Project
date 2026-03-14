@@ -27,11 +27,11 @@
   ]
 </script>
 
-<SEO title="EML packages — EML Project" description="Browse and discover the various packages that make up the EML Project." />
+<SEO title="Packages — EML Project" description="Browse and discover the various packages that make up the EML Project." />
 
 <section class="hero small">
   <div class="container-layout">
-    <p class="hero-title"><span>EML</span> packages</p>
+    <p class="hero-title"><span>EML</span> Packages</p>
   </div>
 </section>
 
@@ -89,7 +89,7 @@
     padding: 30px;
     background: white;
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 10px;
     text-decoration: none;
     color: inherit;
     transition: all 0.2s ease;

@@ -49,7 +49,7 @@
       version: 'v2.1.0',
       title: 'Improved uploading system',
       description: 'Redesign the uploading system with chunked uploads.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 5,
@@ -57,7 +57,7 @@
       version: 'v2.2.0',
       title: 'Homepage component',
       description: 'Add a homepage component to display server status and information.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 6,
@@ -95,29 +95,29 @@
       id: 9,
       target: 'lib',
       version: 'v2.3.0',
-      title: 'Stats and Crash Reporting features',
-      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'future'
-    },
-    {
-      id: 9,
-      target: 'admintool',
-      version: 'v2.4.0',
-      title: 'Stats and Crash Reporting features',
-      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
+      title: 'Skins and Capes management',
+      description: 'Add functionality to manage player skins and capes (Microsoft accounts only).',
       status: 'future'
     },
     {
       id: 10,
       target: 'lib',
       version: 'v2.4.0',
-      title: 'Bypass maintenance mode',
-      description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
+      title: 'Stats and Crash Reporting features',
+      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
       status: 'future'
     },
     {
       id: 10,
       target: 'admintool',
+      version: 'v2.4.0',
+      title: 'Stats and Crash Reporting features',
+      description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
+      status: 'future'
+    },
+    {
+      id: 11,
+      target: 'lib',
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
@@ -125,14 +125,22 @@
     },
     {
       id: 11,
+      target: 'admintool',
+      version: 'v2.5.0',
+      title: 'Bypass maintenance mode',
+      description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
+      status: 'future'
+    },
+    {
+      id: 12,
       title: 'MCP support',
       target: 'lib',
-      version: 'v2.5.0',
+      version: 'v2.6.0',
       description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
       status: 'future'
     },
     {
-      id: 11,
+      id: 12,
       title: 'MCP support',
       target: 'admintool',
       version: 'v2.6.0',
@@ -281,7 +289,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 27%, var(--border-color) 27%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 35%, var(--border-color) 35%);
       border-radius: 2px;
       z-index: 0;
     }
