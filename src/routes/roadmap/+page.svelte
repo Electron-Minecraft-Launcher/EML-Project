@@ -70,13 +70,21 @@
     {
       id: 7,
       target: 'lib',
+      version: 'v2.0.2',
+      title: 'Support for Minecraft 1.13+ on Mac Apple Silicon',
+      description: 'Add support for launching Minecraft 1.13 and above on Mac computers with Apple Silicon (M1/M2/...).',
+      status: 'active'
+    },
+    {
+      id: 8,
+      target: 'lib',
       version: 'v2.1.0',
       title: 'Multiple profile support',
       description: 'Allow managing multiple profiles with different configurations and mods.',
       status: 'future'
     },
     {
-      id: 7,
+      id: 8,
       target: 'admintool',
       version: 'v2.3.0',
       title: 'Multiple profile support',
@@ -84,7 +92,7 @@
       status: 'future'
     },
     {
-      id: 8,
+      id: 9,
       target: 'lib',
       version: 'v2.2.0',
       title: 'EML AdminTool-agnostic version',
@@ -92,7 +100,7 @@
       status: 'future'
     },
     {
-      id: 9,
+      id: 10,
       target: 'lib',
       version: 'v2.3.0',
       title: 'Skins and Capes management',
@@ -100,7 +108,7 @@
       status: 'future'
     },
     {
-      id: 10,
+      id: 11,
       target: 'lib',
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
@@ -108,7 +116,7 @@
       status: 'future'
     },
     {
-      id: 10,
+      id: 11,
       target: 'admintool',
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
@@ -116,7 +124,7 @@
       status: 'future'
     },
     {
-      id: 11,
+      id: 12,
       target: 'lib',
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
@@ -124,7 +132,7 @@
       status: 'future'
     },
     {
-      id: 11,
+      id: 12,
       target: 'admintool',
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
@@ -132,7 +140,7 @@
       status: 'future'
     },
     {
-      id: 12,
+      id: 13,
       title: 'MCP support',
       target: 'lib',
       version: 'v2.6.0',
@@ -140,7 +148,7 @@
       status: 'future'
     },
     {
-      id: 12,
+      id: 13,
       title: 'MCP support',
       target: 'admintool',
       version: 'v2.6.0',
@@ -148,7 +156,7 @@
       status: 'future'
     },
     {
-      id: 12,
+      id: 14,
       title: 'Multiple instance support',
       target: 'lib',
       version: 'vX.Y.Z',
@@ -156,7 +164,7 @@
       status: 'future'
     },
     {
-      id: 12,
+      id: 14,
       title: 'Multiple instance support',
       target: 'admintool',
       version: 'vX.Y.Z',
