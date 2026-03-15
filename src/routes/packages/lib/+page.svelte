@@ -26,7 +26,7 @@
     })
   )
 
-  function getInstallCommand(v: typeof filteredVersions[number]) {
+  function getInstallCommand(v: (typeof filteredVersions)[number]) {
     let atTag = v.isLatest ? '' : `@${v.version}`
     switch (packageManager) {
       case 'yarn':
@@ -60,9 +60,15 @@
     <div>
       <label for="" style="margin-bottom:  10px">Package manager</label>
       <div class="options">
-        <label for="npm"  class="inline"><input bind:group={packageManager} type="radio" name="command" id="npm" value="npm" checked />&nbsp;&nbsp;npm</label>
-        <label for="yarn" class="inline"><input bind:group={packageManager} type="radio" name="command" id="yarn" value="yarn" />&nbsp;&nbsp;Yarn</label>
-        <label for="pnpm" class="inline"><input bind:group={packageManager} type="radio" name="command" id="pnpm" value="pnpm" />&nbsp;&nbsp;pnpm</label>
+        <label for="npm" class="inline"
+          ><input bind:group={packageManager} type="radio" name="command" id="npm" value="npm" checked />&nbsp;&nbsp;npm</label
+        >
+        <label for="yarn" class="inline"
+          ><input bind:group={packageManager} type="radio" name="command" id="yarn" value="yarn" />&nbsp;&nbsp;Yarn</label
+        >
+        <label for="pnpm" class="inline"
+          ><input bind:group={packageManager} type="radio" name="command" id="pnpm" value="pnpm" />&nbsp;&nbsp;pnpm</label
+        >
       </div>
     </div>
 
@@ -248,6 +254,26 @@
       line-height: 1.7;
       color: #24292e;
       overflow-x: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .controls-bar {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      gap: 15px;
+
+      .options {
+        flex-wrap: wrap;
+      }
+
+      #version-search {
+        width: calc(100% - 32px) !important;
+      }
+    }
+
+    .version-card {
+      padding: 20px;
     }
   }
 </style>

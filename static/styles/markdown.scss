@@ -162,26 +162,29 @@
   }
 
   /* --- Tableaux --- */
-  table {
-    width: auto;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 15px;
-    line-height: 1.7;
-
-    th,
-    td {
-      border: 1px solid var(--border-color);
-      padding: 6px 13px;
-      text-align: left;
+    table {
+      display: block; // MODIFIER
+      overflow-x: auto; // AJOUT — scroll sur le tableau seul, pas la page
+      max-width: 100%; // AJOUT
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 15px;
+      line-height: 1.7;
+  
+      th,
+      td {
+        border: 1px solid var(--border-color);
+        padding: 6px 13px;
+        text-align: left;
+        white-space: nowrap; // AJOUT — évite que les cellules se compressent
+      }
+  
+      th {
+        background-color: var(--background-color);
+        font-weight: 600;
+        text-align: center;
+      }
     }
-
-    th {
-      background-color: var(--background-color);
-      font-weight: 600;
-      text-align: center;
-    }
-  }
 
   /* --- Admonitions (Alerts) --- */
   .admonition {

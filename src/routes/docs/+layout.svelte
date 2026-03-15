@@ -42,6 +42,7 @@
 <div class="docs-layout">
   <aside class="sidebar" class:open={isDocMenuOpen}>
     <p class="table-of-contents">Table of Contents</p>
+    <button class="close" onclick={toggleDocMenu}><i class="fa-solid fa-times"></i></button>
     <div class="sidebar-inner">
       {#each docsMenu as section, index}
         <details bind:open={openSections[index]}>
@@ -94,6 +95,10 @@
     overflow-y: auto;
     height: 100%;
     max-height: calc(100vh - 162px);
+
+    button.close {
+      display: none;
+    }
 
     p.table-of-contents {
       font-size: 1rem;
@@ -191,21 +196,48 @@
   @media (max-width: 768px) {
     .docs-layout {
       display: block;
+      width: 100%;
+      margin: 1rem auto;
     }
 
     .sidebar {
       position: fixed;
       top: 0;
       left: 0;
-      height: 100vh;
+      min-height: 100vh;
+      width: calc(100vw - 40px);
+      border-radius: 0;
+      border: none;
       z-index: 2000;
       transform: translateX(-100%);
-      transition: transform 0.3s ease;
-      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
-
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow-y: auto;
+      
       &.open {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         transform: translateX(0);
       }
+
+      button.close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        border: none;
+        font-size: 1rem;
+        color: var(--text-dark-color);
+        cursor: pointer;
+      }
+    }
+
+    .content-wrapper {
+      padding: 5%;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
     }
 
     .doc-menu-button {
