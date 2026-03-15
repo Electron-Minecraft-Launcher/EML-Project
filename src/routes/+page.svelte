@@ -345,6 +345,7 @@ async function start() {
     background: white;
     background-image: url('/images/background.png');
     background-size: cover;
+    background-position: center;
     padding: 80px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
