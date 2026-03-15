@@ -57,7 +57,7 @@
       version: 'v2.2.0',
       title: 'Homepage component',
       description: 'Add a homepage component to display server status and information.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 6,
@@ -65,7 +65,7 @@
       version: 'v2.0.1',
       title: 'Replace adm-zip with yauzl',
       description: 'Replace the adm-zip dependency with yauzl for better performance and maintainability.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 7,
@@ -235,7 +235,7 @@
 <style lang="scss">
   .roadmap-section.container-layout {
     margin-top: 50px;
-    
+
     h2 {
       text-align: center;
       margin: 0 0 50px 0;
@@ -289,7 +289,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 35%, var(--border-color) 35%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 43%, var(--border-color) 43%);
       border-radius: 2px;
       z-index: 0;
     }
@@ -419,22 +419,33 @@
   @media (max-width: 768px) {
     .roadmap {
       &::before {
-        left: 25px;
-        transform: none;
+        display: none;
       }
 
       .step {
         flex-direction: column;
-        justify-content: flex-start !important;
+        align-items: flex-start;
+        margin-bottom: 16px;
 
         .step-number {
-          left: 0;
+          position: static;
           transform: none;
+          width: 36px;
+          height: 36px;
+          font-size: 0.9rem;
+          margin-bottom: 8px;
+        }
+
+        .cards-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: flex-start !important;
         }
 
         .step-content {
-          width: calc(100% - 70px);
-          margin-left: 70px;
+          width: calc(100% - 50px);
+          margin-left: 0;
         }
       }
     }

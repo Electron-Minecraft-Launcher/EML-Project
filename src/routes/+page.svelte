@@ -45,7 +45,7 @@ async function start() {
 
     <div class="buttons">
       <a href="/docs" class="not-a button primary">Get Started</a>
-      <a href="/packages" class="not-a button secondary">Browse packages</a>
+      <a href="/packages" class="not-a button secondary browse-button">Browse packages</a>
     </div>
   </div>
 </section>
@@ -355,7 +355,8 @@ async function start() {
       margin: 0 0 10px 0;
     }
 
-    h2, p {
+    h2,
+    p {
       text-shadow: 0 0 10px white;
     }
 
@@ -399,8 +400,15 @@ async function start() {
   @media (max-width: 768px) {
     .code-preview {
       flex-direction: column;
+
       .code-block {
         width: 100%;
+        min-width: 0;
+
+        pre {
+          overflow-x: auto;
+          white-space: pre;
+        }
       }
     }
 
@@ -408,9 +416,14 @@ async function start() {
       h1 {
         font-size: 2.2rem;
       }
+
       .buttons {
         flex-direction: column;
         align-items: center;
+      }
+
+      .browse-button {
+        margin-top: 0;
       }
     }
   }

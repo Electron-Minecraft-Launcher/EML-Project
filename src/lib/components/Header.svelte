@@ -8,6 +8,7 @@
   }
 
   $effect(() => {
+    const _ = page.url.pathname // track path changes
     isMenuOpen = false
   })
 </script>
@@ -132,33 +133,31 @@
     }
 
     ul.nav-links {
-      height: 0;
-      position: absolute;
+      max-height: 0;
+      position: fixed;
       top: 67px;
-      width: 100%;
       left: 0;
+      width: 100vw;
       background-color: white;
       flex-direction: column;
       align-items: flex-start;
       gap: 0;
       padding: 0 16px;
+      box-sizing: border-box;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 0;
       overflow: hidden;
       display: flex;
       transition:
-        height 0.3s ease,
+        max-height 0.3s ease,
         padding 0.3s ease;
 
       &.active {
-        height: 147px;
+        max-height: 400px;
         padding: 16px;
       }
 
       li {
-        margin-bottom: 0;
         width: 100%;
-
         a {
           display: block;
           width: 100%;
@@ -166,11 +165,9 @@
           padding: 12px 0 12px 12px;
           position: relative;
         }
-
         :hover:not(.active) {
           color: var(--text-dark-color);
         }
-
         a.active::after {
           content: '';
           display: inline-block;

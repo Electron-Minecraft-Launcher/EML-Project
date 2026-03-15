@@ -251,4 +251,24 @@
       overflow-x: auto;
     }
   }
+
+  @media (max-width: 768px) {
+    .controls-bar {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      gap: 15px;
+
+      .options {
+        flex-wrap: wrap;
+      }
+
+      #version-search {
+        width: calc(100% - 32px) !important;
+      }
+    }
+
+    .version-card {
+      padding: 20px;
+    }
+  }
 </style>
