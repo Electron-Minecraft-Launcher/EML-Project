@@ -89,7 +89,7 @@
 
     .card-hero {
       width: 100%;
-      height: 200px;
+      aspect-ratio: 5 / 3;
       background-size: cover;
       background-position: center;
       border-bottom: 1px solid var(--border-color, #333);

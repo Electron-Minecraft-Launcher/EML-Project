@@ -44,7 +44,7 @@
 </article>
 
 <style lang="scss" global>
-  @use 'highlight.js/styles/github-dark.css';
+  @use 'highlight.js/styles/github.css';
   @use '../static/styles/markdown.scss';
 
   article {
