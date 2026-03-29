@@ -65,7 +65,7 @@
       version: 'v2.0.1',
       title: 'Replace adm-zip with yauzl',
       description: 'Replace the adm-zip dependency with yauzl for better performance and maintainability.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 7,
@@ -73,7 +73,7 @@
       version: 'v2.0.2',
       title: 'Support for Minecraft 1.13+ on Mac Apple Silicon',
       description: 'Add support for launching Minecraft 1.13 and above on Mac computers with Apple Silicon (M1/M2/...).',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 8,
@@ -81,7 +81,7 @@
       version: 'v2.1.0',
       title: 'Multiple profile support',
       description: 'Allow managing multiple profiles with different configurations and mods.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 8,
@@ -89,7 +89,7 @@
       version: 'v2.3.0',
       title: 'Multiple profile support',
       description: 'Allow managing multiple profiles with different configurations and mods.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 9,
@@ -297,7 +297,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 43%, var(--border-color) 43%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 50%, var(--border-color) 50%);
       border-radius: 2px;
       z-index: 0;
     }

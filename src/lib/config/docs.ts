@@ -20,13 +20,14 @@ export const docsMenu = [
     title: 'EML AdminTool features',
     items: [
       { title: 'General Settings', slug: 'general-settings', file: '3.1-general-settings' },
-      { title: 'User settings', slug: 'user-settings', file: '3.2-user-settings' },
-      { title: 'Files Updater and Loader', slug: 'files-updater-and-loader', file: '3.3-files-updater-and-loader' },
-      { title: 'Bootstraps', slug: 'bootstraps', file: '3.4-bootstraps' },
-      { title: 'Maintenance', slug: 'maintenance', file: '3.5-maintenance' },
-      { title: 'News', slug: 'news', file: '3.6-news' },
-      { title: 'Backgrounds', slug: 'backgrounds', file: '3.7-backgrounds' },
-      { title: 'Stats', slug: 'stats', file: '3.8-stats' }
+      { title: 'Profiles', slug: 'profiles', file: '3.2-profiles' },
+      { title: 'User settings', slug: 'user-settings', file: '3.3-user-settings' },
+      { title: 'Files Updater and Loader', slug: 'files-updater-and-loader', file: '3.4-files-updater-and-loader' },
+      { title: 'Bootstraps', slug: 'bootstraps', file: '3.5-bootstraps' },
+      { title: 'Maintenance', slug: 'maintenance', file: '3.6-maintenance' },
+      { title: 'News', slug: 'news', file: '3.7-news' },
+      { title: 'Backgrounds', slug: 'backgrounds', file: '3.8-backgrounds' },
+      { title: 'Stats', slug: 'stats', file: '3.9-stats' }
     ]
   },
   {
