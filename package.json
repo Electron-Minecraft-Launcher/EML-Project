@@ -1,7 +1,7 @@
 {
 	"name": "eml-project",
 	"private": true,
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev --host",
@@ -15,23 +15,26 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/adapter-cloudflare": "^7.2.8",
-		"@sveltejs/kit": "^2.53.0",
-		"@sveltejs/vite-plugin-svelte": "^6.2.4",
-		"@types/node": "^22.19.11",
-		"globals": "^16.5.0",
+		"@sveltejs/kit": "^2.56.1",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@types/canvas-confetti": "^1.9.0",
+		"@types/node": "^25.5.2",
+		"canvas-confetti": "^1.9.4",
+		"fast-xml-parser": "^5.5.10",
+		"globals": "^17.4.0",
 		"highlight.js": "^11.11.1",
-		"mdsvex": "^0.12.6",
+		"mdsvex": "^0.12.7",
 		"prettier": "^3.8.1",
-		"prettier-plugin-svelte": "^3.5.0",
+		"prettier-plugin-svelte": "^3.5.1",
 		"rehype-autolink-headings": "^7.1.0",
 		"rehype-slug": "^6.0.0",
-		"remark-github-blockquote-alert": "^2.0.1",
-		"sass": "^1.97.3",
-		"svelte": "^5.53.3",
-		"svelte-check": "^4.4.3",
+		"remark-github-blockquote-alert": "^2.1.0",
+		"sass": "^1.99.0",
+		"svelte": "^5.55.1",
+		"svelte-check": "^4.4.6",
 		"svelte-preprocess": "^6.0.3",
-		"typescript": "^5.9.3",
+		"typescript": "^5.9.2",
 		"unist-util-visit": "^5.1.0",
-		"vite": "^7.3.1"
+		"vite": "^8.0.3"
 	}
 }
