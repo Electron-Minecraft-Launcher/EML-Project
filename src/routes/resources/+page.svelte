@@ -5,7 +5,7 @@
     {
       id: 'config-generator',
       name: 'Config generator',
-      description: 'Generate the config object for EML Lib.',
+      description: 'Generate the config object for EML Lib to launch Minecraft.',
       icon: 'fa-solid fa-cog',
       link: '/resources/config-generator'
     },
@@ -19,16 +19,9 @@
     {
       id: 'minecraft-versions',
       name: 'Minecraft versions',
-      description: 'Browse different versions of Minecraft.',
+      description: 'Browse different versions of Minecraft and mod loaders.',
       icon: 'fa-solid fa-cube',
       link: '/resources/minecraft-versions'
-    },
-    {
-      id: 'loaders-versions',
-      name: 'Mod loaders versions',
-      description: 'Browse different versions of mod loaders.',
-      icon: 'fa-solid fa-cube',
-      link: '/resources/loaders-versions'
     }
   ]
 </script>
@@ -83,7 +76,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
   }
