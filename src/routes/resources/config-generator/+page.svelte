@@ -1,6 +1,6 @@
 <script lang="ts">
   import { generatorStore, generatedConfig } from '$lib/stores/config-generator'
-  import { slide, fade, scale } from 'svelte/transition'
+  import { fade, scale } from 'svelte/transition'
   import hljs from 'highlight.js'
   import typescript from 'highlight.js/lib/languages/typescript'
   import SEO from '$lib/components/SEO.svelte'
