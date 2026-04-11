@@ -112,7 +112,7 @@
               target="_blank"
               rel="noreferrer"
               class="npm-link"
-              title="View on NPM"
+              title="View on npm"
             >
               <i class="fa-brands fa-npm"></i>
             </a>
