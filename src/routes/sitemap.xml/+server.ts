@@ -30,7 +30,7 @@ export const GET: RequestHandler = async () => {
   `
     )
     .join('')}
-</urlset>`
+</urlset>`.trim()
 
   return new Response(sitemap, {
     headers: {
