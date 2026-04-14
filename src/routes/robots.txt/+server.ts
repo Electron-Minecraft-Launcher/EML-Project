@@ -36,7 +36,7 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://eml-project.pages.dev/sitemap.xml`
+Sitemap: https://emlproject.pages.dev/sitemap.xml`
 
   return new Response(robots, {
     headers: {
