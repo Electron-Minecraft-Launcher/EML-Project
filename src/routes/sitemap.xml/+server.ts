@@ -1,7 +1,7 @@
 import { docsMenu } from '$lib/config/docs'
 import type { RequestHandler } from './$types'
 
-const site = 'https://emlproject.pages.dev'
+const site = 'https://emlproject.com'
 
 export const GET: RequestHandler = async () => {
   const pages = ['', '/packages', '/packages/lib', '/packages/admintool']
@@ -21,7 +21,7 @@ ${allPages
     (page) => `<url>
 <loc>${site}${page}</loc>
 <changefreq>weekly</changefreq>
-<priority>${page === '' ? 1.0 : 0.8}</priority>
+<priority>${page === '' ? '1.0' : '0.8'}</priority>
 </url>`
   )
   .join('\n')}

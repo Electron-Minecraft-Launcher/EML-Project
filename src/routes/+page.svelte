@@ -19,7 +19,7 @@ async function start() {
 
   // 2. Setup launcher
   const launcher = new Launcher({
-    url: 'https://at.emlproject.pages.dev',
+    url: 'https://at.emlproject.com',
     serverId: 'goldfrite',
     account: account,
     memory: { min: 2048, max: 1024 },
