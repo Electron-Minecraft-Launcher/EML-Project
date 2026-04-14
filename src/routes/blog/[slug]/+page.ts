@@ -1,6 +1,8 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
 
+export const prerender = true
+
 export const load: PageLoad = async ({ params }) => {
   const modules = import.meta.glob('/src/lib/blog/*.md', { eager: true })
 
@@ -19,3 +21,4 @@ export const load: PageLoad = async ({ params }) => {
 
   error(404, 'Post not found')
 }
+

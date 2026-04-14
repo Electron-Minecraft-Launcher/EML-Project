@@ -4,6 +4,7 @@
   interface Props {
     title: string
     description?: string
+    keywords?: string[]
     image?: string
     type?: 'website' | 'article'
     author?: string
@@ -13,6 +14,7 @@
   let {
     title,
     description = 'EML Project is an open-source, modular infrastructure designed for server administrators to create, secure, and distribute custom Minecraft launchers.',
+    keywords = [],
     image = 'https://emlproject.pages.dev/images/og-image-default.png',
     type = 'website',
     author = 'Electron Minecraft Launcher',
@@ -39,6 +41,7 @@
 <svelte:head>
   <title>{finalTitle}</title>
   <meta name="description" content={description} />
+  <meta name="keywords" content={keywords.join(', ')} />
   <link rel="canonical" href={canonicalUrl} />
   <meta name="robots" content="index, follow" />
 
