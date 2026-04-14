@@ -6,8 +6,10 @@ const site = 'https://emlproject.pages.dev'
 export const GET: RequestHandler = async () => {
   const pages = ['', '/packages', '/packages/lib', '/packages/admintool']
   const docPages = docsMenu.flatMap((section) => section.items.map((item) => `/docs/${item.slug}`))
+  const blogModules = import.meta.glob('/src/lib/blog/*.md', { eager: true })
+  const blogPages = Object.entries(blogModules).map(([, mod]: any) => `/blog/${mod.metadata?.slug}`)
 
-  const allPages = [...pages, ...docPages]
+  const allPages = [...pages, ...docPages, ...blogPages]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset
@@ -37,3 +39,4 @@ export const GET: RequestHandler = async () => {
     }
   })
 }
+

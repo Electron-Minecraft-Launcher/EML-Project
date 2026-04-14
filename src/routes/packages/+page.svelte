@@ -5,7 +5,7 @@
     {
       id: 'lib',
       name: 'EML Lib',
-      description: 'The core library for your Minecraft launcher. Browse packages via NPM.',
+      description: 'The core library for your Minecraft launcher. Browse packages via npm.',
       icon: 'fa-solid fa-cube',
       link: '/packages/lib'
     },

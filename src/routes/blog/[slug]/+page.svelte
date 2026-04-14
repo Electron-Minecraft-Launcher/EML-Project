@@ -3,11 +3,19 @@
   import type { PageData } from './$types'
 
   let { data }: { data: PageData } = $props()
-  
+
   const DEFAULT_HERO = '/images/blog/default-hero.webp'
 </script>
 
-<SEO title="{data.meta.title} — EML Blog" description="Read about {data.meta.title} on the EML Project blog." />
+<SEO
+  title="{data.meta.title} — EML Blog"
+  description={data.meta.description}
+  keywords={data.meta.keywords || []}
+  image={data.meta.hero || DEFAULT_HERO}
+  author={data.meta.author}
+  publishedTime={data.meta.date}
+  type="article"
+/>
 
 <article class="blog-post-container">
   <header class="post-header">
@@ -16,7 +24,7 @@
     </a>
 
     <h1 class="post-title">{data.meta.title}</h1>
-    
+
     <div class="post-meta">
       {#if data.meta.author}
         <span class="author">{data.meta.author}</span>
@@ -46,6 +54,7 @@
 <style lang="scss" global>
   @use 'highlight.js/styles/github.css';
   @use '../static/styles/markdown.scss';
+  @use 'sass:meta';
 
   article {
     margin-bottom: 40px !important;
@@ -127,9 +136,15 @@
     }
 
     .doc-content {
-      font-size: 1.1rem; // Légèrement plus grand pour la lisibilité façon article
+      font-size: 1.1rem;
       line-height: 1.7;
       color: var(--text-main);
+
+      :global {
+        code {
+          background: #eeeef0 !important;
+        }
+      }
     }
   }
 

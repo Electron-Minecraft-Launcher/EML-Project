@@ -1,11 +1,12 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
-import  {docsMenu} from '../../../lib/config/docs'
+import { docsMenu } from '../../../lib/config/docs'
+
+export const prerender = true
 
 export const load = (async ({ params }) => {
   try {
-    const filename = docsMenu.flatMap(section => section.items)
-      .find(item => item.slug === params.slug)?.file
+    const filename = docsMenu.flatMap((section) => section.items).find((item) => item.slug === params.slug)?.file
     const post = await import(`../../../lib/docs/${filename}.md`)
 
     return {
@@ -18,3 +19,4 @@ export const load = (async ({ params }) => {
     throw error(404, `Document ${params.slug} not found.`)
   }
 }) satisfies PageLoad
+
