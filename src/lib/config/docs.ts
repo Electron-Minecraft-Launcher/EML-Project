@@ -19,8 +19,8 @@ export const docsMenu = [
   {
     title: 'EML AdminTool features',
     items: [
-      { title: 'General Settings', slug: 'general-settings', file: '3.1-general-settings' },
-      { title: 'Profiles', slug: 'profiles', file: '3.2-profiles' },
+      { title: 'General settings', slug: 'general-settings', file: '3.1-general-settings' },
+      { title: 'Profiles management', slug: 'profiles-management', file: '3.2-profiles-management' },
       { title: 'User settings', slug: 'user-settings', file: '3.3-user-settings' },
       { title: 'Files Updater and Loader', slug: 'files-updater-and-loader', file: '3.4-files-updater-and-loader' },
       { title: 'Bootstraps', slug: 'bootstraps', file: '3.5-bootstraps' },
