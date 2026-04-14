@@ -81,7 +81,7 @@
       version: 'v2.1.0',
       title: 'Multiple profile support',
       description: 'Allow managing multiple profiles with different configurations and mods.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 8,
@@ -89,7 +89,7 @@
       version: 'v2.3.0',
       title: 'Multiple profile support',
       description: 'Allow managing multiple profiles with different configurations and mods.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 9,
@@ -97,7 +97,7 @@
       version: 'v2.2.0',
       title: 'EML AdminTool-agnostic version',
       description: 'Make the library fully independent from the EML AdminTool and usable in any type of application.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 10,
@@ -297,7 +297,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 50%, var(--border-color) 50%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 58%, var(--border-color) 58%);
       border-radius: 2px;
       z-index: 0;
     }
