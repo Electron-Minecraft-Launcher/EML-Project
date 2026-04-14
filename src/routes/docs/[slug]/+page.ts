@@ -7,6 +7,9 @@ export const prerender = true
 export const load = (async ({ params }) => {
   try {
     const filename = docsMenu.flatMap((section) => section.items).find((item) => item.slug === params.slug)?.file
+    if (!filename) {
+      throw 404
+    }
     const post = await import(`../../../lib/docs/${filename}.md`)
 
     return {
@@ -14,8 +17,8 @@ export const load = (async ({ params }) => {
       meta: post.metadata,
       slug: params.slug
     }
-  } catch (e) {
-    console.error(e)
+  } catch (err) {
+    console.error(err)
     throw error(404, `Document ${params.slug} not found.`)
   }
 }) satisfies PageLoad
