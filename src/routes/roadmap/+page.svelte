@@ -235,7 +235,7 @@
   </div>
 
   <div class="buttons">
-    <a href="https://discord.gg/VbR86WchH9" target="_blank" rel="noreferrer" class="button discord">Discuss on Discord</a>
+    <a href="/discord/website" target="_blank" rel="noreferrer" class="button discord">Discuss on Discord</a>
     <a href="https://github.com/Electron-Minecraft-Launcher" target="_blank" rel="noreferrer" class="button primary github">Discuss on GitHub</a>
   </div>
 </section>

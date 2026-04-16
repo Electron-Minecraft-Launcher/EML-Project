@@ -134,7 +134,7 @@ async function start() {
     <p>Join the Discord community or start reading the documentation.</p>
     <div class="buttons">
       <a href="/docs" class="button primary start">Start installation</a>
-      <a href="https://discord.gg/VbR86WchH9" target="_blank" class="button discord">
+      <a href="/discord/website" target="_blank" class="button discord">
         <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join Discord
       </a>
     </div>
