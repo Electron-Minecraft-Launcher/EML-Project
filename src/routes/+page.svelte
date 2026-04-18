@@ -20,7 +20,7 @@ async function start() {
   // 2. Setup launcher
   const launcher = new Launcher({
     url: 'https://at.emlproject.com',
-    serverId: 'goldfrite',
+    root: 'goldfrite',
     account: account,
     memory: { min: 2048, max: 1024 },
   })
@@ -107,18 +107,25 @@ async function start() {
         <p>Complete rewrite. Secure architecture. EML AdminTool with Docker. Forge support.</p>
       </div>
     </div>
-    <div class="step active">
-      <div class="step-number">3</div>
+    <div class="step completed">
+      <div class="step-number"><i class="fa-solid fa-check"></i></div>
       <div class="step-content">
         <h3>V2 Release (current)</h3>
         <p>NeoForge, Fabric & Quilt support. Public release.</p>
       </div>
     </div>
-    <div class="step">
+    <div class="step active">
       <div class="step-number">4</div>
       <div class="step-content">
         <h3>New features</h3>
-        <p>Multi-instance support. EML AdminTool-agnostic version of EML Lib.</p>
+        <p>Multi-profile support. EML AdminTool-agnostic version of EML Lib.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">5</div>
+      <div class="step-content">
+        <h3>V3 Release</h3>
+        <p>Multi-instance support: manage multiple launcher instances simultaneously.</p>
       </div>
     </div>
   </div>
