@@ -159,7 +159,7 @@
       id: 14,
       title: 'Multiple instance support',
       target: 'lib',
-      version: 'vX.Y.Z',
+      version: 'v3.0.0',
       description: 'Run multiple launcher projects with the same EML AdminTool instance.',
       status: 'future'
     },
@@ -167,7 +167,7 @@
       id: 14,
       title: 'Multiple instance support',
       target: 'admintool',
-      version: 'vX.Y.Z',
+      version: 'v3.0.0',
       description: 'Run multiple launcher projects with the same EML AdminTool instance.',
       status: 'future'
     }
