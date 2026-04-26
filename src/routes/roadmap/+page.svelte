@@ -97,15 +97,15 @@
       version: 'v2.2.0',
       title: 'EML AdminTool-agnostic version',
       description: 'Make the library fully independent from the EML AdminTool and usable in any type of application.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 10,
       target: 'lib',
       version: 'v2.3.0',
       title: 'Skins and Capes management',
-      description: 'Add functionality to manage player skins and capes (Microsoft accounts only).',
-      status: 'future'
+      description: 'Add functionality to manage player skins and capes.',
+      status: 'active'
     },
     {
       id: 11,
@@ -297,7 +297,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 58%, var(--border-color) 58%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 67%, var(--border-color) 67%);
       border-radius: 2px;
       z-index: 0;
     }
