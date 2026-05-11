@@ -41,7 +41,7 @@ async function downloadJava() {
 
 | Parameter                  | Type     | Description                                                                                                                                        | Required? |
 | -------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `config.root`              | `string` | Name of the root game directory, without a leading dot.                                                                                            | **Yes**   |
+| `config.root`              | `string` | Name of the root game directory, without a leading dot.                                                                                            | Yes       |
 | `config.url`               | `string` | URL of your EML AdminTool instance or manifest. Used to resolve the Minecraft version if `config.minecraft.version` is not set.                    | No        |
 | `config.minecraft.version` | `string` | The Minecraft version to install Java for. Supports `'latest_release'` and `'latest_snapshot'`. If omitted, the version is fetched from the `url`. | No        |
 
@@ -79,4 +79,3 @@ Verifies that a Java executable is correctly installed and matches the required 
 **Returns:** `Promise<{ version: string, arch: '64-bit' | '32-bit' }>`
 
 **Throws:** `JAVA_ERROR` — If the executable is not found, cannot be run, or does not match the required major version.
-

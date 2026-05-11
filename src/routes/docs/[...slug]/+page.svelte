@@ -1,19 +1,17 @@
 <script lang="ts">
   import SEO from '$lib/components/SEO.svelte'
-  import { docsMenu } from '$lib/config/docs'
+  import { getFlatPages } from '$lib/config/docs'
   import type { PageProps } from './$types'
 
   let { data }: PageProps = $props()
   let Content = $derived(data.content)
 
-  const flatMenu = docsMenu.flatMap((section) => section.items)
+  const flatPages = getFlatPages()
   const meta = data.meta ?? {}
 
-  let currentSlug = $derived(data.slug)
-
-  let currentIndex = $derived(flatMenu.findIndex((item) => item.slug === currentSlug))
-  let prevPage = $derived(currentIndex > 0 ? flatMenu[currentIndex - 1] : null)
-  let nextPage = $derived(currentIndex < flatMenu.length - 1 ? flatMenu[currentIndex + 1] : null)
+  let currentIndex = $derived(flatPages.findIndex((p) => p.slug === data.slug))
+  let prevPage = $derived(currentIndex > 0 ? flatPages[currentIndex - 1] : null)
+  let nextPage = $derived(currentIndex < flatPages.length - 1 ? flatPages[currentIndex + 1] : null)
 </script>
 
 <SEO title={meta.title ? `${meta.title} — EML Docs` : 'EML Docs'} description={meta.description} type="article" publishedTime={meta.lastUpdated} />

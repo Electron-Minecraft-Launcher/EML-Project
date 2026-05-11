@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state'
-  import { docsMenu } from '$lib/config/docs'
+  import { docsMenu, findSectionIndex } from '$lib/config/docs'
   import { copyCode } from '$lib/utils/copycode'
   import type { LayoutData } from '../$types'
 
@@ -18,17 +18,19 @@
     isDocMenuOpen = !isDocMenuOpen
   }
 
-  $effect(() => {
-    const currentPath = page.url.pathname
+  function currentSlug() {
+    return page.url.pathname.split('/').at(-1) ?? ''
+  }
 
+  $effect(() => {
+    const slug = currentSlug()
     isDocMenuOpen = false
 
-    docsMenu.forEach((section, index) => {
-      const containsActivePage = section.items.some((item) => currentPath.includes(item.slug))
-
-      if (containsActivePage) {
-        openSections[index] = true
-      }
+    openSections = openSections.map((_, index) => {
+      return docsMenu[index].entries.some((entry) => {
+        if (entry.type === 'page') return entry.slug === slug
+        return entry.items.some((item) => item.slug === slug)
+      })
     })
   })
 </script>
@@ -43,26 +45,43 @@
   <aside class="sidebar" class:open={isDocMenuOpen}>
     <p class="table-of-contents">Table of Contents</p>
     <button class="close" onclick={toggleDocMenu}><i class="fa-solid fa-times"></i></button>
+
     <div class="sidebar-inner">
-      {#each docsMenu as section, index}
-        <details bind:open={openSections[index]}>
+      {#each docsMenu as section, sectionIndex}
+        <details bind:open={openSections[sectionIndex]}>
           <summary>&nbsp;&nbsp;{section.title}</summary>
-          <ul>
-            {#each section.items as item}
-              <li>
-                <a href="/docs/{item.slug}" class:active={page.url.pathname.split('/').slice(-1)[0] === item.slug}>
-                  {item.title}
+
+          <div class="section-entries">
+            {#each section.entries as entry}
+              {#if entry.type === 'page'}
+                <a href="/docs/{entry.slug}" class="direct-link" class:active={currentSlug() === entry.slug}>
+                  {entry.title}
                 </a>
-              </li>
+              {:else}
+                <div class="group">
+                  <span class="group-label">{entry.title}</span>
+                  <ul>
+                    {#each entry.items as item}
+                      <li>
+                        <a href="/docs/{item.slug}" class:active={currentSlug() === item.slug}>
+                          {item.title}
+                        </a>
+                      </li>
+                    {/each}
+                  </ul>
+                </div>
+              {/if}
             {/each}
-          </ul>
+          </div>
         </details>
       {/each}
     </div>
   </aside>
 
   {#if isDocMenuOpen}
-    <div class="overlay" onclick={toggleDocMenu} role="button" tabindex="0" onkeydown={() => {}}></div>
+    <!-- svelte-ignore a11y_no_static_element_interactions -->
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
+    <div class="overlay" onclick={toggleDocMenu}></div>
   {/if}
 
   <div class="content-wrapper">
@@ -133,10 +152,60 @@
       }
     }
 
+    a.direct-link {
+      display: block;
+      text-decoration: none;
+      color: #555;
+      font-size: 0.9rem;
+      padding: 6px 15px;
+      margin: 2px 0 2px 15px;
+      border-radius: 0 5px 5px 0;
+      border-left: 2px solid var(--border-color);
+      border-bottom: none;
+      transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-left-color 0.2s ease;
+      line-height: 1.5;
+
+      &:hover {
+        background: var(--secondary-color);
+        color: var(--text-dark-color);
+        border-left-color: var(--primary-color);
+      }
+
+      &.active {
+        background: var(--primary-tr-color-hover);
+        color: var(--primary-color);
+        font-weight: 500;
+        border-left-color: var(--primary-color);
+      }
+    }
+
+    .section-entries {
+      padding-left: 0;
+      margin-top: 6px;
+    }
+
+    .group {
+      margin-top: 4px;
+    }
+
+    .group-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #999;
+      padding: 8px 12px 4px 27px;
+      user-select: none;
+    }
+
     ul {
       list-style: none;
       padding-left: 15px;
-      margin-top: 10px;
+      margin: 0 0 4px 0;
 
       li a {
         display: block;
@@ -211,11 +280,15 @@
       z-index: 2000;
       transform: translateX(-100%);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
       overflow-y: auto;
-      
+
       &.open {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         transform: translateX(0);
       }

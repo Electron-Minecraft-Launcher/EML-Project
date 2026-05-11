@@ -79,7 +79,7 @@ Get the player's avatar. If the player has no avatar, `null` is returned.
 > [!NOTE]
 > Data returned by this method may be cached. Call `reload()` to fetch the latest data from the server.
 
-**Returns:** `Promise<IAvatar | null>` — The player's avatar if it exists, otherwise `null`.
+**Returns:** `Promise<IAvatar>` — The player's avatar if it exists. • `Promise<null>` — If the player has no avatar.
 
 **Throws:** `FETCH_ERROR` — If the request to server fails. • `TOO_MANY_REQUESTS` — If the client has made too many requests to the server. • `CONFIG_ERROR` — If the account type is not supported by this class.
 
@@ -95,10 +95,10 @@ Reload the player's skin, cape and avatar data from the server. This is useful t
 
 Upload a new skin for the player and activate it. Cache is automatically updated after a successful update.
 
-| Parameter | Type                         | Description                                                                                                                                                                                                                    | Required?                    |
-| --------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| `source`  | `string \| File \| Blob` | The source file of the skin. The image should be a `.png` file of the skin, and must follow the standard Minecraft skin format (64x64 pixels, or 64x32 pixels for legacy skins). You can also provide a URL to the skin image. | **Yes**                      |
-| `variant` | `'classic' \| 'slim'`      | The skin variant to use. This is only relevant for Minecraft accounts that have both a classic and a slim skin. If the account only has one skin variant, this parameter is ignored.                                           | No (defaults to `'classic'`) |
+| Parameter | Type                     | Description                                                                                                                                                                                                                    | Required?                    |
+| --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| `source`  | `string \| File \| Blob` | The source file of the skin. The image should be a `.png` file of the skin, and must follow the standard Minecraft skin format (64x64 pixels, or 64x32 pixels for legacy skins). You can also provide a URL to the skin image. | Yes                          |
+| `variant` | `'classic' \| 'slim'`    | The skin variant to use. This is only relevant for Minecraft accounts that have both a classic and a slim skin. If the account only has one skin variant, this parameter is ignored.                                           | No (defaults to `'classic'`) |
 
 **Returns:** `Promise<void>`
 
@@ -111,9 +111,9 @@ Upload a new cape for the player and activate it. Cache is automatically updated
 > [!WARNING]
 > This method only works for Azuriom accounts.
 
-| Parameter | Type                         | Description                                                                                                                                                                                  | Required? |
-| --------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `source`  | `string \| File \| Blob` | The source file of the cape. The image should be a `.png` file of the cape, and must follow the standard Minecraft cape format (64x32 pixels). You can also provide a URL to the cape image. | **Yes**   |
+| Parameter | Type                     | Description                                                                                                                                                                                  | Required? |
+| --------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| `source`  | `string \| File \| Blob` | The source file of the cape. The image should be a `.png` file of the cape, and must follow the standard Minecraft cape format (64x32 pixels). You can also provide a URL to the cape image. | Yes       |
 
 **Returns:** `Promise<void>`
 
@@ -139,7 +139,7 @@ Switch the player's active cape.
 
 | Parameter | Type     | Description                                                                                                           | Required? |
 | --------- | -------- | --------------------------------------------------------------------------------------------------------------------- | --------- |
-| `capeId`  | `string` | The ID of the cape to activate. You can get the list of the player's capes and their IDs with the `getCape()` method. | **Yes**   |
+| `capeId`  | `string` | The ID of the cape to activate. You can get the list of the player's capes and their IDs with the `getCape()` method. | Yes       |
 
 **Returns:** `Promise<void>`
 
@@ -155,4 +155,3 @@ Hide the player's cape. Cache is automatically updated after a successful update
 **Returns:** `Promise<void>`
 
 **Throws:** `FETCH_ERROR` — If the request to server fails. • `TOO_MANY_REQUESTS` — If the client has made too many requests to the server. • `CONFIG_ERROR` — If the account type is not supported by this method, or if the account doesn't have permission to hide capes.
-

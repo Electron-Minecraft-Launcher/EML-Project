@@ -78,4 +78,3 @@ Renews an expired access token without requiring the player to log in again.
 **Returns:** `Promise<Account>` — The account with updated tokens.
 
 **Throws:** `AUTH_ERROR` — If the refresh fails (the player must log in again).
-
