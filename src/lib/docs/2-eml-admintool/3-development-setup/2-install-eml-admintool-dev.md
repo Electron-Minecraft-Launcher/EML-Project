@@ -18,7 +18,7 @@ last-updated: 2026-05-13
 This page explains how to run EML AdminTool locally for development and testing. No NGINX, SSL certificate, or domain name is required.
 
 > [!WARNING]
-> This setup is intended for development only. Do not expose a local EML AdminTool instance to the internet without completing the [production setup](docs/eml-admintool/production-setup/install-docker) steps.
+> This setup is intended for development only. Do not expose a local EML AdminTool instance to the internet without completing the [production setup](/docs/eml-admintool/production-setup/install-docker) steps.
 
 ## Download the Compose file
 
