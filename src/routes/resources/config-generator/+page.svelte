@@ -164,11 +164,8 @@
                   <p class="info">We provide many tools to help you configure this section:</p>
                   <ul class="info">
                     <li>
-                      <a href="/resources/minecraft-versions" target="_blank">Minecraft versions</a>: Check the available versions for your Minecraft
+                      <a href="/resources/minecraft-versions" target="_blank">Minecraft and Loader versions</a>: Check the available versions for your Minecraft
                       installation.
-                    </li>
-                    <li>
-                      <a href="/resources/loader-versions" target="_blank">Loader versions</a>: Check the available versions for your mod loader.
                     </li>
                     <li>
                       <a href="/resources/modpack-json-generator" target="_blank">Modpack JSON generator</a>: Generate the JSON file for your modpack.
