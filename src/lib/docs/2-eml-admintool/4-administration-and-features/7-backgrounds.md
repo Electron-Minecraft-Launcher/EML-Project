@@ -3,7 +3,7 @@ title: Backgrounds
 description: How to upload and manage background images in EML AdminTool to customize the launcher's appearance.
 category: EML AdminTool — Administration
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

@@ -3,7 +3,7 @@ title: Profiles
 description: API reference for the Profiles class, used to retrieve the list of profiles configured in EML AdminTool.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

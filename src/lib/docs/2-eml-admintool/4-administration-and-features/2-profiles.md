@@ -3,7 +3,7 @@ title: Profiles
 description: How to create and manage profiles in EML AdminTool to support multiple isolated Minecraft instances from a single dashboard.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

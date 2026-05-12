@@ -3,7 +3,7 @@ title: Required knowledge
 description: EML is not a plug-and-play solution. Before starting, make sure you are comfortable with the technical concepts listed on this page.
 category: Introduction
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

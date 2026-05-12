@@ -121,7 +121,6 @@
 ├─ resourcepacks/
 │  ├─ pack1.zip
 │  └─ pack2.zip
-├─ options.txt
 └─ server.dat</pre>
 
           <div class="input-field" style="margin-top: 2rem;">

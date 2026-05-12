@@ -3,7 +3,7 @@ title: Set up NGINX
 description: How to configure NGINX as a reverse proxy for EML AdminTool, enabling access via a domain name on standard HTTP ports.
 category: EML AdminTool — Production setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -76,10 +76,10 @@ server {
   server_name YOUR_DOMAIN_OR_IP;
 
   location / {
-  proxy_pass http://localhost:8080;
+    proxy_pass http://localhost:8080;
 
-    # Allow large file uploads (adjust as needed)
-    client_max_body_size 1G;
+    # Allow large file uploads as EML AdminTool sends 5MB chunks
+    client_max_body_size 8M;
 
     # Extended timeouts for large uploads
     proxy_read_timeout    300s;
@@ -129,5 +129,5 @@ sudo systemctl reload nginx
 </TabItem>
 </Tabs>
 
-EML AdminTool is now accessible at `http://YOUR_DOMAIN_OR_IP` without the `:8080` port suffix. Proceed to [SSL certificate](/docs/eml-admintool//production-setup/ssl-certificate) to enable HTTPS.
+EML AdminTool is now accessible at `http://YOUR_DOMAIN_OR_IP` without the `:8080` port suffix.
 

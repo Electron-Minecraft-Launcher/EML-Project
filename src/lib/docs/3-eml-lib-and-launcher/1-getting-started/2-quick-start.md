@@ -3,7 +3,7 @@ title: Quick start
 description: A minimal working example to verify your environment by launching Minecraft through EML Lib.
 category: EML Lib and Launcher — Getting started
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

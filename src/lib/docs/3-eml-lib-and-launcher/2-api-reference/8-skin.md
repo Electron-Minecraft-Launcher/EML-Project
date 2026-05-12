@@ -3,7 +3,7 @@ title: Skins
 description: API reference for the Skins class, used to fetch a player's Minecraft skin and cape data for display in the launcher.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -97,8 +97,8 @@ Upload a new skin for the player and activate it. Cache is automatically updated
 
 | Parameter | Type                     | Description                                                                                                                                                                                                                    | Required?                    |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| `source`  | `string \| File \| Blob` | The source file of the skin. The image should be a `.png` file of the skin, and must follow the standard Minecraft skin format (64x64 pixels, or 64x32 pixels for legacy skins). You can also provide a URL to the skin image. | Yes                          |
-| `variant` | `'classic' \| 'slim'`    | The skin variant to use. This is only relevant for Minecraft accounts that have both a classic and a slim skin. If the account only has one skin variant, this parameter is ignored.                                           | No (defaults to `'classic'`) |
+| `source`  | `string &#124 File &#124 Blob` | The source file of the skin. The image should be a `.png` file of the skin, and must follow the standard Minecraft skin format (64x64 pixels, or 64x32 pixels for legacy skins). You can also provide a URL to the skin image. | Yes                          |
+| `variant` | `'classic' &#124 'slim'`    | The skin variant to use. This is only relevant for Minecraft accounts that have both a classic and a slim skin. If the account only has one skin variant, this parameter is ignored.                                           | No (defaults to `'classic'`) |
 
 **Returns:** `Promise<void>`
 
@@ -113,7 +113,7 @@ Upload a new cape for the player and activate it. Cache is automatically updated
 
 | Parameter | Type                     | Description                                                                                                                                                                                  | Required? |
 | --------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `source`  | `string \| File \| Blob` | The source file of the cape. The image should be a `.png` file of the cape, and must follow the standard Minecraft cape format (64x32 pixels). You can also provide a URL to the cape image. | Yes       |
+| `source`  | `string &#124 File &#124 Blob` | The source file of the cape. The image should be a `.png` file of the cape, and must follow the standard Minecraft cape format (64x32 pixels). You can also provide a URL to the cape image. | Yes       |
 
 **Returns:** `Promise<void>`
 

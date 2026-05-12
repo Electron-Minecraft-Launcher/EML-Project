@@ -3,7 +3,7 @@ title: Account settings
 description: Manage your EML AdminTool account, including changing your password and deleting your account.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 # Account settings

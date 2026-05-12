@@ -3,7 +3,7 @@ title: News
 description: API reference for the News class, used to fetch news articles and categories from EML AdminTool for display in the launcher.
 category: EML Lib — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

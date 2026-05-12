@@ -3,7 +3,7 @@ title: Packaging
 description: How to package your EML launcher into platform-specific installers using electron-builder, and how to connect the output to EML AdminTool's auto-update system.
 category: EML Lib and Launcher — Packaging
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

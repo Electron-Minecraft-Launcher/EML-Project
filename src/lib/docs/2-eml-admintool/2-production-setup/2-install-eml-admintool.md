@@ -3,7 +3,7 @@ title: Install EML AdminTool
 description: How to install and perform the initial setup of EML AdminTool on a Linux VPS.
 category: EML AdminTool — Production setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

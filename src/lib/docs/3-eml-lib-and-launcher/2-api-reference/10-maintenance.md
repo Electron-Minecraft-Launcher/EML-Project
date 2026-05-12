@@ -3,7 +3,7 @@ title: Maintenance
 description: API reference for the Maintenance class, used to check whether the server administrator has enabled maintenance mode.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

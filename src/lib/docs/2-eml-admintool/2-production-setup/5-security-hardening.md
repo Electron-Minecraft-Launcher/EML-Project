@@ -3,7 +3,7 @@ title: Security hardening
 description: Recommended security measures for a production EML AdminTool deployment, including firewall configuration, DDoS protection, and application-level best practices.
 category: EML AdminTool — Production setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

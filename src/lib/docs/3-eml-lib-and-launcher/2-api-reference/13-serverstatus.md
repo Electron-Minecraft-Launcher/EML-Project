@@ -3,7 +3,7 @@ title: ServerStatus
 description: API reference for the ServerStatus class, used to check whether a Minecraft server is online and retrieve its player count.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -43,7 +43,7 @@ async function pingServer() {
 | ---------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | `ip`       | `string`                                          | The Minecraft server IP or hostname.                                                                                                                                                                                  | Yes                         |
 | `port`     | `number`                                          | The Minecraft server port.                                                                                                                                                                                            | No (defaults to `25565`)    |
-| `protocol` | `'modern' \| '1.6' \| '1.4-1.5' \| 'beta1.8-1.3'` | The Minecraft network protocol version. Use `'modern'` for any version from 1.7 (13w41a) onward.                                                                                                                      | No (defaults to `'modern'`) |
+| `protocol` | `'modern' &#124 '1.6' &#124 '1.4-1.5' &#124 'beta1.8-1.3'` | The Minecraft network protocol version. Use `'modern'` for any version from 1.7 (13w41a) onward.                                                                                                                      | No (defaults to `'modern'`) |
 | `pvn`      | `number`                                          | The Minecraft protocol version number (e.g. `767` for 1.21). Improves compatibility. You can find the protocol version for your Minecraft version on the [Minecraft Wiki](https://minecraft.wiki/w/Protocol_version). | No (defaults to `-1`)       |
 | `timeout`  | `number`                                          | Connection timeout in seconds.                                                                                                                                                                                        | No (defaults to `5`)        |
 

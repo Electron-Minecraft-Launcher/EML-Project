@@ -3,7 +3,7 @@ title: Uninstallation and reinstallation
 description: Instructions for completely removing EML AdminTool from your server or your computer, and how to perform a clean reinstallation if needed.
 category: EML AdminTool
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

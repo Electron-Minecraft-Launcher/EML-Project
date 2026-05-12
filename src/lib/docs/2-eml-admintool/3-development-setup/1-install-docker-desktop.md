@@ -3,7 +3,7 @@ title: Install Docker Desktop
 description: How to install Docker Desktop on macOS or Windows for local development and testing of EML AdminTool.
 category: EML AdminTool — Development setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

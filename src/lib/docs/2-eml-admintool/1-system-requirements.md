@@ -3,7 +3,7 @@ title: System requirements
 description: Hardware and software requirements for deploying EML AdminTool and developing a launcher with EML Lib.
 category: EML AdminTool
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

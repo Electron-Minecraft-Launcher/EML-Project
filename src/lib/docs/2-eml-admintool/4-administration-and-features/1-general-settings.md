@@ -3,7 +3,7 @@ title: General settings
 description: Manage your EML AdminTool instance identity, monitor system health, and control panel-wide configuration.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -103,4 +103,4 @@ This section provides a snapshot of your infrastructure health.
 > [!CAUTION]
 > This action is irreversible. Use it only if you want to start from scratch.
 
-**How to uninstall EML AdminTool?** — This button opens a modal with instructions on how to completely remove EML AdminTool from your server, including deleting all files and Docker containers. See the [uninstallation guide](/docs/eml-admintool/uninstallation) for more details.
+**How to uninstall EML AdminTool?** — This button opens a modal with instructions on how to completely remove EML AdminTool from your server, including deleting all files and Docker containers. See the [uninstallation guide](/docs/eml-admintool/uninstallation-and-reinstallation) for more details.

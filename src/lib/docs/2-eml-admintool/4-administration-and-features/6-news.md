@@ -3,7 +3,7 @@ title: News
 description: How to create, edit, and manage news articles in EML AdminTool to display a news feed in the launcher.
 category: EML AdminTool — Administration
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

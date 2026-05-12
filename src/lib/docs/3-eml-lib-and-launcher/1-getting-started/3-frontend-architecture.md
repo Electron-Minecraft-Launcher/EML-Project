@@ -3,7 +3,7 @@ title: Frontend architecture
 description: Recommended architecture for a launcher UI built on Electron and EML Lib, covering the two-process model, IPC setup, and required views.
 category: EML Lib and Launcher — Getting started
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

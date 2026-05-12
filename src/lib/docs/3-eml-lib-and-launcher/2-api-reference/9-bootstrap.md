@@ -3,7 +3,7 @@ title: Bootstrap
 description: API reference for the Bootstrap class, used to check for and apply launcher auto-updates distributed via EML AdminTool.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

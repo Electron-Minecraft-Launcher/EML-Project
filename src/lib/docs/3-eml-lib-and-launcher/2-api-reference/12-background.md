@@ -3,7 +3,7 @@ title: Background
 description: API reference for the Background class, used to fetch the current launcher background image from EML AdminTool.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

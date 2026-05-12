@@ -3,7 +3,7 @@ title: Bootstraps
 description: How to manage launcher auto-update files in EML AdminTool, allowing players to receive launcher updates automatically.
 category: EML AdminTool — Administration
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

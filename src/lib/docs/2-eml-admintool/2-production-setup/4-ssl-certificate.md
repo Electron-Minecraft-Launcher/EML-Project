@@ -3,7 +3,7 @@ title: SSL certificate
 description: How to obtain a free TLS certificate from Let's Encrypt and configure NGINX to serve EML AdminTool over HTTPS.
 category: EML AdminTool — Production setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -65,5 +65,5 @@ Let's Encrypt certificates are valid for 90 days. Certbot installs a systemd tim
 sudo certbot renew --dry-run
 ```
 
-EML AdminTool is now accessible at `https://your-domain.com`. Proceed to [Security hardening](/docs/eml-admintool/production-setup/security-hardening) for the final production checks.
+EML AdminTool is now accessible at `https://your-domain.com`.
 

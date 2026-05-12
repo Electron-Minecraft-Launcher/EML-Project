@@ -3,7 +3,7 @@ title: Install Docker
 description: How to install Docker Engine and Docker Compose on a Linux VPS for a production deployment of EML AdminTool.
 category: EML AdminTool — Production setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

@@ -135,9 +135,9 @@ export const docsMenu: DocSection[] = [
             file: '2-eml-admintool/4-administration-and-features/7-backgrounds'
           },
           {
-            title: 'Account management',
-            slug: 'eml-admintool/administration-and-features/account-management',
-            file: '2-eml-admintool/4-administration-and-features/8-account-management'
+            title: 'Account settings',
+            slug: 'eml-admintool/administration-and-features/account-settings',
+            file: '2-eml-admintool/4-administration-and-features/8-account-settings'
           }
         ]
       },
@@ -167,9 +167,9 @@ export const docsMenu: DocSection[] = [
             file: '3-eml-lib-and-launcher/1-getting-started/2-quick-start'
           },
           {
-            title: 'Frontend structure',
-            slug: 'eml-lib-and-launcher/getting-started/Frontend-structure',
-            file: '3-eml-lib-and-launcher/1-getting-started/3-Frontend-structure'
+            title: 'Frontend architecture',
+            slug: 'eml-lib-and-launcher/getting-started/frontend-architecture',
+            file: '3-eml-lib-and-launcher/1-getting-started/3-frontend-architecture'
           }
         ]
       },

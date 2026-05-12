@@ -1,7 +1,8 @@
 <script lang="ts">
   import { page } from '$app/state'
-  import { docsMenu, findSectionIndex } from '$lib/config/docs'
+  import { docsMenu } from '$lib/config/docs'
   import { copyCode } from '$lib/utils/copycode'
+  import { untrack } from 'svelte'
   import type { LayoutData } from '../$types'
 
   interface Props {
@@ -11,25 +12,67 @@
 
   let { data, children }: Props = $props()
 
+  const initial = computeOpenState(getSlug())
   let isDocMenuOpen = $state(false)
-  let openSections = $state<boolean[]>(new Array(docsMenu.length).fill(false))
+  let openSections = $state(initial.sections)
+  let openGroups = $state(initial.groups)
 
   function toggleDocMenu() {
     isDocMenuOpen = !isDocMenuOpen
   }
 
-  function currentSlug() {
-    return page.url.pathname.split('/').at(-1) ?? ''
+  function getSlug(): string {
+    const parts = page.url.pathname.split('/')
+    let slug = ''
+    for (let i = 2; i < parts.length; i++) {
+      slug += (i > 2 ? '/' : '') + parts[i]
+    }
+    return slug
+  }
+
+  function groupKey(si: number, ei: number): string {
+    return `${si}-${ei}`
+  }
+
+  function computeOpenState(slug: string) {
+    const sections = new Array(docsMenu.length).fill(false)
+    const groups: Record<string, boolean> = {}
+
+    docsMenu.forEach((section, si) => {
+      section.entries.forEach((entry, ei) => {
+        if (entry.type === 'group') {
+          groups[groupKey(si, ei)] = false
+          if (entry.items.some((item) => item.slug === slug)) {
+            sections[si] = true
+            groups[groupKey(si, ei)] = true
+          }
+        } else if (entry.slug === slug) {
+          sections[si] = true
+        }
+      })
+    })
+
+    return { sections, groups }
   }
 
   $effect(() => {
-    const slug = currentSlug()
-    isDocMenuOpen = false
+    page.url.pathname
+    const slug = getSlug()
 
-    openSections = openSections.map((_, index) => {
-      return docsMenu[index].entries.some((entry) => {
-        if (entry.type === 'page') return entry.slug === slug
-        return entry.items.some((item) => item.slug === slug)
+    untrack(() => {
+      isDocMenuOpen = false
+
+      docsMenu.forEach((section, si) => {
+        section.entries.forEach((entry, ei) => {
+          if (entry.type === 'page') {
+            if (entry.slug === slug) openSections[si] = true
+          } else {
+            if (entry.items.some((item) => item.slug === slug)) {
+              openSections[si] = true
+              openGroups[groupKey(si, ei)] = true
+            }
+          }
+        })
       })
     })
   })
@@ -47,29 +90,25 @@
     <button class="close" onclick={toggleDocMenu}><i class="fa-solid fa-times"></i></button>
 
     <div class="sidebar-inner">
-      {#each docsMenu as section, sectionIndex}
-        <details bind:open={openSections[sectionIndex]}>
+      {#each docsMenu as section, si}
+        <details bind:open={openSections[si]}>
           <summary>&nbsp;&nbsp;{section.title}</summary>
 
           <div class="section-entries">
-            {#each section.entries as entry}
+            {#each section.entries as entry, ei}
               {#if entry.type === 'page'}
-                <a href="/docs/{entry.slug}" class="direct-link" class:active={currentSlug() === entry.slug}>
+                <a href="/docs/{entry.slug}" class="direct-link" class:active={getSlug() === entry.slug}>
                   {entry.title}
                 </a>
               {:else}
-                <div class="group">
-                  <span class="group-label">{entry.title}</span>
-                  <ul>
-                    {#each entry.items as item}
-                      <li>
-                        <a href="/docs/{item.slug}" class:active={currentSlug() === item.slug}>
-                          {item.title}
-                        </a>
-                      </li>
-                    {/each}
-                  </ul>
-                </div>
+                <details class="group" bind:open={openGroups[groupKey(si, ei)]}>
+                  <summary class="group-summary">&nbsp;&nbsp;{entry.title}</summary>
+                  {#each entry.items as item}
+                    <a href="/docs/{item.slug}" class="group-item" class:active={getSlug() === item.slug}>
+                      {item.title}
+                    </a>
+                  {/each}
+                </details>
               {/if}
             {/each}
           </div>
@@ -129,7 +168,7 @@
       font-weight: 650;
     }
 
-    details {
+    > div.sidebar-inner > details {
       margin-bottom: 0.5rem;
 
       &[open] > summary {
@@ -137,7 +176,7 @@
       }
     }
 
-    summary {
+    > div.sidebar-inner > details > summary {
       font-weight: 600;
       color: var(--text-dark-color);
       cursor: pointer;
@@ -152,21 +191,30 @@
       }
     }
 
-    a.direct-link {
+    .section-entries {
+      margin-top: 4px;
+    }
+
+    a {
       display: block;
       text-decoration: none;
       color: #555;
-      font-size: 0.9rem;
+      font-weight: 500;
+      font-size: 0.8rem;
       padding: 6px 15px;
-      margin: 2px 0 2px 15px;
+      margin: 0 0 0 15px;
       border-radius: 0 5px 5px 0;
       border-left: 2px solid var(--border-color);
       border-bottom: none;
+      line-height: 1.5;
       transition:
         color 0.2s ease,
         background 0.2s ease,
         border-left-color 0.2s ease;
-      line-height: 1.5;
+
+      &.group-item {
+        margin-left: 30px;
+      }
 
       &:hover {
         background: var(--secondary-color);
@@ -182,58 +230,31 @@
       }
     }
 
-    .section-entries {
-      padding-left: 0;
-      margin-top: 6px;
+    details.group {
+      margin-top: 2px;
+
+      &[open] > summary.group-summary {
+        list-style-type: '\f077';
+      }
     }
 
-    .group {
-      margin-top: 4px;
-    }
-
-    .group-label {
-      display: block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
+    summary.group-summary {
+      font-size: 0.9rem;
+      font-weight: 600;
       letter-spacing: 0.6px;
-      color: #999;
-      padding: 8px 12px 4px 27px;
-      user-select: none;
-    }
+      color: #333;
+      cursor: pointer;
+      padding: 7px 12px 5px 12px;
+      margin-left: 15px;
+      border-radius: 5px;
+      list-style-type: '\f078';
+      font-family: 'Poppins', 'Font Awesome 7 Free';
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
 
-    ul {
-      list-style: none;
-      padding-left: 15px;
-      margin: 0 0 4px 0;
-
-      li a {
-        display: block;
-        text-decoration: none;
-        color: #555;
-        font-size: 0.9rem;
-        padding: 6px 15px;
-        border-radius: 0 5px 5px 0;
-        border-left: 2px solid var(--border-color);
-        border-bottom: none;
-        transition:
-          color 0.2s ease,
-          background 0.2s ease,
-          border-left-color 0.2s ease;
-        line-height: 1.5;
-
-        &:hover {
-          background: var(--secondary-color);
-          color: var(--text-dark-color);
-          border-left-color: var(--primary-color);
-        }
-
-        &.active {
-          background: var(--primary-tr-color-hover);
-          color: var(--primary-color);
-          font-weight: 500;
-          border-left-color: var(--primary-color);
-        }
+      &:hover {
+        background: var(--secondary-color);
       }
     }
   }
@@ -286,9 +307,6 @@
       overflow-y: auto;
 
       &.open {
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         transform: translateX(0);
       }

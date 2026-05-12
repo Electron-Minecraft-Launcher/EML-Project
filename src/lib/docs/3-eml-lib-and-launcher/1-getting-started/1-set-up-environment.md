@@ -3,7 +3,7 @@ title: Set up environment
 description: How to install Node.js and initialize a launcher project with EML Lib, using EML Template or a manual setup.
 category: EML Lib and Launcher — Getting started
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

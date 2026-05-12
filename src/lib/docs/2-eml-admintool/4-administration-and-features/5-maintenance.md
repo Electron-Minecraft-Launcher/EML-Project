@@ -3,7 +3,7 @@ title: Maintenance
 description: How to enable and disable maintenance mode in EML AdminTool to temporarily block launcher access.
 category: EML AdminTool — Administration
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

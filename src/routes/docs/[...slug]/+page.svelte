@@ -7,7 +7,7 @@
   let Content = $derived(data.content)
 
   const flatPages = getFlatPages()
-  const meta = data.meta ?? {}
+  const meta = $derived(data.meta ?? {})
 
   let currentIndex = $derived(flatPages.findIndex((p) => p.slug === data.slug))
   let prevPage = $derived(currentIndex > 0 ? flatPages[currentIndex - 1] : null)

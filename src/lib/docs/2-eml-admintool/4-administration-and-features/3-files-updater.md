@@ -3,7 +3,7 @@ title: Files Updater
 description: How to manage game files for each profile in EML AdminTool — uploading, organizing, and deleting modpack content.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
@@ -42,12 +42,17 @@ The Files Updater works like a file manager. You can:
 Follow the standard Minecraft directory layout to ensure compatibility:
 
 ```
-/ (profile root)
-├── mods/            <- .jar mod files
-├── config/          <- mod configuration files
-├── resourcepacks/   <- .zip resource packs
-├── shaderpacks/     <- (optional) shader packs
-└── options.txt      <- (optional) default keybinds and video settings
+/ (modpack folder)
+├─ mods/
+│  ├─ mod1.jar
+│  └─ mod2.jar
+├── config/
+│  ├─ mod1.toml
+│  └─ mod2.toml
+├─ resourcepacks/
+│  ├─ pack1.zip
+│  └─ pack2.zip
+└─ server.dat
 ```
 
 ### What not to upload
@@ -64,7 +69,8 @@ Avoid uploading files that are session-specific, player-specific, or regenerated
 
 If you upload an `options.txt`, it will overwrite players' settings on every sync. Uploading it once to set default keybinds is reasonable. Uploading it on every modpack update will reset players' volume, sensitivity, and video settings repeatedly — avoid doing this unless intentional.
 
-_Note: EML AdminTool does not currently support merging `options.txt` changes. This is a planned feature for a future release. Currently, you should hard-code the default `options.txt` in the launcher. See [workaround here](/docs/eml-lib-and-launcher/api-reference/launcher)._
+> [!NOTE]
+> EML AdminTool does not currently support merging `options.txt` changes. This is a planned feature for a future release. Currently, you should hard-code the default `options.txt` in the launcher. See [workaround here](/docs/eml-lib-and-launcher/api-reference/launcher#use-a-default-optionstxt-without-overwriting-player-settings).
 
 ## Mod loader configuration
 

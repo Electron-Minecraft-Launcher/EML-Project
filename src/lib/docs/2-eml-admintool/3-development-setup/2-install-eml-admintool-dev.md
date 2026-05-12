@@ -3,7 +3,7 @@ title: Install EML AdminTool (dev)
 description: How to run EML AdminTool locally on macOS or Windows for development and testing purposes.
 category: EML AdminTool — Development setup
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>

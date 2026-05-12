@@ -3,7 +3,7 @@ title: MicrosoftAuth
 description: API reference for the MicrosoftAuth class, used to authenticate players with a Microsoft account.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-03
+last-updated: 2026-05-13
 ---
 
 <script>
