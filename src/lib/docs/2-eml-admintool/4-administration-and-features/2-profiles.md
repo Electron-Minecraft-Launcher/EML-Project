@@ -42,7 +42,7 @@ Once saved, the profile appears in the list and is immediately available for fil
 Hover over any profile card and click the edit button to rename it, update its server address, Minecraft version and permissions. Changes apply immediately.
 
 > [!TIP]
-> You can also edit permissions from the [Settings](docs/eml-admintool/administration-and-features/general-settings#user-management) page. Permissions are always in sync between the profile and the user management sections.
+> You can also edit permissions from the [Settings](/docs/eml-admintool/administration-and-features/general-settings#user-management) page. Permissions are always in sync between the profile and the user management sections.
 
 ## Deleting a profile
 
