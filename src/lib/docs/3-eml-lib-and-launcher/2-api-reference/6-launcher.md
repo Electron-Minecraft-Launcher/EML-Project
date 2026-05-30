@@ -160,7 +160,7 @@ If you want to provide a default `options.txt` with recommended keybinds and vid
 
 1. Open the js/ts file where you create the `Launcher` instance.
 
-2. Import the `fs` module from Node.js:
+2. Import the `fs` and `path` modules from Node.js:
 
    ```js
    import fs from 'node:fs'
