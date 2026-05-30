@@ -3,7 +3,7 @@ title: Launcher
 description: API reference for the Launcher class — the core of EML Lib. Covers the Config object, all events, and common patterns including the options.txt workaround.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-13
+last-updated: 2026-05-30
 ---
 
 <script>
@@ -164,6 +164,7 @@ If you want to provide a default `options.txt` with recommended keybinds and vid
 
    ```js
    import fs from 'node:fs'
+   import path from 'node:path'
    ```
 
 3. In you `Config` object passed to the `Launcher` constructor: if `cleaning.enabled` is `true`, ensure that `options.txt` is included in the `cleaning.ignored` array to prevent it from being deleted by the cleaner.
