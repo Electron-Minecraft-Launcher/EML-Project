@@ -158,16 +158,18 @@ const launcher = new Launcher({
 
 If you want to provide a default `options.txt` with recommended keybinds and video settings, but don't want to overwrite players' custom settings on every launch, use the following workaround:
 
-1. Open the js/ts file where you create the `Launcher` instance.
+1. If present in the Files Updater options from EML AdminTool or your self-hosted modpack manifest, remove `options.txt` so it is not downloaded to players' instances.
 
-2. Import the `fs` and `path` modules from Node.js:
+2. Open the js/ts file where you create the `Launcher` instance.
+
+3. Import the `fs` and `path` modules from Node.js:
 
    ```js
    import fs from 'node:fs'
    import path from 'node:path'
    ```
 
-3. In you `Config` object passed to the `Launcher` constructor: if `cleaning.enabled` is `true`, ensure that `options.txt` is included in the `cleaning.ignored` array to prevent it from being deleted by the cleaner.
+4. In you `Config` object passed to the `Launcher` constructor: if `cleaning.enabled` is `true`, ensure that `options.txt` is included in the `cleaning.ignored` array to prevent it from being deleted by the cleaner.
 
    ```js
    const launcher = new Launcher({
@@ -179,7 +181,7 @@ If you want to provide a default `options.txt` with recommended keybinds and vid
    })
    ```
 
-4. Update your launch code to check if `options.txt` exists in the instance folder. If it doesn't, create it with your default content. Then proceed to launch as normal.
+5. Update your launch code to check if `options.txt` exists in the instance folder. If it doesn't, create it with your default content. Then proceed to launch as normal.
 
    ```js
    const optionsPath = path.join(launcher.config.root, 'options.txt')
