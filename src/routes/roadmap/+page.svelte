@@ -105,7 +105,7 @@
       version: 'v2.3.0',
       title: 'Skins and Capes management',
       description: 'Add functionality to manage player skins and capes.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 11,
@@ -113,7 +113,7 @@
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
       description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 11,
@@ -121,7 +121,7 @@
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
       description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 12,
@@ -297,7 +297,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 67%, var(--border-color) 67%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 74%, var(--border-color) 74%);
       border-radius: 2px;
       z-index: 0;
     }

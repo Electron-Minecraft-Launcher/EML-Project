@@ -135,9 +135,19 @@ export const docsMenu: DocSection[] = [
             file: '2-eml-admintool/4-administration-and-features/7-backgrounds'
           },
           {
+            title: 'Stats',
+            slug: 'eml-admintool/administration-and-features/stats',
+            file: '2-eml-admintool/4-administration-and-features/8-stats'
+          },
+          {
+            title: 'Crash Reports',
+            slug: 'eml-admintool/administration-and-features/crash-reports',
+            file: '2-eml-admintool/4-administration-and-features/9-crash-reports'
+          },
+          {
             title: 'Account settings',
             slug: 'eml-admintool/administration-and-features/account-settings',
-            file: '2-eml-admintool/4-administration-and-features/8-account-settings'
+            file: '2-eml-admintool/4-administration-and-features/10-account-settings'
           }
         ]
       },
@@ -209,6 +219,12 @@ export const docsMenu: DocSection[] = [
             title: 'ServerStatus',
             slug: 'eml-lib-and-launcher/api-reference/serverstatus',
             file: '3-eml-lib-and-launcher/2-api-reference/13-serverstatus'
+          },
+          { title: 'Stats', slug: 'eml-lib-and-launcher/api-reference/stats', file: '3-eml-lib-and-launcher/2-api-reference/14-stats' },
+          {
+            title: 'CrashReports',
+            slug: 'eml-lib-and-launcher/api-reference/crashreports',
+            file: '3-eml-lib-and-launcher/2-api-reference/15-crashreports'
           }
         ]
       },
