@@ -41,9 +41,9 @@ Click **Save** to publish immediately. There is no draft state — saved article
 
 Click any article in the list to open it, then click the edit button to modify its content. Changes are published immediately on save.
 
-### Deleting an article
+### Deleting articles
 
-Click the trash button next to an article to delete it permanently. This action is irreversible.
+Select one or more articles and click the trash button at the top of the list to delete them permanently. This action is irreversible.
 
 ## Categories and tags
 

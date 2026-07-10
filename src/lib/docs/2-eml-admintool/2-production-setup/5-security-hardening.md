@@ -85,12 +85,6 @@ Game servers are frequent targets for volumetric attacks. Cloudflare is the most
 
 **HTTPS** — Never run EML AdminTool in production over plain HTTP. If you have not done so yet, follow the [SSL certificate](ssl-certificate) guide.
 
-**`.env` file** — The file at `~/.eml/admintool/.env` contains your database credentials and secret keys. Never share it, never commit it to a version control repository, and restrict its read permissions:
-
-```bash
-chmod 600 ~/.eml/admintool/.env
-```
-
 ## System maintenance
 
 A secure server is an up-to-date server. Unpatched software is the most common entry point for automated attacks.
