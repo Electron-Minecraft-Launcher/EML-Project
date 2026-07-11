@@ -111,6 +111,7 @@ Events are emitted on the `Launcher` instance via `.on(event, callback)`.
 | `launch_check_java`       | Checking the Java installation.                       | —                                                           |
 | `launch_clean`            | Cleaning unrecognised files from the instance folder. | —                                                           |
 | `launch_launch`           | Spawning the Minecraft process.                       | `{ version, loader, loaderVersion }`                        |
+| `launch_crash`            | The Minecraft process has crashed.                    | `{ exitCode, crashData }`                                   |
 
 **Progress events** are emitted continuously within a step.
 
