@@ -22,7 +22,7 @@ The **Crash Reports** page allows you to collect and manage crash reports from y
 
 ![EML AdminTool Crash Reports page](/images/docs/crash-reports.png)
 
-See [Crash Reports](/docs/eml-lib-and-launcher/api-reference/crash-reports) in the EML Lib API Reference for more details.
+See [CrashReports](/docs/eml-lib-and-launcher/api-reference/crashreports) in the EML Lib API Reference for more details.
 
 ## Key metrics
 

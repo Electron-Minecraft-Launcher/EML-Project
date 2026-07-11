@@ -35,7 +35,7 @@ The Files Updater works like a file manager. You can:
 - **Edit** small text-based files (such as `.txt` or `.json` config files) directly in the browser.
 
 > [!WARNING]
-> Do not upload `minecraft.jar`, version JARs, version manifests, or the `assets/` and `libraries/` folders. These are managed automatically by the [Loader settings](loader-settings) feature.
+> Do not upload `minecraft.jar`, version JARs, version manifests, or the `assets/` and `libraries/` folders. These are managed automatically by the [Loader settings](#mod-loader-configuration) feature.
 
 ### Recommended folder structure
 
