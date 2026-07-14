@@ -113,7 +113,7 @@
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
       description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 11,
@@ -121,7 +121,7 @@
       version: 'v2.4.0',
       title: 'Stats and Crash Reporting features',
       description: 'Add a stats feature to collect anonymous usage data and help prioritize development.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 12,
@@ -129,7 +129,7 @@
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 12,
@@ -137,7 +137,7 @@
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 13,
@@ -297,7 +297,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 74%, var(--border-color) 74%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 80%, var(--border-color) 80%);
       border-radius: 2px;
       z-index: 0;
     }
