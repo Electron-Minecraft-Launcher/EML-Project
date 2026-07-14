@@ -3,7 +3,7 @@ title: Profiles
 description: How to create and manage profiles in EML AdminTool to support multiple isolated Minecraft instances from a single dashboard.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-13
+last-updated: 2026-07-14
 ---
 
 <script>
@@ -35,6 +35,14 @@ Click the "Add profile" button. A modal opens with the following fields:
 
 **Permissions** — Select which users have access to manage this profile's files and loader configuration.
 
+**Visibility** (for non-default profiles) — Choose whether this profile is visible to all players (visible), or only to those with explicit permission (hidden).
+
+**Allowed pseudos to view the profile** (for hidden profiles) — Select which players can see and launch this profile. If no users are selected, the profile is effectively disabled.
+
+> [!WARNING]
+> Hiding a profile is not a security measure. It only prevents it from being displayed in the launcher for players without permission, but they can still access it if they know the slug, the direct URL or an allowed pseudo. Allowed pseudos are only used to display the profile in the launcher to players with permission. You should always use proper server-side authentication and authorization to protect your game files and server access.
+> You can use hidden profiles to create private test servers, or to restrict access to certain game modes for specific players.
+
 Once saved, the profile appears in the list and is immediately available for file and loader management.
 
 ## Editing a profile
@@ -53,3 +61,4 @@ Hover over a profile card and click the trash button to delete it.
 
 > [!NOTE]
 > The _default_ profile cannot be deleted.
+
