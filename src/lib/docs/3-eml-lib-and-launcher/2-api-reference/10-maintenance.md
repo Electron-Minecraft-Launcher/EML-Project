@@ -3,7 +3,7 @@ title: Maintenance
 description: API reference for the Maintenance class, used to check whether the server administrator has enabled maintenance mode.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-13
+last-updated: 2026-07-14
 ---
 
 <script>
@@ -46,9 +46,10 @@ async function applyMaintenanceStatus() {
 
 ## Constructor
 
-| Parameter | Type     | Description                             | Required? |
-| --------- | -------- | --------------------------------------- | --------- |
-| `url`     | `string` | The URL of your EML AdminTool instance. | Yes       |
+| Parameter | Type      | Description                                                                        | Required? |
+| --------- | --------- | ---------------------------------------------------------------------------------- | --------- |
+| `url`     | `string`  | The URL of your EML AdminTool instance.                                            | Yes       |
+| `account` | `Account` | The account to use for authentication, in order to potentially bypass maintenance. | No        |
 
 ## Methods
 

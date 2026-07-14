@@ -3,7 +3,7 @@ title: Profiles
 description: API reference for the Profiles class, used to retrieve the list of profiles configured in EML AdminTool.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
-last-updated: 2026-05-13
+last-updated: 2026-07-14
 ---
 
 <script>
@@ -33,13 +33,14 @@ async function getProfiles() {
 
 ## Constructor
 
-| Parameter | Type     | Description                             | Required? |
-| --------- | -------- | --------------------------------------- | --------- |
-| `url`     | `string` | The URL of your EML AdminTool instance. | Yes       |
+| Parameter | Type      | Description                                                            | Required? |
+| --------- | --------- | ---------------------------------------------------------------------- | --------- |
+| `url`     | `string`  | The URL of your EML AdminTool instance.                                | Yes       |
+| `account` | `Account` | The account to use for authentication, to display any hidden profiles. | No        |
 
 ## `getProfiles()` method
 
-Fetches the list of all profiles available on the AdminTool.
+Fetches the list of all profiles available on the EML AdminTool.
 
 **Returns:** `Promise<IProfile[]>` — An array of profile objects. The default profile is always included.
 
