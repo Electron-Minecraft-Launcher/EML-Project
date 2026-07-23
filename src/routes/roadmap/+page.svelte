@@ -129,7 +129,7 @@
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 12,
@@ -137,26 +137,42 @@
       version: 'v2.5.0',
       title: 'Bypass maintenance mode',
       description: 'Add a feature to allow some specified users to bypass maintenance mode and access the launcher while it is in maintenance.',
+      status: 'completed'
+    },
+    {
+      id: 13,
+      target: 'lib',
+      version: 'v2.6.0',
+      title: 'Hidden and Protected profiles',
+      description: 'Update the lib to support hidden and protected profiles from the EML AdminTool.',
       status: 'active'
     },
     {
       id: 13,
-      title: 'MCP support',
-      target: 'lib',
-      version: 'v2.6.0',
-      description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
-      status: 'future'
-    },
-    {
-      id: 13,
-      title: 'MCP support',
       target: 'admintool',
       version: 'v2.6.0',
+      title: 'Hidden and Protected profiles',
+      description: 'Enhance the Profiles feature to allow some profiles to be hidden or protected with a password.',
+      status: 'active'
+    },
+    {
+      id: 14,
+      title: 'MCP support',
+      target: 'lib',
+      version: 'v2.7.0',
       description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
       status: 'future'
     },
     {
       id: 14,
+      title: 'MCP support',
+      target: 'admintool',
+      version: 'v2.7.0',
+      description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
+      status: 'future'
+    },
+    {
+      id: 15,
       title: 'Multiple instance support',
       target: 'lib',
       version: 'v3.0.0',
@@ -164,7 +180,7 @@
       status: 'future'
     },
     {
-      id: 14,
+      id: 15,
       title: 'Multiple instance support',
       target: 'admintool',
       version: 'v3.0.0',
@@ -297,7 +313,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 80%, var(--border-color) 80%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 82%, var(--border-color) 82%);
       border-radius: 2px;
       z-index: 0;
     }
