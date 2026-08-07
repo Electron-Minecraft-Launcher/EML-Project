@@ -63,8 +63,6 @@ export async function getVanillaVersions(): Promise<LoaderVersion[]> {
 }
 
 export async function getForgeLikeVersions(loader: 'forge' | 'neoforge'): Promise<LoaderVersion[]> {
-  const cacheKey = loader === 'forge' ? 'forge-versions' : 'neoforge-versions'
-
   const v = V[loader]
   const mavenMetadataUrl = `${v.mavenUrl}/${v.group.replace(/\./g, '/')}/${v.artifact}/maven-metadata.xml`
   const metadata = await fetchXml(mavenMetadataUrl, `Failed to fetch ${v.name} versions`)
@@ -179,13 +177,13 @@ function getMajorVersion(version: string, fallback = 'Latest'): string {
 
 function parseForgeVersion(v: string, currentMajor: string) {
   const parts = v.split('-')
-  if (parts.length >= 2 && parts[0].startsWith('1.')) {
+  if (parts.length >= 2) {
     const mcVer = parts[0]
 
     return {
       majorVersion: getMajorVersion(mcVer, currentMajor),
       minecraftVersion: mcVer,
-      forgeVersion: parts[1]
+      forgeVersion: parts.slice(1).join('-')
     }
   }
 
@@ -260,4 +258,5 @@ async function fetchXml(url: string, errorMsg: string): Promise<any> {
     return error(500, `${errorMsg}: ${err instanceof Error ? err.message : String(err)}`)
   }
 }
+
 
