@@ -153,7 +153,7 @@
       version: 'v2.6.0',
       title: 'Hidden and Protected profiles',
       description: 'Enhance the Profiles feature to allow some profiles to be hidden or protected with a password.',
-      status: 'active'
+      status: 'completed'
     },
     {
       id: 14,
@@ -161,7 +161,7 @@
       target: 'lib',
       version: 'v2.7.0',
       description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 14,
@@ -169,7 +169,7 @@
       target: 'admintool',
       version: 'v2.7.0',
       description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
-      status: 'future'
+      status: 'active'
     },
     {
       id: 15,
@@ -313,7 +313,7 @@
       transform: translateX(-50%);
       width: 4px;
       height: 100%;
-      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 82%, var(--border-color) 82%);
+      background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 90%, var(--border-color) 90%);
       border-radius: 2px;
       z-index: 0;
     }

@@ -3,7 +3,7 @@ title: Files Updater
 description: How to manage game files for each profile in EML AdminTool — uploading, organizing, and deleting modpack content.
 category: EML AdminTool — Administration and features
 author: Electron Minecraft Launcher
-last-updated: 2026-05-13
+last-updated: 2026-08-10
 ---
 
 <script>
@@ -74,11 +74,13 @@ If you upload an `options.txt`, it will overwrite players' settings on every syn
 
 ## Mod loader configuration
 
-The **Mod loader** section, located at the bottom of the page, controls the Minecraft version and modding engine for each profile. When players launch the game, EML Lib reads this configuration to download the correct game JARs, libraries, and loader installer.
+The **Loader** section, located at the bottom of the page, controls the Minecraft version and modding engine for each profile. When players launch the game, EML Lib reads this configuration to download the correct game JARs, libraries, and loader installer.
 
 To edit, hover over the section and click the edit button.
 
 ### Configuration options
+
+#### Standard fields
 
 **Loader** — The modding API to use for this profile:
 
@@ -90,9 +92,98 @@ To edit, hover over the section and click the edit button.
 | `Fabric`   | A lightweight, modular mod loader.         |
 | `Quilt`    | A fork of Fabric with additional features. |
 
-**Minecraft version** — The game version (e.g. `1.21.1`). Must match the version your mods and server are built for.
+**Minecraft version** — The major game version (e.g. `1.20`).
 
-**Loader version** — The specific version of the selected loader. For Vanilla, this field is not applicable. For all other loaders, use the latest stable version unless you have a specific reason not to.
+**Minecraft and loader version** — The specific version of Minecraft and the selected loader.
+
+> [!IMPORTANT]
+> When you save a change to the loader configuration, EML AdminTool immediately updates the manifest. The next time a player starts the launcher, EML Lib will detect the change and download the new libraries and game JARs automatically. Players do not need to reinstall anything manually.
+
+#### Custom loader
+
+Once you select a loader, you can toggle the "Customize the selected version" option. After clicking the "Next" button, you can upload a custom `version.json` (version manifest). To add custom libraries (or to modify existing ones), you **need** to compute the SHA-1 hash and the size of the file. Then, add (or update) the `url` property with `eml://upload`. EML AdminTool will automatically detect that this is a custom file, and you will be able to upload it in the next step. You can do the exact same thing with a custom `assetIndex.json` (asset index manifest), or `client.jar` (the game JAR). Here is an example based on the Minecraft Vanilla 1.20.6 version manifest:
+
+```json
+{
+  "arguments": { ... }, // The launch arguments for the client and server... you can customize these too!
+  "assetIndex": {
+    "id": "16",
+    "sha1": "23ea571ac75c42d2318483f8a302ce4630ed54f6", // SHA-1 hash of the custom asset index file
+    "size": 427365, // Size of the custom asset index file in bytes
+    "totalSize": 654414263,
+    "url": "eml://upload" // This will be replaced with the actual URL after upload
+  },
+  "assets": "16",
+  "complianceLevel": 1,
+  "downloads": {
+    "client": { // This is the custom client JAR
+      "sha1": "05b6f1c6b46a29d6ea82b4e0d42190e42402030f", // SHA-1 hash of the custom client JAR
+      "size": 26565641, // Size of the custom client JAR in bytes
+      "url": "eml://upload" // This will be replaced with the actual URL after upload
+    },
+    ...
+  },
+  "id": "1.20.6-custom", // This is a custom version ID
+  "javaVersion": {
+    "component": "java-runtime-delta",
+    "majorVersion": 21
+  },
+  "libraries": [
+    ...
+    { // This is a custom library that has been uploaded to the server
+      "downloads": {
+        "artifact": {
+          "path": "com/github/oshi/oshi-core/6.4.10/oshi-core-6.4.10.jar",
+          "sha1": "b1d8ab82d11d92fd639b56d639f8f46f739dd5fa", // SHA-1 hash of the custom library
+          "size": 979212, // Size of the custom library in bytes
+          "url": "eml://upload" // This will be replaced with the actual URL after upload
+        }
+      },
+      "name": "com.github.oshi:oshi-core:6.4.10"
+    },
+    ...
+  ],
+  "logging": { // Default logging configuration for the client... but you can customize it too!
+    "client": {
+      "argument": "-Dlog4j.configurationFile=${path}",
+      "file": {
+        "id": "client-1.12.xml",
+        "sha1": "bd65e7d2e3c237be76cfbef4c2405033d7f91521",
+        "size": 888,
+        "url": "https://piston-data.mojang.com/v1/objects/bd65e7d2e3c237be76cfbef4c2405033d7f91521/client-1.12.xml"
+      },
+      "type": "log4j2-xml"
+    }
+  },
+  "mainClass": "net.minecraft.client.main.Main",
+  "minimumLauncherVersion": 21,
+  "releaseTime": "2024-04-29T12:40:45+00:00",
+  "time": "2024-04-29T12:40:45+00:00",
+  "type": "release"
+}
+```
+
+If you want to upload a custom `assetIndex.json`, you can do the same thing: compute the SHA-1 hash and size of the file, then **add** the `url` property and set it to `eml://upload`. EML AdminTool will detect this and allow you to upload it in the next step. Here is an example based on the Minecraft Vanilla 1.20.6 asset index:
+
+```json
+{
+  "objects": {
+    "icons/icon_128x128.png": { // This is a custom icon file that has been uploaded to the server
+      "hash": "b62ca8ec10d07e6bf5ac8dae0c8c1d2e6a1e3356", // SHA-1 hash of the custom icon file
+      "size": 9101, // Size of the custom icon file in bytes
+      "url": "eml://upload" // Add this property to indicate that the file should be uploaded to the server
+    },
+    "icons/icon_16x16.png": { // Default icon file that is not uploaded to the server
+      "hash": "5ff04807c356f1beed0b86ccf659b44b9983e3fa",
+      "size": 781,
+      // No "url" property
+    },
+    ...
+  }
+}
+```
+
+Once you have uploaded you custom `version.json` and `assetIndex.json`, you will be able to upload any custom libraries or the game JAR itself. EML AdminTool will automatically detect that these files are referenced in the manifests and will allow you to upload them. The `url` property will be replaced with the actual URL of the uploaded file on your server.
 
 > [!IMPORTANT]
 > When you save a change to the loader configuration, EML AdminTool immediately updates the manifest. The next time a player starts the launcher, EML Lib will detect the change and download the new libraries and game JARs automatically. Players do not need to reinstall anything manually.
