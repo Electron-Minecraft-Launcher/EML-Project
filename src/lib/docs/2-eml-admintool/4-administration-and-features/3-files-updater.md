@@ -183,7 +183,7 @@ If you want to upload a custom `assetIndex.json`, you can do the same thing: com
 }
 ```
 
-Once you have uploaded you custom `version.json` and `assetIndex.json`, you will be able to upload any custom libraries or the game JAR itself. EML AdminTool will automatically detect that these files are referenced in the manifests and will allow you to upload them. The `url` property will be replaced with the actual URL of the uploaded file on your server.
+Once you have uploaded your custom `version.json` and `assetIndex.json`, you will be able to upload any custom libraries or the game JAR itself. EML AdminTool will automatically detect that these files are referenced in the manifests and will allow you to upload them. The `url` property will be replaced with the actual URL of the uploaded file on your server.
 
 > [!IMPORTANT]
 > When you save a change to the loader configuration, EML AdminTool immediately updates the manifest. The next time a player starts the launcher, EML Lib will detect the change and download the new libraries and game JARs automatically. Players do not need to reinstall anything manually.
