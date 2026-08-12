@@ -16,8 +16,12 @@ export const load: PageLoad = async () => {
     return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime()
   })
 
+  const filteredPosts = sortedPosts.filter((post) => post.meta?.filter.includes('viewer'))
+
   return {
-    posts: sortedPosts
+    posts: filteredPosts
   }
 }
+
+
 
