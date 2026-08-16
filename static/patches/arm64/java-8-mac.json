@@ -1,0 +1,1724 @@
+{
+  "files": {
+    "jre.bundle/Contents/Home/Contents": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/ASSEMBLY_EXCEPTION": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/ASSEMBLY_EXCEPTION",
+          "sha1": "7a9b074ca8d783dbe5310ecc22f5538b65cc918e",
+          "size": 1522
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/DISCLAIMER": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/DISCLAIMER",
+          "sha1": "ce9725038a18d4cddb7fb99731b13da810023acf",
+          "size": 2765
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/LICENSE": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/LICENSE",
+          "sha1": "a4fb972c240d89131ee9e16b845cd302e0ecb05f",
+          "size": 19274
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/THIRD_PARTY_README": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/THIRD_PARTY_README",
+          "sha1": "7b1e6cb789713e2b21707aee0bbcb2c1f97cd36e",
+          "size": 194035
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/Welcome.html": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/Welcome.html",
+          "sha1": "6a4e15a1a9beedda18118f6e940798dfe8319055",
+          "size": 1186
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/java": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/java",
+          "sha1": "f0a600ba162e60a6b544992a6794890efc3a9527",
+          "size": 166208
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/jfr": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/jfr",
+          "sha1": "d7d284a781d3f11798d7033a06f6a3707e67f30b",
+          "size": 166224
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/jjs": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/jjs",
+          "sha1": "1adcf9ac079de9cc062462a676b01b0c6a239951",
+          "size": 166224
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/keytool": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/keytool",
+          "sha1": "8488527252be350b53382140253b02e86307d75a",
+          "size": 166240
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/orbd": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/orbd",
+          "sha1": "edd64f7e349604137b0932bc60b88327f9a0f46d",
+          "size": 166224
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/pack200": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/pack200",
+          "sha1": "c31665fc3a84ae105c3203509091f64a2c7265ff",
+          "size": 166240
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/policytool": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/policytool",
+          "sha1": "afd357536858f1490f7be12ae89153d022ac15ae",
+          "size": 166256
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/rmid": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/rmid",
+          "sha1": "19c8f4e57d4384228724aa97d2712280d7747bee",
+          "size": 166224
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/rmiregistry": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/rmiregistry",
+          "sha1": "1e49db6a0d3a4f938731d54fff4afb0db9c1a186",
+          "size": 166256
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/servertool": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/servertool",
+          "sha1": "184ee1268ffd2d67a6ebeb688785794c93d0c202",
+          "size": 166256
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/tnameserv": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/tnameserv",
+          "sha1": "ed8a2fc01a6539a3c6faa2537fd71fb3532737f7",
+          "size": 166256
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/bin/unpack200": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/bin/unpack200",
+          "sha1": "9ea753d0c38b99ca69afcce5acfaa0889d272dfa",
+          "size": 168880
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework/JavaNativeFoundation": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/JavaNativeFoundation.framework/JavaNativeFoundation",
+          "sha1": "52eb28c1d4d5cd63a039ac44147ca9b751b6aa39",
+          "size": 160160
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework/Resources": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework/Resources/Info.plist": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/JavaNativeFoundation.framework/Resources/Info.plist",
+          "sha1": "fce47358d88ae1af6c18689a6518fdd251629ee4",
+          "size": 871
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework/_CodeSignature": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/JavaNativeFoundation.framework/_CodeSignature/CodeResources": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/JavaNativeFoundation.framework/_CodeSignature/CodeResources",
+          "sha1": "051af4e10bdf78cb3732d1676d7cc6936b3e998f",
+          "size": 2442
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/applet": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/calendars.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/calendars.properties",
+          "sha1": "e969a98067073c789b02168b211277eb393db634",
+          "size": 2479
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/charsets.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/charsets.jar",
+          "sha1": "6e28964f3c4659b1cbafa62561710dbc4824e1cf",
+          "size": 3138910
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/classlist": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/classlist",
+          "sha1": "9645974e3b328b4df546542cdc3553fe3c4ca5f7",
+          "size": 72450
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm/CIEXYZ.pf": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/cmm/CIEXYZ.pf",
+          "sha1": "fb7d37db9ad5679600a27352aa1998d5bcdc9311",
+          "size": 784
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm/GRAY.pf": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/cmm/GRAY.pf",
+          "sha1": "d73abfdf682fd0f570775b90e40d714976339f33",
+          "size": 556
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm/LINEAR_RGB.pf": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/cmm/LINEAR_RGB.pf",
+          "sha1": "7576e83e5911096471a97f5e73f3238c6ffe6976",
+          "size": 488
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm/PYCC.pf": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/cmm/PYCC.pf",
+          "sha1": "da0db2d41e6cead9e38a7e4a5c08fa7e90e57b22",
+          "size": 234080
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/cmm/sRGB.pf": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/cmm/sRGB.pf",
+          "sha1": "11c7be03d659c369474a6f2231561350ae7889ab",
+          "size": 6876
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/content-types.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/content-types.properties",
+          "sha1": "b21698017c4a2866b5fabe59681b7592e72c83b1",
+          "size": 5916
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/currency.data": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/currency.data",
+          "sha1": "7c4733126e548a5c34eedac6d3a87482057882a1",
+          "size": 4289
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/cldrdata.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/cldrdata.jar",
+          "sha1": "e5241d333bfc9f4bc29217681767dfa12e39c20c",
+          "size": 3862636
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/dnsns.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/dnsns.jar",
+          "sha1": "bc43ddf6fa881b8560e3f213ef310ac1593ded1e",
+          "size": 8354
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/jaccess.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/jaccess.jar",
+          "sha1": "598fda6e02427c2abbd6188d204f4d0794ff6780",
+          "size": 44518
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/localedata.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/localedata.jar",
+          "sha1": "586e27db471cca2b0f039921ac44c1f8ec04d0f4",
+          "size": 1183432
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/meta-index": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/meta-index",
+          "sha1": "c2eb88bd684555a0494e9fc98070f50227374bdd",
+          "size": 617
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/nashorn.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/nashorn.jar",
+          "sha1": "0d4f6c3175406c24f8aec40fba741008e2967636",
+          "size": 2034428
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/sunec.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/sunec.jar",
+          "sha1": "17650330ccc124af79dac5657f720b05be8ce557",
+          "size": 38962
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/sunjce_provider.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/sunjce_provider.jar",
+          "sha1": "f54d62d8ddfd00cdb897d2f78fbe1113bf3f2284",
+          "size": 275539
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/sunpkcs11.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/sunpkcs11.jar",
+          "sha1": "4ac69e5993ebafb4839c56a06f30032a770ddda4",
+          "size": 281986
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/ext/zipfs.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/ext/zipfs.jar",
+          "sha1": "cc634ff4782a607040d3653cb189acbb93adfcea",
+          "size": 72089
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/flavormap.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/flavormap.properties",
+          "sha1": "16d0966c5f2deb951845f532df2f2b63c3ddb4a7",
+          "size": 4211
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/fontconfig.bfc": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/fontconfig.bfc",
+          "sha1": "fa599549574ff3c1d0511abda8b21ab5eb1fd22d",
+          "size": 3058
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/fontconfig.properties.src": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/fontconfig.properties.src",
+          "sha1": "15f5db26a04dd72d67b523b6205509799b0b0ed1",
+          "size": 9084
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/hijrah-config-umalqura.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/hijrah-config-umalqura.properties",
+          "sha1": "d8c664ac3e18a044465b4f76311661a4f7f045a2",
+          "size": 14959
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/cursors.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/cursors.properties",
+          "sha1": "f2b9a22ddd0a77869497a64f28f07e89a7d41f48",
+          "size": 1274
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/invalid32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/invalid32x32.gif",
+          "sha1": "259edc45b4569427e8319895a444f4295d54348f",
+          "size": 153
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_CopyDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_CopyDrop32x32.gif",
+          "sha1": "eb7620fae702172aa663a19d170a0b929d3b11d1",
+          "size": 158
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_CopyNoDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_CopyNoDrop32x32.gif",
+          "sha1": "259edc45b4569427e8319895a444f4295d54348f",
+          "size": 153
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_LinkDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_LinkDrop32x32.gif",
+          "sha1": "9699137f990c240e714481563181069c8f6c17bb",
+          "size": 162
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_LinkNoDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_LinkNoDrop32x32.gif",
+          "sha1": "259edc45b4569427e8319895a444f4295d54348f",
+          "size": 153
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_MoveDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_MoveDrop32x32.gif",
+          "sha1": "03c1617ce3c5ab8af03e46d30a8c8f31ab57fb1b",
+          "size": 141
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/images/cursors/motif_MoveNoDrop32x32.gif": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/images/cursors/motif_MoveNoDrop32x32.gif",
+          "sha1": "259edc45b4569427e8319895a444f4295d54348f",
+          "size": 153
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jce.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jce.jar",
+          "sha1": "cd09034ca8e66d4f9e1808368698b1c26cc6d555",
+          "size": 98058
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jfr": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jfr/default.jfc": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jfr/default.jfc",
+          "sha1": "60fc116620692fc361d94ae1f4b931941a2c42d4",
+          "size": 30605
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jfr/profile.jfc": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jfr/profile.jfc",
+          "sha1": "34b8b81a2bed404e7ba2e5cd247c48a9d7431680",
+          "size": 30563
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jfr.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jfr.jar",
+          "sha1": "59ef37b4777a8d5e65fa0188036eda4a176d8c7f",
+          "size": 891292
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jli": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jli/libjli.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jli/libjli.dylib",
+          "sha1": "95feb688ebc013842f96d5f737c99826fd34ab4a",
+          "size": 126048
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jspawnhelper": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jspawnhelper",
+          "sha1": "722882ec60c4141218612fcec2846fbeec96c29d",
+          "size": 72944
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jsse.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jsse.jar",
+          "sha1": "127c670e0a27e4288fa634619fbd59bd4d1a675d",
+          "size": 1933973
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jvm.cfg": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jvm.cfg",
+          "sha1": "5a4953cbd861b4a5cef5f9ff36824f46c425f307",
+          "size": 1621
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/jvm.hprof.txt": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/jvm.hprof.txt",
+          "sha1": "fbd61d52534cdd0c15df332114d469c65d001e33",
+          "size": 4226
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libAppleScriptEngine.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libAppleScriptEngine.dylib",
+          "sha1": "4c6444f9099fefd02dbf8cadb5dee4488733690a",
+          "size": 115840
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libattach.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libattach.dylib",
+          "sha1": "5b0b02fbba4af8b6bf05cf293d741319d4bd7ad8",
+          "size": 72592
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libawt.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libawt.dylib",
+          "sha1": "37b43dcfc8aa2f46e91cfd6c7f7f6c9be48af906",
+          "size": 588848
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libawt_lwawt.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libawt_lwawt.dylib",
+          "sha1": "e2fed2ab9fb6184f7cc488fc77244d103ce939f1",
+          "size": 895360
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libdt_socket.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libdt_socket.dylib",
+          "sha1": "d2784270c28fc72ebbf1c24a2227b1f570491e56",
+          "size": 77888
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libfontmanager.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libfontmanager.dylib",
+          "sha1": "3f9bc6619cf02bb9a329ef498d7ba23a953b4b49",
+          "size": 557568
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libfreetype.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libfreetype.dylib",
+          "sha1": "4f2fe5958d0dbddd6346a26880049a14ebd88de9",
+          "size": 710096
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libhprof.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libhprof.dylib",
+          "sha1": "48798162dd55c78623b216e5110f0edae9abfa13",
+          "size": 241168
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libinstrument.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libinstrument.dylib",
+          "sha1": "b84fecf4a20ac92f56fe4a6e472ddd6f131732b9",
+          "size": 202256
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libj2gss.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libj2gss.dylib",
+          "sha1": "3f157a231cefa84b9bf7ea8197091639f84a4335",
+          "size": 102640
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libj2pcsc.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libj2pcsc.dylib",
+          "sha1": "b5e33deb9aad9255e1702155b352b148e702b18f",
+          "size": 74544
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libj2pkcs11.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libj2pkcs11.dylib",
+          "sha1": "4ea15d6bc8829e01177f15e2c9cadddc57c67f62",
+          "size": 153024
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjaas_unix.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjaas_unix.dylib",
+          "sha1": "a12481655488ca34d3ee8320cea57c83a9c6b1ae",
+          "size": 69728
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjava.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjava.dylib",
+          "sha1": "7cfec3b3e45a112f90ccfe000c36f4bcb4dca28b",
+          "size": 305712
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjava_crw_demo.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjava_crw_demo.dylib",
+          "sha1": "0ca0bea4886eb6141bd8875705101ba8b370b4d5",
+          "size": 88896
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjawt.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjawt.dylib",
+          "sha1": "3d6c2c86e04587e7396da4cfaf3f7e3cdb6d9488",
+          "size": 52848
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjdwp.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjdwp.dylib",
+          "sha1": "d7810e768fda377fb469c4b4910a9013e6b5b27b",
+          "size": 324640
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjpeg.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjpeg.dylib",
+          "sha1": "b1d47873d6c49de44c6f2cda8c48f529b401d60e",
+          "size": 239104
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjsdt.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjsdt.dylib",
+          "sha1": "943a69aae3e7df9b3351065501f47a095d887397",
+          "size": 71008
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjsig.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjsig.dylib",
+          "sha1": "879b52cf4272bd103c9eb5d2eff61d4bd254ecf1",
+          "size": 71664
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libjsound.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libjsound.dylib",
+          "sha1": "9377fff7016614e366548da2e0d8c6e4c1c641d1",
+          "size": 145952
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/liblcms.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/liblcms.dylib",
+          "sha1": "bc7556590c712ac83b4fca45f50a2d699f75fc8e",
+          "size": 452768
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libmanagement.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libmanagement.dylib",
+          "sha1": "320324b5317688151d8c2356097114d55b86aa5b",
+          "size": 98640
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libmlib_image.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libmlib_image.dylib",
+          "sha1": "d023dd7b5db0a469d2ae8db1f6c7bc9aec12ce19",
+          "size": 656288
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libnet.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libnet.dylib",
+          "sha1": "794a3d6d06fb72888bc9317852fe8f5b2cd32418",
+          "size": 166736
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libnio.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libnio.dylib",
+          "sha1": "c8ce91b0e38e7ac6a8328b459f55bcfa3cfaaca0",
+          "size": 146880
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libnpt.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libnpt.dylib",
+          "sha1": "e7c1400ec3edaf76976a7b338de97e9c089ab389",
+          "size": 72048
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libosx.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libosx.dylib",
+          "sha1": "23c58f821aa9cbc92fd09e8acd20a5714f9f0ab1",
+          "size": 117392
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libosxapp.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libosxapp.dylib",
+          "sha1": "6fd3d5ee8d6fee942baf7b2af422f2d79a3bd456",
+          "size": 424816
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libosxkrb5.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libosxkrb5.dylib",
+          "sha1": "f15d31693185c5eb7d717a97d55af4b93b1e5893",
+          "size": 72544
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libosxui.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libosxui.dylib",
+          "sha1": "65055bb37504fa5e4dfaccefb537274b19c9263f",
+          "size": 108400
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libsplashscreen.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libsplashscreen.dylib",
+          "sha1": "d349c5f73b2cad52b75a225d85b26c4d971f3caa",
+          "size": 421776
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libsunec.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libsunec.dylib",
+          "sha1": "96ba682fa409e4cce115652646f07c1bb4f579a5",
+          "size": 223296
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libunpack.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libunpack.dylib",
+          "sha1": "e1c4215145d9c11716c459d0026ae1f3e8795d51",
+          "size": 152112
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libverify.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libverify.dylib",
+          "sha1": "33018859cd936111a30665e1eec1d08d995462da",
+          "size": 93696
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/libzip.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/libzip.dylib",
+          "sha1": "735a19442b8ad7066edfafdb61cd0647dce3985b",
+          "size": 101088
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/logging.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/logging.properties",
+          "sha1": "89da8094484891f9ec1fa40c6c8b61f94c5869d0",
+          "size": 2455
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management/jmxremote.access": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/management/jmxremote.access",
+          "sha1": "21200eaad898ba4a2a8834a032efb6616fabb930",
+          "size": 3998
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management/jmxremote.password.template": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/management/jmxremote.password.template",
+          "sha1": "c1e0f01408bf20fbbb8b4810520c725f70050db5",
+          "size": 2856
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management/management.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/management/management.properties",
+          "sha1": "f6b4c642b3907fe90401417d1e698c491842b34a",
+          "size": 14749
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management/snmp.acl.template": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/management/snmp.acl.template",
+          "sha1": "2e9f9ac287274532eb1f0d1afcefd7f3e97cc794",
+          "size": 3376
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/management-agent.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/management-agent.jar",
+          "sha1": "8e5b3abd350d0689cd528aa5513c81cbf1c4697d",
+          "size": 382
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/meta-index": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/meta-index",
+          "sha1": "ce606cdd606d655ab5b5f3d66b4bb4618db46b91",
+          "size": 2028
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/net.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/net.properties",
+          "sha1": "9aa14cc3fe10b8d097555e273026b5507ab7d09d",
+          "size": 6185
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/psfont.properties.ja": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/psfont.properties.ja",
+          "sha1": "67c15e05a398b4ce6409d530a058f7e1b2208c20",
+          "size": 3793
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/psfontj2d.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/psfontj2d.properties",
+          "sha1": "4edd9e0fc3d30fbdcabcdcaab3bc0b3157fc881e",
+          "size": 11390
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/resources.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/resources.jar",
+          "sha1": "28809d3672b04b8ff1986a160ef6f6ed1fd792e2",
+          "size": 3532587
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/rt.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/rt.jar",
+          "sha1": "5543f284b833734bb1904e1fa5a7de4a22778300",
+          "size": 66602583
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/blacklisted.certs": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/blacklisted.certs",
+          "sha1": "ee0288462fc32992a0f9dfab5aeb3385412f0c4f",
+          "size": 2488
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/cacerts": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/cacerts",
+          "sha1": "4f0a9978d6ab77e494c7425e6c0e292d4571eafa",
+          "size": 124591
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/java.policy": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/java.policy",
+          "sha1": "d41a3e69977d3774dbc379d2f6f87a8aefb3dbc6",
+          "size": 2665
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/java.security": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/java.security",
+          "sha1": "6a6679ac8023041d05439ab455b17ad044aa613b",
+          "size": 60517
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/limited": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/limited/US_export_policy.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/policy/limited/US_export_policy.jar",
+          "sha1": "45efbef7461fa8f6501701a8220e157e3f1004bf",
+          "size": 622
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/limited/local_policy.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/policy/limited/local_policy.jar",
+          "sha1": "9ced0e490d286cae205629e404d028f111cb73cd",
+          "size": 1042
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/unlimited": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/unlimited/US_export_policy.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/policy/unlimited/US_export_policy.jar",
+          "sha1": "45efbef7461fa8f6501701a8220e157e3f1004bf",
+          "size": 622
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/security/policy/unlimited/local_policy.jar": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/security/policy/unlimited/local_policy.jar",
+          "sha1": "bc5bdaee15bf3ec8798b1383a5f9624116f291f1",
+          "size": 640
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/server": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/server/Xusage.txt": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/server/Xusage.txt",
+          "sha1": "6983727eafe140f9dd793c78aa6f3e007438243a",
+          "size": 1423
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/server/libjsig.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/server/libjsig.dylib",
+          "sha1": "933f47ac395667cf441da545a6bd9bf55bc2c2d8",
+          "size": 71664
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/server/libjvm.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/server/libjvm.dylib",
+          "sha1": "c1e10e7da00d0d932c78854285846e1911a213b8",
+          "size": 13369136
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/sound.properties": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/sound.properties",
+          "sha1": "9afceb218059d981d0fa9f07aad3c5097cf41b0c",
+          "size": 1210
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/lib/tzdb.dat": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/lib/tzdb.dat",
+          "sha1": "c7c8cc1d719206f08de2597bab6069821c0240f4",
+          "size": 102968
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/java.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/java.1",
+          "sha1": "c4b10b2566ad75f6d0ccfa21574449cd73e88142",
+          "size": 1083
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/jjs.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/jjs.1",
+          "sha1": "ebd4f9d0fc0d4a190dc72a5f4851d4e91ec47119",
+          "size": 1076
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/keytool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/keytool.1",
+          "sha1": "d4c600075a82aa3e271f1d4851686117ace387e3",
+          "size": 1086
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/orbd.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/orbd.1",
+          "sha1": "e92489a8e39ed9d8cd711aa0e98d59fe37f0090a",
+          "size": 1083
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/pack200.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/pack200.1",
+          "sha1": "d454b7c40294333814ffc0a9f55be3567c766620",
+          "size": 1086
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/policytool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/policytool.1",
+          "sha1": "a619be75d76cf8ea23af8e245bd5abb65e5066d6",
+          "size": 1089
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/rmid.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/rmid.1",
+          "sha1": "15dbc5e5dcd44a14a99fce15cf4f5b1ce7700a86",
+          "size": 1083
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/rmiregistry.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/rmiregistry.1",
+          "sha1": "00ee302974d6cf8daa4e76cd8df000b32aa9d973",
+          "size": 1090
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/servertool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/servertool.1",
+          "sha1": "6b500ca5c9707af6b4312a08e4f97dbf9e2e0881",
+          "size": 1089
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/tnameserv.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/tnameserv.1",
+          "sha1": "8b3ba1f9b9ff2d8cd139c181ed79c246d4f363ce",
+          "size": 1088
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/ja_JP.UTF-8/man1/unpack200.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/ja_JP.UTF-8/man1/unpack200.1",
+          "sha1": "c458a3d416be02949d07040bcbe8c02ed28449a8",
+          "size": 1088
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/java.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/java.1",
+          "sha1": "83f54e230558da706557967d7a280cd466fa7e6b",
+          "size": 107134
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/jjs.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/jjs.1",
+          "sha1": "a92693156d9395de6f3acb676ebaaa13a3ac8dd7",
+          "size": 5921
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/keytool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/keytool.1",
+          "sha1": "afe52dff60604fece8565c827e12134dea939f77",
+          "size": 87894
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/orbd.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/orbd.1",
+          "sha1": "15409a367d2c374dbb56e4dc0230f40def14aaef",
+          "size": 13149
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/pack200.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/pack200.1",
+          "sha1": "8c12265916f94ebf9f1c728d1521dd107336bb2a",
+          "size": 12592
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/policytool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/policytool.1",
+          "sha1": "c449340596d6a234abde6e7de922c8412f2da25c",
+          "size": 4204
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/rmid.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/rmid.1",
+          "sha1": "6af017f5f2eefca488952e9d241ead39525b0ff8",
+          "size": 16948
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/rmiregistry.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/rmiregistry.1",
+          "sha1": "f45e9b484f909a377d89b114a77dba334ba4ff17",
+          "size": 4418
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/servertool.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/servertool.1",
+          "sha1": "3dcd9bc3b9d06dc3cc3368b2538534748c0fd323",
+          "size": 8206
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/tnameserv.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/tnameserv.1",
+          "sha1": "f4588e8e281b1988ab83b22e324b8f024d711542",
+          "size": 16716
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/man/man1/unpack200.1": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/man/man1/unpack200.1",
+          "sha1": "eeac6004cd3c12ee93fff8e2578e33aa0265dd9b",
+          "size": 5213
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/readme.txt": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/readme.txt",
+          "sha1": "bcfb944cebb7faf8ef02118a22988f3039f3e764",
+          "size": 838
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Home/release": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Home/release",
+          "sha1": "cba3d7366ca24196085d04ace153d032ed85a51f",
+          "size": 192
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/Info.plist": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/Info.plist",
+          "sha1": "c905575c65f639a6cdf49d6b0321088f4c5b544b",
+          "size": 1250
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/MacOS": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/MacOS/libjli.dylib": {
+      "type": "file",
+      "executable": true,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/MacOS/libjli.dylib",
+          "sha1": "fd55dbf44e78609e18134e3f4d227301afead57e",
+          "size": 126080
+        }
+      }
+    },
+    "jre.bundle/Contents/Home/Contents/_CodeSignature": {
+      "type": "directory"
+    },
+    "jre.bundle/Contents/Home/Contents/_CodeSignature/CodeResources": {
+      "type": "file",
+      "executable": false,
+      "downloads": {
+        "raw": {
+          "url": "https://emlproject.com/patches/arm64/jre8/mac/Contents/_CodeSignature/CodeResources",
+          "sha1": "89feaafe067bf2c95a8b2c1f3fb351c2760554c1",
+          "size": 24001
+        }
+      }
+    }
+  }
+}
