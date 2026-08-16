@@ -157,22 +157,30 @@
     },
     {
       id: 14,
-      title: 'MCP support',
+      title: 'Custom loaders support',
       target: 'lib',
       version: 'v2.7.0',
-      description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
-      status: 'active'
+      description: 'Add support for custom Minecraft loaders (like MCP).',
+      status: 'completed'
     },
     {
       id: 14,
-      title: 'MCP support',
+      title: 'Custom loaders support',
       target: 'admintool',
       version: 'v2.7.0',
-      description: 'Add support for Minecraft Coder Pack (MCP) launchers.',
-      status: 'active'
+      description: 'Add support for custom Minecraft loaders (like MCP).',
+      status: 'completed'
     },
     {
       id: 15,
+      title: 'Support for every Minecraft on Mac Apple Silicon',
+      target: 'lib',
+      version: 'v2.7.1',
+      description: 'Add support for launching every Minecraft version on Mac computers with Apple Silicon (M1/M2/...).',
+      status: 'active'
+    },
+    {
+      id: 16,
       title: 'Multiple instance support',
       target: 'lib',
       version: 'v3.0.0',
@@ -180,7 +188,7 @@
       status: 'future'
     },
     {
-      id: 15,
+      id: 16,
       title: 'Multiple instance support',
       target: 'admintool',
       version: 'v3.0.0',
