@@ -173,10 +173,10 @@
     },
     {
       id: 15,
-      title: 'Support for every Minecraft on Mac Apple Silicon',
+      title: 'Support for Minecraft 1.6+ on ARM devices',
       target: 'lib',
       version: 'v2.7.1',
-      description: 'Add support for launching every Minecraft version on Mac computers with Apple Silicon (M1/M2/...).',
+      description: 'Add support for launching Minecraft version 1.6+ on Mac computers with Apple Silicon (M1/M2/...) and Windows 11 ARM64.',
       status: 'active'
     },
     {
