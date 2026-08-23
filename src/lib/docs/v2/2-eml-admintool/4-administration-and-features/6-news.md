@@ -19,7 +19,7 @@ The **News** page lets you publish articles that are displayed in the launcher's
 
 ![EML AdminTool News page](/images/docs/news.png)
 
-See [News](/docs/eml-lib-and-launcher/api-reference/news) in the EML Lib API Reference for more details.
+See [News](/docs/v2/eml-lib-and-launcher/api-reference/news) in the EML Lib API Reference for more details.
 
 ## News
 

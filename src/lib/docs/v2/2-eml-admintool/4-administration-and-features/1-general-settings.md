@@ -63,7 +63,7 @@ Click the check button next to a pending user to open the permission modal. Assi
 To decline a request, click the cross button. The user moves to the **Deleted users** list.
 
 > [!TIP]
-> Per-profile Files Updater permissions can also be managed from the [Profiles](/docs/eml-admintool/administration-and-features/profiles) page when creating or editing a profile.
+> Per-profile Files Updater permissions can also be managed from the [Profiles](/docs/v2/eml-admintool/administration-and-features/profiles) page when creating or editing a profile.
 
 ### Editing an existing user
 
@@ -103,4 +103,4 @@ This section provides a snapshot of your infrastructure health.
 > [!CAUTION]
 > This action is irreversible. Use it only if you want to start from scratch.
 
-**How to uninstall EML AdminTool?** — This button opens a modal with instructions on how to completely remove EML AdminTool from your server, including deleting all files and Docker containers. See the [uninstallation guide](/docs/eml-admintool/uninstallation-and-reinstallation) for more details.
+**How to uninstall EML AdminTool?** — This button opens a modal with instructions on how to completely remove EML AdminTool from your server, including deleting all files and Docker containers. See the [uninstallation guide](/docs/v2/eml-admintool/uninstallation-and-reinstallation) for more details.

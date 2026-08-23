@@ -87,5 +87,5 @@ This documentation is divided into three main parts:
 - **EML Lib**: how to build a launcher, from setting up the development environment to packaging and distributing the final executable.
 - **Packaging**: how to produce platform-specific installers and connect them to EML AdminTool's auto-update system.
 
-Start with [Required knowledge](/docs/introduction/required-knowledge) to verify that you meet the prerequisites, then follow the setup guides in order.
+Start with [Required knowledge](/docs/v2/introduction/required-knowledge) to verify that you meet the prerequisites, then follow the setup guides in order.
 

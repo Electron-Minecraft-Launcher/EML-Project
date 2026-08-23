@@ -36,4 +36,4 @@ These permissions are assigned by the administrator when your account is approve
 > This action is **irreversible**. You will lose access to the EML AdminTool immediately. If you wish to return, you will need to register again and wait for administrator approval.
 
 > [!NOTE]
-> The Administrator cannot delete their own account from here. To reset the main account, a full factory reset of the EML AdminTool is required (see [General settings](/docs/eml-admintool/administration-and-features/general-settings)).
+> The Administrator cannot delete their own account from here. To reset the main account, a full factory reset of the EML AdminTool is required (see [General settings](/docs/v2/eml-admintool/administration-and-features/general-settings)).

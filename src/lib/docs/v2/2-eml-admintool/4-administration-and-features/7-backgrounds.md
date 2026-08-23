@@ -19,7 +19,7 @@ The **Backgrounds** page lets you upload an image that is used as the background
 
 ![EML AdminTool Backgrounds page](/images/docs/backgrounds.png)
 
-See [Background](/docs/eml-lib-and-launcher/api-reference/background) in the EML Lib API Reference for more details.
+See [Background](/docs/v2/eml-lib-and-launcher/api-reference/background) in the EML Lib API Reference for more details.
 
 ### Uploading a background
 

@@ -22,7 +22,7 @@ The **Stats** page provides insights into player behavior and launcher usage. Yo
 
 ![EML AdminTool Stats page](/images/docs/stats.png)
 
-See [Stats](/docs/eml-lib-and-launcher/api-reference/stats) in the EML Lib API Reference for more details.
+See [Stats](/docs/v2/eml-lib-and-launcher/api-reference/stats) in the EML Lib API Reference for more details.
 
 ## Action bar
 

@@ -70,7 +70,7 @@ Avoid uploading files that are session-specific, player-specific, or regenerated
 If you upload an `options.txt`, it will overwrite players' settings on every sync. Uploading it once to set default keybinds is reasonable. Uploading it on every modpack update will reset players' volume, sensitivity, and video settings repeatedly — avoid doing this unless intentional.
 
 > [!NOTE]
-> EML AdminTool does not currently support merging `options.txt` changes. This is a planned feature for a future release. Currently, you should hard-code the default `options.txt` in the launcher. See [workaround here](/docs/eml-lib-and-launcher/api-reference/launcher#use-a-default-optionstxt-without-overwriting-player-settings).
+> EML AdminTool does not currently support merging `options.txt` changes. This is a planned feature for a future release. Currently, you should hard-code the default `options.txt` in the launcher. See [workaround here](/docs/v2/eml-lib-and-launcher/api-reference/launcher#use-a-default-optionstxt-without-overwriting-player-settings).
 
 ## Mod loader configuration
 

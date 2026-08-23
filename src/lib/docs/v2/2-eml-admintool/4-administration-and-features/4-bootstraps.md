@@ -18,11 +18,11 @@ last-updated: 2026-05-13
 The **Bootstraps** section manages updates to the launcher executable itself â€” distinct from game files. When you fix a bug, redesign the interface, or add a new feature to your launcher, you publish a new version here. Players receive the update automatically the next time they start the launcher.
 
 > [!NOTE]
-> Bootstraps update the **launcher application**. Game files and mods are managed separately in [Files Updater](/docs/eml-admintool/administration-and-features/files-updater). You will use Files Updater for the vast majority of updates; Bootstraps is only needed when you release a new version of the Electron app itself.
+> Bootstraps update the **launcher application**. Game files and mods are managed separately in [Files Updater](/docs/v2/eml-admintool/administration-and-features/files-updater). You will use Files Updater for the vast majority of updates; Bootstraps is only needed when you release a new version of the Electron app itself.
 
 ![EML AdminTool Bootstraps page](/images/docs/bootstraps.png)
 
-See [Bootstrap](/docs/eml-lib-and-launcher/api-reference/bootstrap) in the EML Lib API Reference for more details.
+See [Bootstrap](/docs/v2/eml-lib-and-launcher/api-reference/bootstrap) in the EML Lib API Reference for more details.
 
 ### How it works
 
@@ -92,5 +92,5 @@ An incorrectly published bootstrap can trap players in an update loop (update â†
 - Install the new `.exe` manually on a test machine before uploading.
 - Verify the version number in the `.yml` manifest matches the version in your `package.json`.
 
-For more detail on building and packaging the launcher, see [Packaging](/docs/eml-lib-and-launcher/packaging).
+For more detail on building and packaging the launcher, see [Packaging](/docs/v2/eml-lib-and-launcher/packaging).
 
