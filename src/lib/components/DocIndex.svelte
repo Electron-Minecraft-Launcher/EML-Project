@@ -1,22 +1,3 @@
-<script lang="ts">
-  import SEO from '$lib/components/SEO.svelte'
-</script>
-
-<SEO title="EML Docs" description="Documentation for EML Lib, EML AdminTool, and related projects." />
-
-<h1>EML Docs</h1>
-
-<p>
-  Welcome to the EML documentation! Here you'll find guides, API references, and other resources to help you get started with EML Lib, EML AdminTool,
-  and related projects.
-</p>
-
-<p>
-  Use the sidebar to navigate through the documentation. If you're new, we recommend starting with the <a href="/docs/introduction/what-is-eml"
-    >What is EML?</a
-  > page.
-</p>
-
 <div class="grid">
   <a href="/docs/introduction/what-is-eml" class="project-card">
     <div class="icon"><i class="fa-solid fa-question-circle"></i></div>
@@ -88,6 +69,7 @@
       margin: 0 0 10px 0;
       font-size: 1.5rem;
       line-height: 1.5;
+      border: 0;
     }
 
     p {

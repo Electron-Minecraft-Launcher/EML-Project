@@ -1,6 +1,6 @@
 ---
-title: Profiles
-description: API reference for the Profiles class, used to retrieve the list of profiles configured in EML AdminTool.
+title: Profile
+description: API reference for the Profile class, used to retrieve the list of profiles configured in EML AdminTool.
 category: EML Lib and Launcher — API Reference
 author: Electron Minecraft Launcher
 last-updated: 2026-07-23
@@ -13,21 +13,21 @@ last-updated: 2026-07-23
   import CodeBlock from '$lib/components/CodeBlock.svelte';
 </script>
 
-# Profiles
+# Profile
 
-`Profiles` fetches the list of profiles configured in EML AdminTool. Use it to populate a profile selector in the launcher UI, then pass the selected `IProfile` to the `Launcher` constructor.
+`Profile` fetches the list of profiles configured in EML AdminTool. Use it to populate a profile selector in the launcher UI, then pass the selected `IProfile` to the `Launcher` constructor.
 
 > [!WARNING]
-> `Profiles` requires an EML AdminTool instance. It is not available in agnostic mode (self-hosted manifest without AdminTool).
+> `Profile` requires an EML AdminTool instance. It is not available in agnostic mode (self-hosted manifest without AdminTool).
 
 ```js
-import { Profiles, Launcher } from 'eml-lib'
+import { Profile, Launcher } from 'eml-lib'
 
 getProfiles()
 
 async function getProfiles() {
-  const profiles = new Profiles('https://at.myserver.com')
-  const list = await profiles.getProfiles()
+  const profile = new Profile('https://at.myserver.com')
+  const list = await profile.getProfiles()
 }
 ```
 

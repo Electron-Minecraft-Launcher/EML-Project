@@ -21,7 +21,7 @@ A profile is a self-contained Minecraft instance configuration. Each profile has
 
 Profiles allow you to manage multiple game modes (a vanilla survival server, a modded server, an event modpack, etc.) from a single EML AdminTool instance.
 
-## Creating a profile
+### Creating a profile
 
 Click the "Add profile" button. A modal opens with the following fields:
 
@@ -53,14 +53,14 @@ Click the "Add profile" button. A modal opens with the following fields:
 
 Once saved, the profile appears in the list and is immediately available for file and loader management.
 
-## Editing a profile
+### Editing a profile
 
 Hover over any profile card and click the edit button to rename it, update its server address, Minecraft version and permissions. Changes apply immediately.
 
 > [!TIP]
 > You can also edit permissions from the [Settings](/docs/eml-admintool/administration-and-features/general-settings#user-management) page. Permissions are always in sync between the profile and the user management sections.
 
-## Deleting a profile
+### Deleting a profile
 
 Hover over a profile card and click the trash button to delete it.
 

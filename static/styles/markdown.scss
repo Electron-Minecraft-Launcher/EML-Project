@@ -52,6 +52,7 @@
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border-color);
     font-weight: 700 !important;
+    z-index: 1;
 
     a::before {
       display: none;
@@ -169,6 +170,9 @@
     margin: 16px 0;
     font-size: 15px;
     line-height: 1.7;
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
 
     th,
     td {
@@ -442,12 +446,6 @@
 }
 
 @media (max-width: 768px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    max-width: 100%;
-  }
-
   th,
   td {
     white-space: nowrap;

@@ -171,7 +171,7 @@
           display: inline-block;
           position: absolute;
           left: 0;
-          top: 12px;
+          top: 7px;
           height: 25px;
           width: 4px;
           background-color: var(--primary-color);

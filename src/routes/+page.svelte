@@ -22,7 +22,7 @@ async function start() {
     url: 'https://at.emlproject.com',
     root: 'goldfrite',
     account: account,
-    memory: { min: 2048, max: 1024 },
+    memory: { min: 1024, max: 2048 },
   })
   
   // 3. Launch
