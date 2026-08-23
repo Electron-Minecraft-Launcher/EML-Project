@@ -16,7 +16,7 @@ last-updated: 2026-05-13
 # Quick start
 
 > [!NOTE]
-> If you are using EML Template, this page is optional. The template ships with a working main process. You can skip directly to [Frontend architecture](/docs/eml-lib-and-launcher/getting-started/frontend-architecture).
+> If you are using EML Template, this page is optional. The template ships with a working main process. You can skip directly to [Frontend architecture](/docs/v2/eml-lib-and-launcher/getting-started/frontend-architecture).
 
 This page walks you through the minimal code needed to verify that your environment is correctly set up by launching Minecraft from the terminal — without building a UI yet.
 
@@ -152,7 +152,7 @@ npm run dev
 Vite starts a dev server, an Electron window opens, and in the terminal you should see EML Lib downloading assets and libraries. Once the download is complete, a Minecraft window opens.
 
 > [!CAUTION]
-> `CrackAuth` is used here for testing convenience only. It is not legal for players who own a genuine Minecraft licence. Use [MicrosoftAuth](/docs/eml-lib-and-launcher/api-reference/microsoftauth) in production.
+> `CrackAuth` is used here for testing convenience only. It is not legal for players who own a genuine Minecraft licence. Use [MicrosoftAuth](/docs/v2/eml-lib-and-launcher/api-reference/microsoftauth) in production.
 
 Congratulations — your environment is working!
 

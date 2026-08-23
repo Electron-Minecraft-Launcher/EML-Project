@@ -48,5 +48,5 @@ You may want to uninstall EML AdminTool if you no longer need it or if you want 
 
 To reinstall EML AdminTool, simply follow the installation instructions for your environment:
 
-- For production deployments on a Linux VPS, see [Production setup](/docs/eml-admintool/production-setup/install-eml-admintool).
-- For local development on Windows or macOS, see [Development setup](/docs/eml-admintool/development-setup/install-eml-admintool-dev).
+- For production deployments on a Linux VPS, see [Production setup](/docs/v2/eml-admintool/production-setup/install-eml-admintool).
+- For local development on Windows or macOS, see [Development setup](/docs/v2/eml-admintool/development-setup/install-eml-admintool-dev).

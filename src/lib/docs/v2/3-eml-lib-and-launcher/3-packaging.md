@@ -283,7 +283,7 @@ After a successful build, upload the output to EML AdminTool to enable auto-upda
 
 Go to **EML AdminTool > Bootstraps**, click the edit button, upload the files for each platform, and save. Players will receive the update the next time they start the launcher.
 
-See [Bootstraps](/docs/eml-admintool/administration-and-features/bootstraps) in the EML AdminTool documentation and [`Bootstrap`](/docs/eml-lib-and-launcher/api-reference/bootstrap) in the EML Lib reference for the full flow.
+See [Bootstraps](/docs/v2/eml-admintool/administration-and-features/bootstraps) in the EML AdminTool documentation and [`Bootstrap`](/docs/v2/eml-lib-and-launcher/api-reference/bootstrap) in the EML Lib reference for the full flow.
 
 ## Troubleshooting
 

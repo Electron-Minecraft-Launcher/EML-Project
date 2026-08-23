@@ -96,7 +96,7 @@ EML Template is an Electron + Vite boilerplate pre-configured with TypeScript, S
    npm run dev
    ```
 
-You can now move on to [Frontend architecture](/docs/eml-lib-and-launcher/getting-started/frontend-architecture).
+You can now move on to [Frontend architecture](/docs/v2/eml-lib-and-launcher/getting-started/frontend-architecture).
 
 ### Option 2 — Manual setup
 

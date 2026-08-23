@@ -36,13 +36,13 @@ A Linux-based VPS or dedicated server is required for production deployments.
 
 **Operating system** — Ubuntu 22.04 LTS or later, or Debian 11 or later. Other Linux distributions are supported but not officially tested.
 
-**Docker** — Required. Installation instructions are on the [next page](/docs/eml-admintool/production-setup/install-docker).
+**Docker** — Required. Installation instructions are on the [next page](/docs/v2/eml-admintool/production-setup/install-docker).
 
-**NGINX** — Required to expose EML AdminTool securely over HTTPS. A configuration guide is provided at [Set up NGINX](/docs/eml-admintool/production-setup/set-up-nginx).
+**NGINX** — Required to expose EML AdminTool securely over HTTPS. A configuration guide is provided at [Set up NGINX](/docs/v2/eml-admintool/production-setup/set-up-nginx).
 
 **A domain name** — Strongly recommended. Let's Encrypt certificates (used for HTTPS) do not support raw IP addresses. Without a domain, EML AdminTool will only be accessible over HTTP.
 
 ## Development (macOS / Windows)
 
-For local testing, EML AdminTool runs on any system that supports Docker Desktop. No Linux administration knowledge is required. See [Dev setup](/docs/eml-admintool/development-setup/install-docker-desktop) for instructions.
+For local testing, EML AdminTool runs on any system that supports Docker Desktop. No Linux administration knowledge is required. See [Dev setup](/docs/v2/eml-admintool/development-setup/install-docker-desktop) for instructions.
 

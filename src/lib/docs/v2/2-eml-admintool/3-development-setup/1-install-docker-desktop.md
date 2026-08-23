@@ -15,7 +15,7 @@ last-updated: 2026-05-13
 
 # Install Docker Desktop
 
-For local development and testing, EML AdminTool runs on macOS and Windows via Docker Desktop. This setup is not suitable for production — for a public deployment, follow the [Production setup](/docs/eml-admintool/production-setup/install-docker) guide instead.
+For local development and testing, EML AdminTool runs on macOS and Windows via Docker Desktop. This setup is not suitable for production — for a public deployment, follow the [Production setup](/docs/v2/eml-admintool/production-setup/install-docker) guide instead.
 
 <Tabs group="os">
 <TabItem label="macOS">

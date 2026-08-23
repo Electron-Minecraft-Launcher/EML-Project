@@ -49,7 +49,7 @@ When prompted for a domain name, enter the domain you will use to access EML Adm
 Once the script completes, EML AdminTool is available at `http://<your-server-ip>:8080/`. Keep it on a private network or behind a firewall until you have completed the NGINX and SSL setup.
 
 > [!WARNING]
-> At this stage, EML AdminTool is not secured. Anyone who knows the URL can access the setup page and create the admin account. Complete the setup immediately, then follow the [NGINX](/docs/eml-admintool/production-setup/set-up-nginx) and [SSL](/docs/eml-admintool/production-setup/ssl-certificate) guides before exposing it to the internet.
+> At this stage, EML AdminTool is not secured. Anyone who knows the URL can access the setup page and create the admin account. Complete the setup immediately, then follow the [NGINX](/docs/v2/eml-admintool/production-setup/set-up-nginx) and [SSL](/docs/v2/eml-admintool/production-setup/ssl-certificate) guides before exposing it to the internet.
 
 ## Initial setup
 

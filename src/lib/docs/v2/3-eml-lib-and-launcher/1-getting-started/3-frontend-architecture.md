@@ -177,7 +177,7 @@ Replace `.js` with `.ts` if using TypeScript.
 
 `src/` contains all frontend code. `index.html` is a single page with multiple view containers. `app.js` initializes the app and sets up global state. `ipc.js` is a typed wrapper around the IPC methods exposed by the preload script. `views/` contains JavaScript files for each view, responsible for rendering and user interactions. `static/` contains images and stylesheets.
 
-`build/` contains static assets needed for the build, such as icons (see [Packaging](/docs/eml-lib-and-launcher/packaging) for details).
+`build/` contains static assets needed for the build, such as icons (see [Packaging](/docs/v2/eml-lib-and-launcher/packaging) for details).
 
 ## Single Page Application model
 

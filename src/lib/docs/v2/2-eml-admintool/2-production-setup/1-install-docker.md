@@ -15,12 +15,12 @@ last-updated: 2026-05-13
 
 # Install Docker
 
-This page covers Docker Engine and Docker Compose installation on a Linux VPS. If you are setting up a local development environment on macOS or Windows, see [Development setup](/docs/eml-admintool/development-setup/install-docker-desktop) instead.
+This page covers Docker Engine and Docker Compose installation on a Linux VPS. If you are setting up a local development environment on macOS or Windows, see [Development setup](/docs/v2/eml-admintool/development-setup/install-docker-desktop) instead.
 
 <small>The instructions below are adapted from the <a href="https://docs.docker.com/engine/install/">official Docker documentation</a> (Apache License 2.0).</small>
 
 > [!WARNING]
-> If your system uses `ufw` or `firewalld`, be aware that Docker manages its own `iptables` rules and will bypass your firewall for container ports. Do not expose port `8080` directly — use NGINX as a reverse proxy instead. See [Security hardening](/docs/eml-admintool/production-setup/security-hardening) for details.
+> If your system uses `ufw` or `firewalld`, be aware that Docker manages its own `iptables` rules and will bypass your firewall for container ports. Do not expose port `8080` directly — use NGINX as a reverse proxy instead. See [Security hardening](/docs/v2/eml-admintool/production-setup/security-hardening) for details.
 
 ## Uninstall conflicting packages
 

@@ -19,7 +19,7 @@ The **Maintenance** page lets you temporarily block access to the launcher for a
 
 ![EML AdminTool Maintenance page](/images/docs/maintenance.png)
 
-When maintenance is active, EML Lib detects the status on startup and it is your launcher's responsibility to display the maintenance screen and prevent the game from launching. See [Maintenance](/docs/eml-lib-and-launcher/api-reference/maintenance) in the EML Lib API Reference for more details.
+When maintenance is active, EML Lib detects the status on startup and it is your launcher's responsibility to display the maintenance screen and prevent the game from launching. See [Maintenance](/docs/v2/eml-lib-and-launcher/api-reference/maintenance) in the EML Lib API Reference for more details.
 
 ### Enabling maintenance
 

@@ -18,7 +18,7 @@ last-updated: 2026-05-13
 `CrackAuth` generates an offline account from a username alone, without any server-side validation. It is synchronous and requires no network access.
 
 > [!CAUTION]
-> Offline accounts are not legally valid for players who own a genuine Minecraft licence. Using crack authentication in a public launcher violates Minecraft's Terms of Service. **Use `CrackAuth` for local development and testing only.** Use [MicrosoftAuth](/docs/eml-lib-and-launcher/api-reference/microsoftauth) in production.
+> Offline accounts are not legally valid for players who own a genuine Minecraft licence. Using crack authentication in a public launcher violates Minecraft's Terms of Service. **Use `CrackAuth` for local development and testing only.** Use [MicrosoftAuth](/docs/v2/eml-lib-and-launcher/api-reference/microsoftauth) in production.
 
 ```js
 import { CrackAuth } from 'eml-lib'
