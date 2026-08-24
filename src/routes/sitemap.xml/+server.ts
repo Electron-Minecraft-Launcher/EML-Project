@@ -1,11 +1,11 @@
-import { getFlatPages } from '$lib/config/docs'
+import { DEFAULT_VERSION, getFlatPages } from '$lib/config/docs'
 import type { RequestHandler } from './$types'
 
 const site = 'https://emlproject.com'
 
 export const GET: RequestHandler = async () => {
   const pages = ['', '/packages', '/packages/lib', '/packages/admintool']
-  const docPages = getFlatPages().map((p) => `/docs/${p.slug}`)
+  const docPages = getFlatPages().map((p) => `/docs/${DEFAULT_VERSION}/${p.slug}`)
   const blogModules = import.meta.glob('/src/lib/blog/*.md', { eager: true })
   const blogPages = Object.entries(blogModules)
     .map(([, mod]: any) => mod.metadata?.slug)
@@ -34,3 +34,4 @@ ${allPages
     }
   })
 }
+
