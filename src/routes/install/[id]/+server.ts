@@ -2,7 +2,7 @@ import { type RequestHandler } from '@sveltejs/kit'
 
 const CONFIG = {
   owner: 'Electron-Minecraft-Launcher',
-  repo: 'eml-admintool-v2',
+  repo: 'eml-admintool',
   toolName: 'admintool',
   scriptName: 'eml-admintool',
   githubRaw: 'https://raw.githubusercontent.com',

@@ -9,7 +9,7 @@ type Version = {
 
 export const load = (async ({ fetch }) => {
   const owner = 'Electron-Minecraft-Launcher'
-  const repo = 'EML-AdminTool-v2'
+  const repo = 'EML-AdminTool'
 
   const headers = {
     'User-Agent': 'EML-Website',
