@@ -103,7 +103,7 @@
               {/if}
             </div>
             <a
-              href={`https://www.github.com/Electron-Minecraft-Launcher/EML-AdminTool-v2/releases/tag/v${v.version}`}
+              href={`https://www.github.com/Electron-Minecraft-Launcher/EML-AdminTool/releases/tag/v${v.version}`}
               target="_blank"
               rel="noreferrer"
               class="github-link"
