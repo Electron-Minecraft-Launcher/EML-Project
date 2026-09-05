@@ -1,11 +1,27 @@
 import { error, redirect } from '@sveltejs/kit'
-import type { PageLoad } from './$types'
-import { findFileBySlug, DEFAULT_VERSION, AVAILABLE_VERSIONS, type DocVersion } from '$lib/config/docs'
+import type { EntryGenerator, PageLoad } from './$types'
+import { findFileBySlug, DEFAULT_VERSION, AVAILABLE_VERSIONS, type DocVersion, getFlatPages } from '$lib/config/docs'
 
 export const prerender = true
 
+export const entries: EntryGenerator = () => {
+  const allEntries: { slug: string }[] = []
+
+  for (const v of AVAILABLE_VERSIONS) {
+    allEntries.push({ slug: v })
+
+    const pages = getFlatPages(v)
+    for (const page of pages) {
+      allEntries.push({ slug: `${v}/${page.slug}` })
+    }
+  }
+
+  return allEntries
+}
+
 export const load: PageLoad = async ({ params }) => {
   const parts = params.slug ? params.slug.split('/').filter(Boolean) : []
+  console.log(parts)
 
   let version: DocVersion = DEFAULT_VERSION
   let pageSlug = ''
