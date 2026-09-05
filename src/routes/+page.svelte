@@ -350,7 +350,7 @@ async function start() {
 
   .cta {
     background: white;
-    background-image: url('/images/background.png');
+    background-image: url('/images/background.webp');
     background-size: cover;
     background-position: center;
     padding: 80px 0;

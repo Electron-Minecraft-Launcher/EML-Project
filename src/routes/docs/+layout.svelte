@@ -303,7 +303,6 @@
       width: 100%;
       min-width: 0;
       margin: 0 auto;
-      overflow-x: scroll;
     }
 
     .right-sidebar {
