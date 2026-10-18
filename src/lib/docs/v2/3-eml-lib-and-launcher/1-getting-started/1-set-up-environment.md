@@ -74,7 +74,7 @@ There are two ways to get started: using EML Template (recommended for beginners
 
 ### Option 1 — EML Template
 
-EML Template is an Electron + Vite boilerplate pre-configured with TypeScript, SCSS, and electron-builder. IPC handlers, preload script, and EML Lib wiring are already in place. It is the fastest way to get a working launcher.
+EML Template is an Electron + Svelte boilerplate pre-configured with TypeScript, SCSS, and electron-builder. IPC handlers, preload script, and EML Lib wiring are already in place. It is the fastest way to get a working launcher.
 
 1. Go to the [EML Template repository](https://github.com/Electron-Minecraft-Launcher/EML-Template) on GitHub.
 

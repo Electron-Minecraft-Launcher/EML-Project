@@ -50,7 +50,7 @@ EML Lib is the bridge between your launcher's user interface and the underlying 
 
 ### EML Template
 
-EML Template is an optional starting point for the launcher frontend. It is an Electron + Vite boilerplate, pre-configured with TypeScript and SCSS, that already wires up IPC communication with EML Lib. You customize its appearance and add your server's branding on top.
+EML Template is an optional starting point for the launcher frontend. It is an Electron + Svelte boilerplate, pre-configured with TypeScript and SCSS, that already wires up IPC communication with EML Lib. You customize its appearance and add your server's branding on top.
 
 > [!NOTE]
 > You are not required to use EML Template. EML Lib can be integrated into any Electron project regardless of your build toolchain.
