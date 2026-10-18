@@ -61,7 +61,7 @@ async function start() {
   </div>
   <div class="card">
     <h3><i class="fa-solid fa-layer-group"></i> EML Template</h3>
-    <p>A ready-to-use Electron + Vite frontend. Customize the design with HTML/CSS, we handle the backend logic.</p>
+    <p>A ready-to-use Electron + Svelte launcher. Customize the design with HTML/CSS, we handle the backend logic.</p>
   </div>
 </section>
 
