@@ -15,6 +15,11 @@ last-updated: 2026-05-13
 
 # System requirements
 
+<!-- insert video youtube -->
+<center>
+<iframe src="https://www.youtube.com/embed/5kQm8RB7CUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="aspect-ratio: 16/9; width: 90%; height: auto; border-radius: 10px;" allowfullscreen></iframe>
+</center>
+
 > [!NOTE]
 > EML AdminTool is **optional** since EML Lib 2.2. If you prefer to host your modpack files independently, you can generate a manifest using the [Modpack JSON generator](/resources/modpack-json-generator) and skip the AdminTool setup entirely. The AdminTool remains the recommended approach for teams and servers that need a dashboard, user management, profile support, or more advanced features.
 
