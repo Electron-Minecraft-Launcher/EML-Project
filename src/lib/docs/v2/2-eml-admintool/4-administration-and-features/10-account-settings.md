@@ -22,6 +22,10 @@ The top section displays your current profile details. To edit them, hover over 
 
 **Account type** —  Indicates if you are the Administrator or a Standard user.
 
+## Appearance
+
+This section allows you to switch between light and dark mode for the EML AdminTool interface. You can also synchronize the theme with your system settings. The change will be applied immediately and are synced across all devices where you are logged in.
+
 ## Permissions
 
 This section is read-only. It displays the list of features you are allowed to access and manage.
